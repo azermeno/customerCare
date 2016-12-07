@@ -1,0 +1,42 @@
+/*RadNotification Office2010Black Skin*/
+
+.RadNotification_Hipocrates
+{
+	border: 1px solid #4a4a4a;
+	background-color: #707070;
+}
+
+.RadNotification_Hipocrates.rnShadows
+{
+	box-shadow: 2px 2px 3px #989997;
+	-webkit-box-shadow: 2px 2px 3px #989997;
+}
+
+.RadNotification_Hipocrates .rnTitleBar,
+.RadNotification_Hipocrates .rnCommands a
+{
+	background-image: url('Notification/NotificationSprite.png');
+}
+
+.RadNotification_Hipocrates .rnTitleBar
+{
+	border: 1px solid #6a6b69;
+}
+
+.RadNotification_Hipocrates .rnTitleBarTitle,
+.RadNotification_Hipocrates .rnContentWrapper
+{
+	color: #ffffff;
+}
+
+.RadNotification_Hipocrates .rnContentWrapper
+{
+	border-top: 1px solid #2e2e2e;
+}
+
+/* base overwrites */
+
+.RadNotification_Hipocrates .rnCommands 
+{
+	margin: 3px 0 0;
+}

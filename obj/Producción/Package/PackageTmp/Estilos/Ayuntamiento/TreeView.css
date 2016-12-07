@@ -1,0 +1,92 @@
+.RadTreeView_Ayuntamiento,
+.RadTreeView_Ayuntamiento a.rtIn,
+.RadTreeView_Ayuntamiento .rtEdit .rtIn input
+{
+	color: #000000;
+	font: 12px/18px "Segoe UI", Arial, sans-serif;
+}
+
+.RadTreeView_Ayuntamiento .rtPlus, 
+.RadTreeView_Ayuntamiento .rtMinus
+{
+	background-image: url('TreeView/PlusMinus.png');
+}
+
+.RadTreeView_Ayuntamiento .rtLI .rtPlus, 
+.RadTreeView_Ayuntamiento .rtLI .rtPlus:hover
+{ background-position: 0 0; }
+
+.RadTreeView_Ayuntamiento .rtLI .rtMinus, 
+.RadTreeView_Ayuntamiento .rtLI .rtMinus:hover
+{ background-position: 0 -11px; }
+
+.RadTreeView_Ayuntamiento .rtChecked,
+.RadTreeView_Ayuntamiento .rtUnchecked,
+.RadTreeView_Ayuntamiento .rtIndeterminate
+{
+	background-image: url('TreeView/TriState.png');
+}
+
+.RadTreeView_Ayuntamiento .rtHover .rtIn
+{
+	color: #87141e;
+	border-color: #c91c2b;
+	background-color: #ffabb2;
+}
+
+.RadTreeView_Ayuntamiento .rtSelected .rtIn
+{
+	color: #87141e;
+	border-color: #c92836;
+	background-color: #ff3849;
+}
+
+.RadTreeView_Ayuntamiento .rtSelected .rtLoadingBefore,
+.RadTreeView_Ayuntamiento .rtSelected .rtLoadingAfter,
+.RadTreeView_Ayuntamiento .rtSelected .rtLoadingBelow
+{
+	color: #333333;
+}
+
+.RadTreeView_Ayuntamiento .rtLoadingIcon
+{
+	background-image: url('TreeView/LoadingIcon.gif');
+}
+
+.RadTreeView_Ayuntamiento .rtLI .rtEdit .rtIn
+{
+	border-color: #6b6b6b;
+	background: #ffffff;
+}
+
+.RadTreeView_Ayuntamiento_disabled .rtIn,
+.RadTreeView_Ayuntamiento .rtDisabled .rtIn
+{
+	color: #cccccc;
+}
+
+
+/* <node lines> */
+
+.RadTreeView_Ayuntamiento .rtLines .rtLI,
+.RadTreeView_Ayuntamiento .rtLines .rtFirst .rtUL { background-image: url('TreeView/NodeSpan.png'); }
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtLI,
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtFirst .rtUL { background-image:url('TreeView/NodeSpan_rtl.png'); }
+
+.RadTreeView_Ayuntamiento .rtLines .rtFirst,
+.RadTreeView_Ayuntamiento .rtLines .rtFirst .rtUL { background-image: url('TreeView/FirstNodeSpan.png'); }
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtFirst,
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtFirst .rtUL { background-image: url('TreeView/FirstNodeSpan_rtl.png'); }
+.RadTreeView_Ayuntamiento .rtLines .rtLast,
+.RadTreeView_Ayuntamiento .rtLines .rtLast .rtUL { background-image: none; }
+
+.RadTreeView_Ayuntamiento .rtLines .rtTop { background-image:url('TreeView/TopLine.png'); }
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtTop { background-image:url('TreeView/TopLine_rtl.png'); }
+.RadTreeView_Ayuntamiento .rtLines .rtMid { background-image:url('TreeView/MiddleLine.png'); }
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtMid { background-image:url('TreeView/MiddleLine_rtl.png'); }
+.RadTreeView_Ayuntamiento .rtLines .rtBot { background-image:url('TreeView/BottomLine.png'); }
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtBot { background-image: url('TreeView/BottomLine_rtl.png'); }
+.RadTreeView_Ayuntamiento .rtLines .rtLast .rtTop { background-image:url('TreeView/SingleLine.png'); }
+.RadTreeView_Ayuntamiento_rtl .rtLines .rtLast .rtTop { background-image:url('TreeView/SingleLine_rtl.png'); }
+
+/* </node lines> */

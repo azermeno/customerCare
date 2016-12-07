@@ -1,0 +1,103 @@
+/* RadColorPicker Office2010Black skin */
+.RadColorPicker_Hipocrates .rcpViews,
+.RadColorPicker_Hipocrates .rcpHeader,
+.RadColorPicker_Hipocrates .rcpPageView
+{
+	background-color:#c7c7c7;
+}
+
+.RadColorPicker_Hipocrates .rcpColorPreview,
+.RadColorPicker_Hipocrates .rcpInput,
+.RadColorPicker_Hipocrates .rcpHexInput,
+.RadColorPicker_Hipocrates .rcpMillionColorsPalette,
+.RadColorPicker_Hipocrates .rcpMillionColorsSlider div.rslTrack
+{
+	border:1px solid #919191;
+}
+
+.RadColorPicker_Hipocrates .rcpPalette,
+.RadColorPicker_Hipocrates input,
+.RadColorPicker_Hipocrates a,
+.RadColorPicker_Hipocrates .rcpApplyButton:hover span
+{
+	color:#000000;
+}
+
+.RadColorPicker_Hipocrates .rcpTabs ul li a
+{
+	color:#ffffff;
+	background-position: left -289px;
+	padding:0 0 0 6px !important;
+}
+
+.RadColorPicker_Hipocrates .rcpTabs ul li a span
+{
+	padding:0 6px 0 0 !important;
+	background-position:right top;
+}
+
+.RadColorPicker_Hipocrates .rcpTabs ul li.rcpSelectedTab a
+{
+	color: #000000;
+	background-position:-1014px -289px;
+	padding-left:6px !important;
+}
+
+.RadColorPicker_Hipocrates .rcpTabs ul li.rcpSelectedTab a span
+{
+	background-position:right -26px;
+	padding-right:6px !important;
+}
+
+.RadColorPicker_Hipocrates .rcpApplyButton span,
+.RadColorPicker_Hipocrates .rcpButton span
+{
+	color:#000000;
+}
+
+.RadColorPicker_Hipocrates .rcpHeader,
+.RadColorPicker_Hipocrates .rcpHeader .rcpImageButton,
+.RadColorPicker_Hipocrates .rcpRecentColors,
+.RadColorPicker_Hipocrates .rcpIcon a,
+.RadColorPicker_Hipocrates .rcpTabs a,
+.RadColorPicker_Hipocrates .rcpTabs a span,
+.RadColorPicker_Hipocrates .rcpButton,
+.RadColorPicker_Hipocrates .rcpButton span,
+.RadColorPicker_Hipocrates .rcpMillionColorsHandle,
+.RadColorPicker_Hipocrates .rcpSlider div.rslTrack,
+/* overwrite sliders */
+.RadColorPicker_Hipocrates .rcpSlider .rslTrack a.rslDraghandle,
+.RadColorPicker_Hipocrates div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle
+{
+	background-image: url('ColorPicker/ColorPickerSprites.png');
+	background-repeat:no-repeat;
+}
+
+/* Rounded corners and shadows */
+.RadColorPicker_Hipocrates .rcpPalette,
+.RadColorPicker_Hipocrates .rcpRoundedRight,
+.RadColorPicker_Hipocrates .rcpRoundedBottomRight,
+.RadColorPicker_Hipocrates .rcpRightShadow,
+.RadColorPicker_Hipocrates .rcpCornerShadow
+{
+	background-image: url('ColorPicker/rcpVerticalSprites.png');
+}
+
+.RadColorPicker_Hipocrates .rcpRoundedBottomLeft,
+.RadColorPicker_Hipocrates .rcpBottomShadow
+{
+	background-image: url('ColorPicker/ColorPickerSprites.png');
+}
+
+* html .RadColorPicker_Hipocrates .rcpPalette,
+* html .RadColorPicker_Hipocrates .rcpRoundedRight,
+* html .RadColorPicker_Hipocrates .rcpRoundedBottomRight,
+* html .RadColorPicker_Hipocrates .rcpRoundedBottomLeft
+{
+	background-image: url('ColorPicker/rcpVerticalSpritesIE6.png');
+}
+
+* html .RadColorPicker_Hipocrates .rcpTabs
+{
+	bottom: -29px !important;
+}

@@ -1,0 +1,274 @@
+/* Telerik RadTreeList Office2007 Skin */
+
+/*global*/
+
+.RadTreeList_Hipocrates,
+.rtlCEdit div.RadTreeList_Hipocrates
+{
+	border-color:#1c1c1c;
+	background:#ffffff;
+	color:#333333;
+}
+
+.RadTreeList_Hipocrates .rtlAdd,
+.RadTreeList_Hipocrates .rtlEdit,
+.RadTreeList_Hipocrates .rtlUpdate,
+.RadTreeList_Hipocrates .rtlCancel,
+.RadTreeList_Hipocrates .rtlDel
+{
+	background-image:url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlTable
+{
+	font:12px/16px "segoe ui",arial,sans-serif;
+}
+
+.RadTreeList_Hipocrates .rtlHeader
+{
+	background:#6b6b6b 0 -2300px repeat-x url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlHeader,
+.RadTreeList_Hipocrates .rtlHeader a
+{
+	color:#242424;
+}
+
+.RadTreeList_Hipocrates .rtlHeader th
+{
+	border-color:#454545;
+}
+
+.RadTreeList_Hipocrates .rtlA
+{
+	background-color:#f7f7f7;
+}
+
+.RadTreeList_Hipocrates .rtlRSel
+{
+	background:#a9f75c 0 -3900px repeat-x url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlRActive
+{
+	background:#e6ffcc 0 -2900px repeat-x url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlRFooter
+{
+	background-color:#e6e6e6;
+}
+
+.RadTreeList_Hipocrates .rtlREdit
+{
+    background-color:#d6ffad;
+}
+
+.rtlCEdit .RadTreeList_Hipocrates 
+{
+    border-right:1px solid;
+    border-top:1px solid;
+}
+
+.RadTreeList_Hipocrates .rtlRActive td,
+.RadTreeList_Hipocrates .rtlR td,
+.RadTreeList_Hipocrates .rtlA td,
+.RadTreeList_Hipocrates .rtlREdit td,
+.RadTreeList_Hipocrates .rtlRFooter td,
+.RadTreeList_Hipocrates .rtlEditForm
+{
+	border-color:#dbe6d1;
+}
+
+.RadTreeList_Hipocrates .rtlRSel td
+{
+    border-color: #9cf740;    
+}
+
+.RadTreeList_Hipocrates .rtlR a,
+.RadTreeList_Hipocrates .rtlA a,
+.RadTreeList_Hipocrates .rtlREdit a,
+.RadTreeList_Hipocrates .rtlEditForm a
+{
+	color:#376e00;
+}
+
+.RadTreeList_Hipocrates .rtlVBorders td.rtlL,
+.RadTreeList_Hipocrates .rtlLines td.rtlL
+{
+	background-color:#ffffff;
+}
+
+.RadTreeList_Hipocrates .rtlExpand,
+.RadTreeList_Hipocrates .rtlCollapse
+{
+	background-image:url('TreeList/sprite.gif');
+}
+
+.RadTreeList_Hipocrates .rtlExpand
+{
+	background-position:0 0;
+}
+
+.RadTreeList_Hipocrates .rtlCollapse
+{
+	background-position:0 -50px;
+}
+
+.RadTreeList_Hipocrates .rtlSortAsc,
+.RadTreeList_Hipocrates .rtlSortDesc
+{
+	background-image:url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlSortAsc
+{
+	background-position:3px -147px;
+}
+
+.RadTreeList_Hipocrates .rtlSortDesc
+{
+	background-position:3px -196px;
+}
+
+.RadTreeList_Hipocrates .rtlLines td.rtlL0
+{
+	background-image:url('TreeList/rtlSingle.gif');
+}
+
+.RadTreeList_Hipocrates .rtlLines td.rtlL1
+{
+	background-image:url('TreeList/rtlTop.gif');
+}
+
+.RadTreeList_Hipocrates .rtlLines td.rtlL2
+{
+	background-image:url('TreeList/rtlMiddle.gif');
+}
+
+.RadTreeList_Hipocrates .rtlLines td.rtlL3
+{
+	background-image:url('TreeList/rtlBottom.gif');
+}
+
+/*rtl*/
+
+.RadTreeListRTL_Hipocrates .rtlLines td.rtlL1
+{
+	background-image:url('TreeList/rtlTopRTL.gif');
+}
+
+.RadTreeListRTL_Hipocrates .rtlLines td.rtlL2
+{
+	background-image:url('TreeList/rtlMiddleRTL.gif');
+}
+
+.RadTreeListRTL_Hipocrates .rtlLines td.rtlL3
+{
+	background-image:url('TreeList/rtlBottomRTL.gif');
+}
+
+/*pager*/
+
+.RadTreeList_Hipocrates .rtlPager
+{
+	background:#333333 0 -7000px repeat-x url('Grid/sprite.png');
+	color:#e3e3e3;
+}
+
+.RadTreeList_Hipocrates .rtlPagerCell
+{
+	border-color:#2b2b2b;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlInfoPart
+{
+	color:#71a33e;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlPageFirst,
+.RadTreeList_Hipocrates .rtlPager .rtlPagePrev,
+.RadTreeList_Hipocrates .rtlPager .rtlPageNext,
+.RadTreeList_Hipocrates .rtlPager .rtlPageLast
+{
+	background:transparent no-repeat url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlPageFirst
+{
+	background-position:0 -550px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPageFirst:hover
+{
+	background-position:0 -600px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPagePrev
+{
+	background-position:0 -700px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPageNext
+{
+	background-position:0 -850px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPageNext:hover
+{
+	background-position:0 -900px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPageLast
+{
+	background-position:0 -1000px;
+}
+.RadTreeList_Hipocrates .rtlPager .rtlPageLast:hover
+{
+	background-position:0 -1050px;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlPagerButton
+{
+	border-color:#cfdbc3;
+	background:#e9f5dc repeat-x 0 -1550px url('Grid/sprite.png');
+	color:#000000;
+	font-family:"segoe ui",arial,sans-serif;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a:hover,
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a:hover span,
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a.rtlCurrentPage,
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a.rtlCurrentPage span
+{
+	background:no-repeat url('Grid/sprite.png');
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a
+{
+	color:#e3e3e3;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a:hover
+{
+	background-position:100% -1250px;
+	color:#000000;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a:hover span
+{
+	background-position:0 -1150px;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a.rtlCurrentPage,
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a.rtlCurrentPage:hover
+{
+	background-position:100% -1450px;
+	color:#ffffff;
+}
+
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a.rtlCurrentPage span,
+.RadTreeList_Hipocrates .rtlPager .rtlNumPart a.rtlCurrentPage:hover span
+{
+	background-position:0 -1350px;
+}

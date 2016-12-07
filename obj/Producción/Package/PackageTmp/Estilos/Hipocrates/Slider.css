@@ -1,0 +1,145 @@
+/* RadSlider for ASP.NET AJAX Office2010Black Skin */
+.RadSlider_Hipocrates .rslTrack
+{
+	border-color:#2b2b2b;
+}
+
+/*base style overwrites*/
+div.RadSlider_Hipocrates, 
+div.RadSlider_Hipocrates .rslItem, 
+div.RadSlider_Hipocrates .rslLargeTick span 
+{
+	color: #ffffff;
+}
+
+div.RadSlider_Hipocrates .rslHorizontal a.rslDraghandle
+{
+	width: 9px;
+}
+div.RadSlider_Hipocrates .rslVertical a.rslDraghandle
+{
+	height: 9px;
+}
+/*base style overwrites end*/
+
+.RadSlider_Hipocrates .rslHorizontal a.rslHandle
+{
+	background-image: url('Slider/Handles.gif');
+}
+
+.RadSlider_Hipocrates .rslHorizontal a.rslDraghandle
+{
+	background-image: url('Slider/DragHandle.gif');
+}
+
+.RadSlider_Hipocrates .rslTop a.rslDraghandle
+{
+	background-image: url('Slider/DragHandleDown.gif');
+}
+
+.RadSlider_Hipocrates .rslHorizontal .rslTrack
+{
+	background: url('Slider/TrackBgr.gif') repeat-x;
+}
+
+.RadSlider_Hipocrates .rslHorizontal .rslSelectedregion
+{
+	background: url('Slider/SelectedRegionHorizontalBgr.gif') right top no-repeat;
+}
+
+/* vertical slider */
+.RadSlider_Hipocrates .rslVertical a.rslHandle
+{
+	background-image: url('Slider/HandlesVertical.gif');
+}
+
+.RadSlider_Hipocrates .rslVertical .rslTrack
+{
+	background: url('Slider/TrackVerticalBgr.gif') repeat-y;
+}
+
+.RadSlider_Hipocrates .rslVertical .rslSelectedregion
+{
+	background: url('Slider/SelectedRegionVerticalBgr.gif') left bottom no-repeat;
+}
+
+.RadSlider_Hipocrates .rslVertical a.rslDraghandle
+{
+	background: url('Slider/DragVerticalHandle.gif') no-repeat;
+}
+
+.RadSlider_Hipocrates .rslLeft a.rslDraghandle
+{
+	background: url('Slider/DragVerticalHandleRight.gif') no-repeat;
+}
+
+.RadSlider_Hipocrates .rslItem,
+.RadSlider_Hipocrates .rslLargeTick span
+{
+	color:#333333;
+}
+
+.RadSlider_Hipocrates .rslItemsWrapper .rslItemSelected
+{
+	color:#000000;
+}
+
+/* horizontal slider items */
+.RadSlider_Hipocrates .rslHorizontal .rslItem
+{
+	background-image: url('Slider/ItemHorizontalBgr.gif');
+}
+
+/* vertical slider items */
+.RadSlider_Hipocrates .rslVertical .rslItem
+{
+	background-image: url('Slider/ItemVerticalBgr.gif');
+}
+
+/* horizontal slider - TrackPosition=Top/Bottom */
+.RadSlider_Hipocrates .rslTop .rslSmallTick,
+.RadSlider_Hipocrates .rslBottom .rslSmallTick
+{
+	background-image: url('Slider/SmallChangeHorizontal.gif');
+}
+
+.RadSlider_Hipocrates .rslTop .rslLargeTick,
+.RadSlider_Hipocrates .rslBottom .rslLargeTick
+{
+	background-image: url('Slider/LargeChangeHorizontal.gif');
+}
+
+/* vertical slider - TrackPosition=Left/Right */
+.RadSlider_Hipocrates .rslLeft .rslSmallTick,
+.RadSlider_Hipocrates .rslRight .rslSmallTick
+{
+	background-image: url('Slider/SmallChangeVertical.gif');
+}
+
+.RadSlider_Hipocrates .rslLeft .rslLargeTick,
+.RadSlider_Hipocrates .rslRight .rslLargeTick 
+{
+	background-image: url('Slider/LargelChangeVertical.gif');
+}
+
+/* horizontal slider - TrackPosition=Center */
+.RadSlider_Hipocrates .rslMiddle .rslSmallTick
+{
+	background-image: url('Slider/SmallChangeMiddleHorizontal.gif');
+}
+
+.RadSlider_Hipocrates .rslMiddle .rslLargeTick  
+{
+	background-image: url('Slider/LargeChangeMiddleHorizontal.gif');
+}
+
+/* vertical slider - TrackPosition=Center */
+.RadSlider_Hipocrates .rslCenter .rslSmallTick
+{
+	background-image: url('Slider/SmallChangeCenterVertical.gif');
+}
+
+.RadSlider_Hipocrates .rslCenter .rslLargeTick
+{
+	background-image: url('Slider/LargelChangeCenterVertical.gif');
+}

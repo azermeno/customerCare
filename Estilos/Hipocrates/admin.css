@@ -1,0 +1,9 @@
+﻿.main{
+}
+
+#encima 
+{
+    position:relative;
+    z-index:100;
+    text-align:center;
+}

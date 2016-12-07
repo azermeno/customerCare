@@ -1,0 +1,146 @@
+/*Telerik RadInput Default Skin*/
+
+/*global*/
+
+.RadInput_Ayuntamiento,
+.RadInputMgr_Ayuntamiento
+{
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*textbox states*/
+
+html body .RadInput_Ayuntamiento .riTextBox,
+html body .RadInputMgr_Ayuntamiento
+{
+	border-color:#616161;
+	background:#ffffff;
+	color:#000000;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+html body .RadInput_Ayuntamiento .riEmpty,
+html body .RadInput_Empty_Ayuntamiento
+{
+	color:#787878;
+}
+
+html body .RadInput_Ayuntamiento .riHover,
+html body .RadInput_Hover_Ayuntamiento
+{
+	border-color:#c91c2b;
+}
+
+html body .RadInput_Ayuntamiento .riFocused,
+html body .RadInput_Focused_Ayuntamiento
+{
+	border-color:#c92836;
+}
+
+html body .RadInput_Ayuntamiento .riRead,
+html body .RadInput_Read_Ayuntamiento
+{
+	border-color:#b0b0b0;
+}
+
+html body .RadInput_Ayuntamiento .riDisabled,
+html body .RadInput_Disabled_Ayuntamiento
+{
+	border-color:#b0b0b0;
+	color:#787878;
+	cursor:default;
+}
+
+html body .RadInput_Ayuntamiento .riError,
+html body .RadInput_Error_Ayuntamiento
+{
+	border-color:#ff2436;
+	background:#ffedef 100% -298px no-repeat url('Input/sprite.gif');
+	color:#ff2436;
+}
+
+.RadForm.rfdTextbox .RadInput_Ayuntamiento .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_Ayuntamiento[type="text"]
+{
+	border-color:#ff2436;
+	background:#ffedef 100% -298px no-repeat url('Input/sprite.gif');
+	color:#ff2436;
+}
+
+html body .RadInput_Ayuntamiento .riNegative,
+html body .RadInput_Negative_Ayuntamiento
+{
+	color:#575757;
+}
+
+/*buttons*/
+
+.RadInput_Ayuntamiento a
+{
+	background:transparent no-repeat url('Input/sprite.gif');
+}
+
+/*go*/
+
+.RadInput_Ayuntamiento .riBtn a
+{
+	width:20px;
+	height:18px;
+	line-height:18px;
+	background-position:3px 5px;
+}
+
+.RadInput_Ayuntamiento .riBtn a:hover
+{
+	background-position:3px -45px;
+}
+
+/*spin*/
+
+.RadInput_Ayuntamiento .riSpin a
+{
+	width:15px;
+	height:7px;
+	line-height:7px;
+}
+
+.RadInput_Ayuntamiento a.riUp
+{
+	background-position:4px -98px;
+}
+
+.RadInput_Ayuntamiento a.riUp:hover
+{
+	background-position:4px -148px;
+}
+
+.RadInput_Ayuntamiento a.riDown
+{
+	background-position:4px -199px;
+}
+
+.RadInput_Ayuntamiento a.riDown:hover
+{
+	background-position:4px -249px;
+}
+
+/*label*/
+
+.RadInput_Ayuntamiento .riLabel
+{
+	color:#000000;
+}
+
+/*rtl*/
+
+html body .RadInputRTL_Ayuntamiento .riError,
+html body .RadInputRTL_Error_Ayuntamiento
+{
+	background-position:3px -298px;
+}
+
+.RadForm.rfdTextbox .RadInputRTL_Ayuntamiento .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_Ayuntamiento[type="text"]
+{
+	background-position:3px -298px;
+}

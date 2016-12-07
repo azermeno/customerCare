@@ -1,0 +1,14 @@
+﻿body   
+{
+    color: #ffffff;
+}
+
+td
+{
+    color:Black;
+}
+
+.RadToolBarDropDown .rtbChecked .rtbWrap 
+{ 
+    font-weight: bold; 
+} 

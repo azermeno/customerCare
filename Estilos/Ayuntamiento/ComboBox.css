@@ -1,0 +1,174 @@
+/* RadComboBox Simple skin */
+
+/*global*/
+
+.RadComboBox_Ayuntamiento,
+.RadComboBox_Ayuntamiento .rcbInput,
+.RadComboBoxDropDown_Ayuntamiento
+{
+	font: 12px "Segoe UI", Arial, sans-serif;
+	color: #333333;
+}
+
+/* combobox */
+
+div.RadComboBox_Ayuntamiento table td.rcbInputCell
+{
+	height: 18px;
+	line-height: 18px;
+	border: solid #616161;
+	background: #ffffff;
+}
+	
+* html div.RadComboBox_Ayuntamiento table td.rcbInputCell
+{
+	height /**/: 20px;
+	line-height /**/: 20px;
+}
+
+div.RadComboBox_Ayuntamiento table td.rcbInputCellLeft { border-width: 1px 0 1px 1px; }
+div.RadComboBox_Ayuntamiento table td.rcbInputCellRight { border-width: 1px 1px 1px 0; }
+
+* html div.RadComboBox_Ayuntamiento .rcbInputCell .rcbInput
+{
+	height /**/: 16px;
+	padding /**/: 2px 0; /* This should fix the ajax introduced height in IE7 and not break IE6 */
+}
+
+.RadComboBox_Ayuntamiento .rcbInputCell .rcbEmptyMessage
+{
+	color: #666666;
+}
+
+.RadComboBox_Ayuntamiento .rcbHovered .rcbInputCell .rcbInput,
+.RadComboBox_Ayuntamiento .rcbFocused .rcbInputCell .rcbInput { color: #87141e; }
+
+div.RadComboBox_Ayuntamiento table td.rcbArrowCell
+{
+	border: 1px solid #616161;
+	background: #ffffff url('ComboBox/rcbSprite.png') no-repeat -1px 50%;
+}
+
+div.RadComboBox_Ayuntamiento .rcbReadOnly .rcbArrowCellLeft,
+div.RadComboBox_Ayuntamiento .rcbArrowCellHidden.rcbArrowCellLeft { border-width: 1px 0 1px 1px; }
+div.RadComboBox_Ayuntamiento .rcbReadOnly .rcbArrowCellRight,
+div.RadComboBox_Ayuntamiento .rcbArrowCellHidden.rcbArrowCellRight { border-width: 1px 1px 1px 0; }
+
+.RadComboBox_Ayuntamiento td.rcbArrowCell { background-position: -1px 50%; }
+.RadComboBox_Ayuntamiento .rcbHovered .rcbArrowCell { background-position: -21px 50%; }
+.RadComboBox_Ayuntamiento .rcbFocused .rcbArrowCell { background-position: -41px 50%; }
+.RadComboBox_Ayuntamiento .rcbDisabled .rcbArrowCell { background-position: -61px 50%; }
+
+.RadComboBox_Ayuntamiento .rcbReadOnly td.rcbArrowCell { background-position: -2px 50%; }
+.RadComboBox_Ayuntamiento .rcbHovered .rcbReadOnly .rcbArrowCell { background-position: -22px 50%; }
+.RadComboBox_Ayuntamiento .rcbFocused .rcbReadOnly .rcbArrowCell { background-position: -42px 50%; }
+.RadComboBox_Ayuntamiento .rcbDisabled .rcbReadOnly .rcbArrowCell { background-position: -62px 50%; }
+
+.RadComboBox_Ayuntamiento td.rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento .rcbHovered td.rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento .rcbFocused td.rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento .rcbReadOnly td.rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento .rcbHovered .rcbReadOnly .rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento .rcbFocused .rcbReadOnly .rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento .rcbDisabled .rcbReadOnly .rcbArrowCellHidden,
+.RadComboBox_Ayuntamiento table.rcbDisabled td.rcbArrowCellHidden { background: none; }
+
+
+.RadComboBox_Ayuntamiento .rcbHovered .rcbArrowCell,
+.RadComboBox_Ayuntamiento .rcbHovered .rcbReadOnly .rcbInputCell,
+.RadComboBox_Ayuntamiento .rcbHovered .rcbReadOnly .rcbArrowCellHidden { background-color: #ffabb2; }
+.RadComboBox_Ayuntamiento .rcbFocused .rcbArrowCell,
+.RadComboBox_Ayuntamiento .rcbFocused .rcbReadOnly .rcbInputCell,
+.RadComboBox_Ayuntamiento .rcbFocused .rcbReadOnly .rcbArrowCellHidden { background-color: #ff3849; }
+
+div.RadComboBox_Ayuntamiento .rcbHovered .rcbArrowCell,
+div.RadComboBox_Ayuntamiento .rcbHovered .rcbInputCell { border-color: #c91c2b; }
+div.RadComboBox_Ayuntamiento .rcbFocused .rcbArrowCell,
+div.RadComboBox_Ayuntamiento .rcbFocused .rcbInputCell { border-color: #c92836; }
+div.RadComboBox_Ayuntamiento .rcbDisabled .rcbArrowCell,
+div.RadComboBox_Ayuntamiento .rcbDisabled .rcbInputCell { border-color: #b0b0b0; }
+
+div.RadComboBox_Ayuntamiento .rcbArrowCell a
+{
+	height: 20px;
+}
+
+div.RadComboBox_Ayuntamiento td.rcbArrowCellHidden,
+div.RadComboBox_Ayuntamiento .rcbArrowCellHidden a
+{
+	width: 1px;
+}
+
+div.RadComboBox_Ayuntamiento td.rcbArrowCellHidden.rcbArrowCellRight
+{
+	border-left: 0;
+}
+
+/* Read-only styles */
+
+/* dropdown */
+
+.RadComboBoxDropDown_Ayuntamiento
+{
+	background: #ffffff;
+	border-color: #616161;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbHeader,
+.RadComboBoxDropDown_Ayuntamiento .rcbFooter
+{
+	background: #e3e3e3;
+	color: #000000;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbHeader
+{
+	border-bottom-color: #7d7d7d;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbFooter
+{
+	border-top-color: #7d7d7d;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbItem em
+{
+	background: #e6e6e6;
+}
+
+div.RadComboBoxDropDown_Ayuntamiento .rcbHovered
+{
+	background: #ffabb2;
+	color: #87141e;
+	border: 1px solid #c91c2b;
+	padding: 1px 5px;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbSeparator
+{
+    color: #ffffff;
+    background: #8a8a8a;
+}
+
+.RadComboBox_Ayuntamiento .rcbDisabled .rcbInputCell .rcbInput,
+.RadComboBoxDropDown_Ayuntamiento .rcbDisabled
+{
+	color: #787878;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbLoading
+{
+	background: #f0f0f0;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbMoreResults
+{
+	border-top-color: #c2c2c2;
+	background: #e3e3e3;
+	color: #8a8a8a;
+}
+
+.RadComboBoxDropDown_Ayuntamiento .rcbMoreResults a
+{
+	background: url('ComboBox/rcbSprite.png') no-repeat -1px -85px;
+}

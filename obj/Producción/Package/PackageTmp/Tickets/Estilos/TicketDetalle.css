@@ -1,0 +1,57 @@
+﻿@media screen 
+{
+    #rgrFormatos
+    {
+        width:100%;
+        float:left;
+    }
+    
+    #rgrAdjuntos
+    {
+        width:100%;
+        float:left;
+    }
+    
+    #rgrTraza_GridData
+    {
+        height:auto !important
+    }
+
+    #aDescargaTodos {
+        z-index:100;
+        position:absolute;
+        float:right;
+    }
+
+    #divAdjuntos {
+        width:100%;
+    }
+}
+
+@media print
+{
+    #RadToolBar1
+    {
+        display:none;
+    }
+           
+    #RAD_SPLITTER_PANE_CONTENT_rpIzquierdo
+    {
+        width:7in !important;
+    }
+           
+    #RAD_SPLITBAR_SPACER_RadSplitBar1
+    {
+        width:0in !important;
+    }
+           
+    #RAD_SPLITTER_PANE_CONTENT_rpDerecho
+    {
+        width:3in !important;
+    }
+           
+    .rtbIcon
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,97 @@
+/*Telerik RadDataPager Office2010Black Skin*/
+
+.RadDataPager_Hipocrates
+{
+	border:1px solid #1c1c1c;
+	background:#f5fced 0 -7000px repeat-x url('Grid/sprite.png');
+	color:#e3e3e3;
+}
+
+.RadDataPager_Hipocrates .rdpPageFirst,
+.RadDataPager_Hipocrates .rdpPagePrev,
+.RadDataPager_Hipocrates .rdpPageNext,
+.RadDataPager_Hipocrates .rdpPageLast
+{
+	background:transparent no-repeat url('Grid/sprite.png');
+}
+
+.RadDataPager_Hipocrates .rdpPageFirst
+{
+	margin:0 3px 0 0;
+	background-position:0 -550px;
+}
+.RadDataPager_Hipocrates .rdpPageFirst:hover
+{
+	background-position:0 -600px;
+}
+.RadDataPager_Hipocrates .rdpPagePrev
+{
+	margin:0 3px 0 0;
+	background-position:0 -700px;
+}
+.RadDataPager_Hipocrates .rdpPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.RadDataPager_Hipocrates .rdpPageNext
+{
+	margin:0 0 0 3px;
+	background-position:0 -850px;
+}
+.RadDataPager_Hipocrates .rdpPageNext:hover
+{
+	background-position:0 -900px;
+}
+.RadDataPager_Hipocrates .rdpPageLast
+{
+	margin:0 0 0 3px;
+	background-position:0 -1000px;
+}
+.RadDataPager_Hipocrates .rdpPageLast:hover
+{
+	background-position:0 -1050px;
+}
+
+.RadDataPager_Hipocrates .rdpPagerButton
+{
+	border:1px solid #99ba77;
+	background:#f2fce8 repeat-x 0 -1550px url('Grid/sprite.png');
+	color:#376e00;
+	font:12px/12px "segoe ui",arial,sans-serif;
+}
+
+.RadDataPager_Hipocrates .rdpNumPart a:hover,
+.RadDataPager_Hipocrates .rdpNumPart a:hover span,
+.RadDataPager_Hipocrates .rdpNumPart a.rdpCurrentPage,
+.RadDataPager_Hipocrates .rdpNumPart a.rdpCurrentPage span
+{
+	background:no-repeat url('Grid/sprite.png');
+}
+
+.RadDataPager_Hipocrates .rdpNumPart a
+{
+	color:#e3e3e3;
+}
+
+.RadDataPager_Hipocrates .rdpNumPart a:hover
+{
+	background-position:100% -1250px;
+	color:#000000;
+}
+
+.RadDataPager_Hipocrates .rdpNumPart a:hover span
+{
+	background-position:0 -1150px;
+}
+
+.RadDataPager_Hipocrates .rdpNumPart a.rdpCurrentPage,
+.RadDataPager_Hipocrates .rdpNumPart a.rdpCurrentPage:hover
+{
+	background-position:100% -1450px;
+}
+
+.RadDataPager_Hipocrates .rdpNumPart a.rdpCurrentPage span,
+.RadDataPager_Hipocrates .rdpNumPart a.rdpCurrentPage:hover span
+{
+	background-position:0 -1350px;
+}

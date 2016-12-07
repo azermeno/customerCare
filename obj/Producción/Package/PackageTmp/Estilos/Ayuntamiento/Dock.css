@@ -1,0 +1,36 @@
+.RadDock_Ayuntamiento .rdMiddle .rdLeft,
+.RadDock_Ayuntamiento .rdMiddle .rdRight
+{
+	background-image: url('Dock/VerticalSprite.gif');
+}
+
+.RadDock_Ayuntamiento .rdTop .rdLeft,
+.RadDock_Ayuntamiento .rdTop .rdRight,
+.RadDock_Ayuntamiento .rdTop .rdCenter,
+.RadDock_Ayuntamiento .rdBottom .rdLeft,
+.RadDock_Ayuntamiento .rdBottom .rdRight,
+.RadDock_Ayuntamiento .rdBottom .rdCenter
+{
+	background-image: url('Dock/HorizontalSprite.gif');
+}
+
+.RadDock_Ayuntamiento .rdCenter .rdCommands a span
+{
+	background-image: url('Dock/CommandSprite.gif');
+}
+
+.RadDock_Ayuntamiento .rdMiddle .rdCenter,
+.RadDock_Ayuntamiento .rdBottom .rdCenter
+{
+	background-color: #ffffff;
+}
+
+.RadDock_Ayuntamiento .rdContent
+{
+	color: black;
+}
+
+.RadDock_Ayuntamiento .rdTitleBar em
+{
+	color: #000000;
+}

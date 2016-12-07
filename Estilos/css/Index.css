@@ -1,0 +1,260 @@
+﻿#body {
+	color: #888;
+	font-size: 13px;
+	line-height: 20px;
+	background-color: rgba(0,148,74,1.00);
+	background-repeat: repeat;
+}
+/*.ui-body-c, .ui-overlay-c {
+background: url(../images/splashinverse.png) !important;
+}*/
+input[type='Text'], input[type='Password']{
+	color: #888;
+	border: 1px thick black;
+	background: border-box;
+	background-color: #bcf5d2/*#d3dfff*/;
+	width: 100%;
+	text-align: left;
+	border-radius: 15px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	border-right-width: 0px !important;
+	border-left-width: 0px !important;
+	min-height: 30px;
+	font-size: x-large;
+    /*padding: 0 0 0 0 !important;*/
+}
+::-webkit-input-placeholder {
+    color: #888;
+}
+input[type='Submit'], input[type='Button'] {
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    border: 1px thick black;
+    background: border-box;
+    background-color: rgb(0, 150, 54)/*#001c8b*/;
+    width:50%;
+	min-height:50px;
+    text-align:center;
+    border-radius: 15px;
+    font: bold 25px arial, verdana;
+}
+/*********************************************************************************/
+/* Footer                                                                       */
+/*********************************************************************************/
+
+#footer {
+	width: 100%;
+	text-align: center;
+	font-size: 13pt;
+	position: relative;
+	height: 40px;
+}
+.boton
+{
+	width: 50%%;
+	text-align: center;
+	float:left;
+	position: relative;
+	}
+	.spinner {
+    position: fixed;
+    top: 0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    /* margin-left: -50px; half width of the spinner gif */
+   /*  margin-top: -50px;  half height of the spinner gif */
+    text-align:center;
+    background-color:#f2f2f2;
+    filter:alpha(opacity=40);
+    opacity:0.8;
+    z-index:1234;
+    overflow: auto;
+    width: 100%; /* width of the spinner gif */
+    height: 100%; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+.cuadro{
+	color: #888;
+	border: 1px thick black;
+	background: border-box;
+	background-color: rgba(179,229,197,1.00)/*#001c8b*/;
+	width: 100%;
+	text-align: center;
+	border-radius: 15px;
+	font: bold 20px arial, verdana;
+	min-height: 30px;
+	}
+
+
+/*.todo {width:350px; height:350px; min-height:350px; margin:auto; border:2px solid black; top:250px; background: white; position:relative; box-shadow: 0 0 5px 5px white; text-align:center;}*/
+.todo {
+	background-repeat: repeat;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,148,74,1.00);	
+	position: absolute;
+	margin-left:5%;
+	margin-right:5%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image: url(../images/bg400.png);
+}
+.contenido {
+	width: 100%;
+	position: relative;
+	float: left;
+	background-size: contain;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	min-height: 50px;
+	max-width: 100%;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.termino {
+	
+	box-shadow: 0 0 5px 5px white;
+	text-align: center;
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	border: 2px solid black;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(0,148,74,1.00);	
+
+}
+
+.imgIndex { width:300px; height:229px; }
+.header{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-top: 25px; /*padding-left: 125px;*/
+	margin: auto;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-transform: none;
+	position: left;
+	color: rgba(245,243,243,1.00);
+	font-size: x-large;
+	font: bold 25px arial, verdana;
+	
+}
+.image{display: inline-block;}
+.image img{display: block; width: 100%;}
+.image-full{display: block; width: 100%; margin: 0 0 0em 0;}
+.contenido {
+	width: 100%;
+	min-height: 20px;
+	position: relative;
+	float: left;
+	padding-top: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.check{
+	width: 20px;
+	height: 20px;
+	}
+.footer {width:100%; height:auto; float:left; text-align:center; font: bold 12px arial, verdana; color: black; padding: 1em 0 0 0;}
+.msj {display:none; text-align:justify; padding: 25px; font:bolder 16px arial, verdana; color: black;}
+
+/*.contIMG {width:100px; height:100px; border: 2px solid rgb(0, 150, 54); border-radius: 25px 25px 25px 25px; position:relative;}*/
+
+/*@media screen and (max-device-width: 768px) and (orientation: landscape) {*/
+    /*.todo {width:350px; height:350px; min-height:350px; margin:auto; border:2px solid black; top:150px; background: white; position:relative; box-shadow: 0 0 5px 5px white;}*/
+/*}*/
+
+/* #### Mobile Phones Portrait #### */
+/*@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .todo {width:100%; height:100%; min-height:0px; margin:auto; border:0px solid red; top: 0px; background: transparent; position:relative; box-shadow: 0 0 0 0 white;}
+	.contenido {width:100%; height:100%; position:relative; float:left; padding-top: 25px; margin-left:auto; margin-right:auto;}
+	.header{width:100%; height:auto; float:left; padding-top: 50px; padding-left: 0px;}*/
+	/*.contIMG {width:100px; height:100px; border: 2px solid #d3dfff; border-radius: 25px 25px 25px 25px; position:relative; left:100px; position: relative;}*/
+/*}*/
+
+/* #### Mobile Phones Landscape #### */
+/*@media screen and (max-device-width: 640px) and (orientation: landscape){
+    .todo {width:100%; height:100%; min-height:0px; margin:auto; border:0px solid red; top: 0px; background: transparent; position:relative; box-shadow: 0 0 0 0 white;}
+	.contenido {width:100%; height:100%; position:relative; float:left; padding-top: 25px; margin-left:auto; margin-right:auto;}
+	.header{width:100%; height:auto; float:left; padding-top: 15px; padding-left: 0px;}*/
+	/*.contIMG {display:none;}*/
+    /*.imgIndex {display:none;}
+}*/
+
+/* Nuevos media screen */
+    /* Primer Bloque Inicio */
+    @media screen and (min-device-width: 240px) and (max-device-width: 480px) 
+    and (min-device-height: 240px) and (max-device-height: 854px) and (orientation: portrait) {
+        .todo {width:100%; height:100%; min-width:240px; min-height:240px; margin:auto; border:0px solid red; top: 0px; background: transparent; position:relative; box-shadow: 0 0 0 0 white;}
+	    .contenido {width:100%; height:100%; min-width:240px; min-height:240px; position:relative; float:left; padding-top: 25px; margin-left:auto; margin-right:auto;}
+	    .header{width:100%; height:auto; min-width:240px; float:left; padding-top: 50px; padding-left: 0px;}
+        
+    }
+
+    @media screen and (min-device-width: 240px) and (max-device-width: 854px) 
+    and (min-device-height: 240px) and (max-device-height: 480px) and (orientation: landscape) {
+        .todo {width:100%; height:100%; min-width:240px; min-height:240px; margin:auto; border:0px solid red; top: 0px; background: transparent; position:relative; box-shadow: 0 0 0 0 white;}
+	    .contenido {width:100%; height:100%; min-width:240px; min-height:240px; position:relative; float:left; padding-top: 25px; margin-left:auto; margin-right:auto;}
+	    .header{width:100%; height:auto; min-width:240px; float:left; padding-top: 15px; padding-left: 0px;}
+        .imgIndex {display:none;}
+        
+    }
+    
+    /* Primer Bloque Fin */
+    /* Segundo Bloque Inicio */
+    @media screen and (min-device-width: 540px) and (max-device-width: 640px) 
+    and (min-device-height: 800px) and (max-device-height: 960px) and (orientation: portrait) {
+        
+    }
+
+    @media screen and (min-device-width: 800px) and (max-device-width: 960px) 
+    and (min-device-height: 540px) and (max-device-height: 640px) and (orientation: landscape) {
+        
+    }
+
+    /* Segundo Bloque Fin */
+    /* Tercer Bloque Inicio */
+    @media screen and (min-device-width: 600px) and (max-device-width: 800px) 
+    and (min-device-height: 1024px) and (max-device-height: 1280px) and (orientation: portrait) {
+        
+    }
+
+    /* Para el IPad */
+    @media screen and (min-device-width: 600px) and (max-device-width: 800px) 
+    and (min-device-height: 1024px) and (max-device-height: 1280px) and (orientation: landscape) {
+
+    }
+
+    @media screen and (min-device-width: 1024px) and (max-device-width: 1280px) 
+    and (min-device-height: 600px) and (max-device-height: 800px) and (orientation: landscape) {
+        
+    }
+
+    /* Tercer Bloque Fin */
+    /* Cuarto Bloque Inicio */
+    @media screen and (min-device-width: 1080px) and (max-device-width: 2560px) 
+    and (min-device-height: 1080px) and (max-device-height: 2048px) and (orientation: portrait) {
+        
+    }
+
+    @media screen and (min-device-width: 1080px) and (max-device-width: 2048px) 
+    and (min-device-height: 1080px) and (max-device-height: 2560px) and (orientation: landscape) {
+        
+    }
+
+    /* Cuarto Bloque Fin */

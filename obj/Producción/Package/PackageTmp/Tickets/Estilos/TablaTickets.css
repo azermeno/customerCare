@@ -1,0 +1,136 @@
+﻿td
+{
+    white-space:nowrap;
+}
+
+.tdCritico
+{
+    font-size: 1.500em;
+}
+
+.tdAlto
+{
+    font-size: 1.200em;
+}
+
+.tdMedio
+{
+    font-size: .960em;
+}
+
+.tdBajo
+{
+    font-size: .768em;
+}
+
+.invisible
+{
+    display:none;
+}
+
+#rtbTipificar
+{
+    position:absolute;
+    top:250px;
+    left:200px;
+    display:none;
+}
+
+.RadCalendarPopup
+{
+  z-index:60000 !important;
+}
+
+.rcbSlide
+{
+  z-index:60000 !important;
+}
+
+.rtbSlide
+{
+  width:auto !important;
+}
+
+.dropTree
+{
+    width:auto !important;
+    overflow:auto !important;
+    max-width:310px;
+    max-height:360px;
+}
+
+.rtbBtn
+{
+    width:9px;
+}
+
+.guardaBoton
+{
+    width:auto !important;
+}
+
+.rtbBtn .rtbIn
+{
+    width:9px;
+    height:9px;
+}
+
+.guardaBoton .rtbIn
+{
+  width:auto !important;
+  height:auto !important;
+}
+
+.RadToolBarDropDown, .RadToolBarDropDown .rtbActive, .RadToolBar .rtbWrap, .RadToolBar .rtbOut, .RadToolBar .rtbMid, .RadToolBar .rtbIn, .rtbItemHovered, .rtbItemHovered .rtbWrap
+{
+    background-image: none !important;
+}
+
+.rtbIcon
+{
+    width:8px;
+    height:8px;
+}
+
+.rtbChecked .rtbIcon
+{
+    background-position: 0px 0px;
+}
+
+.RadToolBarDropDown .rtbWrap .rtbIcon
+{
+    width:13px;
+    height:13px;
+}
+
+.RadToolBarDropDown .rtbChecked .rtbWrap .rtbIcon
+{
+    background-position: 0px 0px;
+}
+    
+.RadGrid
+{
+    position:absolute;
+    top: 32px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.RadGrid .rgDataDiv
+{
+    position: absolute;
+    top: 26px;
+    bottom: 33px;
+}
+
+#RadGrid1_ctl00_Pager
+{
+    position: absolute;
+    bottom: 0px;
+}
+ 
+.RadDock
+{
+    z-index: 1;
+}   

@@ -1,0 +1,28 @@
+﻿body   
+{
+    color: #ffffff;
+    text-align:center; 
+}
+
+.header h1
+{
+    font-weight: 700;
+    color: #f9f9f9;
+}
+
+.botones
+{
+    text-align:center;
+}
+
+.loginDisplay
+{
+    font-size: 12px;
+    padding: 1px;
+    color: #fff;
+}
+
+.loginDisplay a
+{
+    color: #fff;
+}

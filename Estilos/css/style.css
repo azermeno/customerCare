@@ -1,0 +1,309 @@
+
+#contenedor-general {
+min-height: 100%;
+height: auto !importante;
+height: 100%;
+}
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	*
+	{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body, input, textarea
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		color: #8c8a8a;
+	}
+
+	body
+	{
+		background-color: #ddd;
+
+	}
+
+	a
+	{
+		color: #39a6e5;
+	}
+
+	strong, b
+	{
+		font-weight: 700;
+		color: #8c8a8a;
+	}
+
+	h2,h3,h4,h5,h6
+	{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		color: #8c8a8a;
+	}
+
+	h2 a, h4 a, h5 a, h6 a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	.byline
+	{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 300;
+		display: block;
+		margin-top: 1em;
+		color: #1d4eb3;
+	}
+	
+	header
+	{
+		margin: 0 0 2em 0;
+	}
+	
+	blockquote
+	{
+		border-left: solid 5px #ffffff;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+	
+	hr
+	{
+		border: 0;
+		border-top: solid 1px #ffffff;
+		padding: 1.5em 0 0 0;
+		margin: 1.75em 0 0 0;
+	}
+	
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+	
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+	
+	table
+	{
+		width: 100%;
+	}
+	
+	table.style1
+	{
+	}
+	
+		table.style1 tbody tr:nth-child(2n+2)
+		{
+			background: #ffffff;
+		}
+		
+		table.style1 td
+		{
+			padding: 0.5em 1em 0.5em 1em;
+		}
+		
+		table.style1 th
+		{
+			text-align: left;
+			font-weight: 700;
+			padding: 0.75em 1em 0.75em 1em;
+		}
+	
+		table.style1 thead
+		{
+			border-bottom: solid 1px #ddd;
+		}
+		
+		table.style1 tfoot
+		{
+			border-top: solid 1px #ddd;
+			background: #ffffff;
+		}
+		
+		table.style1 tbody
+		{
+		}
+
+	form
+	{
+	}
+	
+		form input,
+		form select,
+		form textarea
+		{
+			border-radius: 0.4em;
+			-webkit-appearance: none;
+			border: solid 1px #ddd;
+			padding: 0.5em;
+			width: 100%;
+		}
+
+		form input:focus,
+		form textarea:focus
+		{
+			box-shadow: 0px 0px 2px 2px #163e80;
+		}
+
+		form ::-webkit-input-placeholder
+		{
+			color: #aaa;
+		}
+
+		form :-moz-placeholder
+		{
+			color: #aaa;
+		}
+
+		form ::-moz-placeholder
+		{
+			color: #aaa;
+		}
+
+		form :-ms-input-placeholder
+		{
+			color: #aaa;
+		}
+		
+	br.clear
+	{
+		clear: both;
+	}
+	
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+	
+	section,
+	article
+	{
+		margin-bottom: 3em;
+	}
+	
+	section > :last-child,
+	article > :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	section > .inner > :last-child,
+	article > .inner > :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	section:last-child,
+	article:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 70%;
+		margin: 0 0 2em 0;
+	}
+	
+@media only screen and (max-device-width: 600px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (device-width: 600px), only screen and (max-width: 767px) { 
+.image{display: block; width: 100%; margin: 0 0 0em 0;}
+.imagec-full{width: 100%;;}
+}
+@media only screen and (max-device-width: 480px), only screen and (device-width: 767px) and (device-height: 480px), only screen and (device-width: 480px), only screen and (max-width: 480px) { 
+.image{display: block; width: 100%; margin: 0 0 0em 0;}
+.imagec-full{width: 100%;;}
+}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+		
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+		
+	#content
+	{
+		position: relative;
+		background-color: #ffffff;
+	}
+	
+		#content:after
+		{
+			content: '';
+			display: block;
+			position: absolute;
+
+			top: 0;
+			width: 100%;
+			height: 100%;
+/*			background-image: url('images/bg2.png');
+			opacity: 0.5;*/
+		}
+	
+	#content-inner
+	{
+		position: relative;
+		z-index: 1;
+	}
+
+
+/*********************************************************************************/
+/* Footer                                                                       */
+/*********************************************************************************/
+
+#footer {
+width: 100%;
+text-align:center;
+background: #1c3975;
+font-size: 13pt;
+position: absolute;
+bottom: 0 !importante;
+bottom: -1px;
+height: 40px;
+}

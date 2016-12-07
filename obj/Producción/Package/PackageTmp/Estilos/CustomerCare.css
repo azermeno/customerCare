@@ -1,0 +1,109 @@
+﻿/*div
+{
+    height:100%;
+}*/
+
+.btNvaInc
+{
+    position:fixed;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align:center;
+}
+
+.header h1
+{
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    width: 100%;
+	overflow:visible;
+	/* 
+	position: fixed; 
+	top: 80px;text-align:left;
+    top: 95px;
+    left: 1px;*/
+    left:0;
+    height: 100%;
+}
+
+.contenido
+{
+    position: relative;
+    width: 1024px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    height: 630px;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    /*text-align: left;
+    width: auto;*/
+    margin: 10px 0px 0px 4px;
+    position: absolute;
+    top:0px;
+    height:auto;
+    left:0px;
+}
+
+.botones
+{
+    height: 35px;
+    position: absolute;
+    top:0px;
+    width: 100%;
+}
+
+.loginDisplay
+{
+    /*display: block;*/
+    text-align: right;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height:auto;
+}
+
+.loginDisplay a
+{
+    top: -10px;
+    position: relative;
+}
+
+.loginDisplay span
+{
+    top: -10px;
+    position: relative;
+}
+
+.aspNetHidden
+{
+    height:auto;
+}
+
+/*#rmpPrincipalPanel
+{
+    height:100%;
+}*/
+
+#rtsPrincipalPanel
+{
+    display:block;
+    height:26px;
+}

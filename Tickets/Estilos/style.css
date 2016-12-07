@@ -1,0 +1,86 @@
+body {color : #00156e;font: normal .8em/2em "Segoe UI",Arial,sans-serif;}
+
+.container{
+ display: table;
+ border: 1px #C0C0C0 solid;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+ width: 90%;
+ margin:0 auto;
+ }
+ 
+  .tripol{
+ display: table-cell;
+ /*border: 2px dotted #C0C0C0;*/
+ width: 33.3%;
+ }
+   .ticket{
+ display: table-cell;
+ /*border: 2px dotted #C0C0C0;*/
+ width: 33.3%;
+ text-align: center;
+ vertical-align: middle;
+ font-size: 1.7em;
+ /*color: blue;*/
+ font-weight: 900;
+ }
+   .tripor{
+ display: table-cell;
+ /*border: 2px dotted #C0C0C0;*/
+ width: 33.3%;
+ text-align: right;
+ }
+  .inner{
+ display: table;
+ /*border: 2px dotted #C0C0C0;*/
+ width: 100%;
+ color: #00156e;
+ text-align: left;
+ }
+  .principal{
+ display: table-cell;
+ border-top: 1px #C0C0C0 solid;
+ border-right: 1px #C0C0C0 solid;
+ border-bottom: 1px #C0C0C0 solid;
+ width: 50%;
+ font-size: 1.0em;
+ text-align: left;
+ padding: 10px 2%;
+ }
+ .fechas{
+ display: table-cell;
+ border-top: 1px #C0C0C0 solid;
+ /*border: 1px #C0C0C0 solid;*/
+ border-bottom: 1px #C0C0C0 solid;
+ width: 50%;
+ font-size: 1.0em;
+ text-align: left;
+ padding: 10px 2%;
+ } 
+  .eventos{
+ display: table-cell;
+ border-right: 1px #C0C0C0 solid;
+ width: 50%;
+ text-align: left;
+ font-size: 1.0em;
+ padding: 10px 2%;
+ }
+ .traza{
+ display: table-cell;
+ /*border: 1px #C0C0C0 solid;*/
+ width: 50%;
+ font-size: 1.0em;
+ text-align: left;
+ padding: 10px 2%;
+ } 
+   .footer{
+ text-align: center;
+ border-top: 1px #C0C0C0 solid;
+ width: 100%;
+ }
+ 
+  .image{display: inline-block; padding-left:0px; rigth:0px; padding-top:5%; padding-bottom:0px; }
+  .image img{display: block; width: 100%;}
+  .image-full{display: block; width: 80%; margin: 0 0 0 0;}
+  .imaged-full{display: block; width: 80%; margin-bottom;5%; float: right;}

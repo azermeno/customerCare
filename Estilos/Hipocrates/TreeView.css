@@ -1,0 +1,86 @@
+.RadTreeView_Hipocrates,
+.RadTreeView_Hipocrates a.rtIn,
+.RadTreeView_Hipocrates .rtEdit .rtIn input
+{
+	color: #525252;
+	font: 12px/18px "Segoe UI", Arial, sans-serif;
+}
+
+.RadTreeView_Hipocrates .rtPlus, 
+.RadTreeView_Hipocrates .rtMinus
+{
+	background-image: url('TreeView/PlusMinus.png');
+}
+
+.RadTreeView_Hipocrates .rtChecked,
+.RadTreeView_Hipocrates .rtUnchecked,
+.RadTreeView_Hipocrates .rtIndeterminate
+{
+	background-image: url('TreeView/TriState.png');
+}
+
+.RadTreeView_Hipocrates .rtHover .rtIn
+{
+	color: #000000;
+	border-color: #9cf740 #9cf740;
+	background-color: #e4ffc9;
+	background-image: url('TreeView/ItemHoveredBg.png');
+}
+
+.RadTreeView_Hipocrates .rtSelected .rtIn
+{
+	color: #000000;
+	border-color: #79c230 #87c24c;
+	background-color: #baff75;
+	background-image: url('TreeView/ItemSelectedBg.png');
+}
+
+.RadTreeView_Hipocrates .rtSelected .rtLoadingBefore,
+.RadTreeView_Hipocrates .rtSelected .rtLoadingAfter,
+.RadTreeView_Hipocrates .rtSelected .rtLoadingBelow
+{
+	color: #333333;
+}
+
+.RadTreeView_Hipocrates .rtLoadingIcon
+{
+	background-image: url('TreeView/LoadingIcon.gif');
+}
+
+.RadTreeView .rtLI .rtEdit .rtIn
+{
+	border-color: #525252;
+	background: #ffffff;
+}
+
+.RadTreeView_Hipocrates_disabled .rtIn,
+.RadTreeView_Hipocrates .rtDisabled .rtIn
+{
+	color: #cccccc;
+}
+
+
+/* <node lines> */
+
+.RadTreeView_Hipocrates .rtLines .rtLI,
+.RadTreeView_Hipocrates .rtLines .rtFirst .rtUL { background-image: url('TreeView/NodeSpan.png'); }
+.RadTreeView_Hipocrates_rtl .rtLines .rtLI,
+.RadTreeView_Hipocrates_rtl .rtLines .rtFirst .rtUL { background-image:url('TreeView/NodeSpan_rtl.png'); }
+
+.RadTreeView_Hipocrates .rtLines .rtFirst,
+.RadTreeView_Hipocrates .rtLines .rtFirst .rtUL { background-image: url('TreeView/FirstNodeSpan.png'); }
+.RadTreeView_Hipocrates_rtl .rtLines .rtFirst,
+.RadTreeView_Hipocrates_rtl .rtLines .rtFirst .rtUL { background-image: url('TreeView/FirstNodeSpan_rtl.png'); }
+.RadTreeView_Hipocrates .rtLines .rtLast,
+.RadTreeView_Hipocrates .rtLines .rtLast .rtUL { background-image: none; }
+
+.RadTreeView_Hipocrates .rtLines .rtTop { background-image:url('TreeView/TopLine.png'); }
+.RadTreeView_Hipocrates_rtl .rtLines .rtTop { background-image:url('TreeView/TopLine_rtl.png'); }
+.RadTreeView_Hipocrates .rtLines .rtMid { background-image:url('TreeView/MiddleLine.png'); }
+.RadTreeView_Hipocrates_rtl .rtLines .rtMid { background-image:url('TreeView/MiddleLine_rtl.png'); }
+.RadTreeView_Hipocrates .rtLines .rtBot { background-image:url('TreeView/BottomLine.png'); }
+.RadTreeView_Hipocrates_rtl .rtLines .rtBot { background-image: url('TreeView/BottomLine_rtl.png'); }
+.RadTreeView_Hipocrates .rtLines .rtLast .rtTop { background-image:url('TreeView/SingleLine.png'); }
+.RadTreeView_Hipocrates_rtl .rtLines .rtLast .rtTop { background-image:url('TreeView/SingleLine_rtl.png'); }
+
+/* </node lines> */

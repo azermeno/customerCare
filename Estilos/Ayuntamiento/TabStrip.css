@@ -1,0 +1,165 @@
+.RadTabStrip_Ayuntamiento .rtsLI,
+.RadTabStrip_Ayuntamiento .rtsLink
+{
+	color: #000000;
+	font: 12px/22px "Segoe UI", Arial, sans-serif;
+}
+
+.RadTabStrip_Ayuntamiento .rtsLink
+{
+	border: 1px solid #7d7d7d;
+	background: #e3e3e3;
+}
+
+.RadTabStrip_Ayuntamiento .rtsLink:hover
+{
+	background: #ffabb2;
+	border-color: #c91c2b;
+	color: #8a131d;
+}
+
+.RadTabStrip_Ayuntamiento .rtsSelected,
+.RadTabStrip_Ayuntamiento .rtsSelected:hover
+{
+	background: #ffffff;
+	border-color: #7d7d7d;
+	color: #000000;
+}
+
+.RadTabStrip_Ayuntamiento .rtsLI .rtsLink { padding-left: 8px; }
+.RadTabStrip_Ayuntamiento .rtsLI .rtsOut { padding-right: 8px; }
+
+.RadTabStripLeft_Ayuntamiento .rtsSeparator,
+.RadTabStripRight_Ayuntamiento .rtsSeparator
+{
+	
+}
+
+div.RadTabStrip_Ayuntamiento a.rtsLink:focus
+{
+    outline /*\**/: none\9;
+}
+
+div.RadTabStrip_Ayuntamiento a.rtsLink:focus:after
+{
+    left /*\**/: 0\9;
+    top /*\**/: 0\9;
+    right /*\**/: 0\9;
+    bottom /*\**/: 0\9;
+}
+
+/* <disabled tabs> */
+/* </disabled tabs> */
+
+/* <scrolling arrows> */
+.RadTabStrip_Ayuntamiento .rtsNextArrow,
+.RadTabStrip_Ayuntamiento .rtsPrevArrow,
+.RadTabStrip_Ayuntamiento .rtsPrevArrowDisabled,
+.RadTabStrip_Ayuntamiento .rtsNextArrowDisabled
+{
+	background-image: url('TabStrip/TabStripStates.png');
+}
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsNextArrow { background-position: -18px 0; }
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsPrevArrow { background-position: 0 0; }
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsNextArrow:hover { background-position: -54px 0; }
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsPrevArrow:hover { background-position: -36px 0; }
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsPrevArrowDisabled:hover { background-position: -72px 0; }
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsNextArrowDisabled,
+.RadTabStrip_Ayuntamiento .rtsLevel .rtsNextArrowDisabled:hover { background-position: -90px 0; }
+
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsNextArrow,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsNextArrow { background-position: -18px -20px; }
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsPrevArrow, 
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsPrevArrow { background-position: 0 -20px; }
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsNextArrow:hover,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsNextArrow:hover  { background-position: -54px -20px; }
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsPrevArrow:hover,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsPrevArrow:hover { background-position: -36px -20px; }
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsPrevArrowDisabled:hover,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsPrevArrowDisabled:hover { background-position: -72px -20px; }
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsNextArrowDisabled,
+.RadTabStripLeft_Ayuntamiento .rtsLevel .rtsNextArrowDisabled:hover,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsNextArrowDisabled,
+.RadTabStripRight_Ayuntamiento .rtsLevel .rtsNextArrowDisabled:hover { background-position: -90px -20px; }
+/* </scrolling arrows> */
+
+.RadTabStripTop_Ayuntamiento .rtsLevel { background-color: transparent; }
+
+.RadTabStripTop_Ayuntamiento_Baseline .rtsLevel,
+.RadTabStripBottom_Ayuntamiento_Baseline .rtsLevel { background-image: url('TabStrip/TabStripStates.png'); }
+
+
+/* <orientation: top> */
+.RadTabStripTop_Ayuntamiento_Baseline .rtsLevel { background-position: 0 100%; background-repeat: repeat-x; }
+
+.RadTabStripTop_Ayuntamiento .rtsLink
+{
+	margin-top: 2px;
+}
+
+.RadTabStripTop_Ayuntamiento .rtsLink:hover
+{
+	border-bottom-color: #7d7d7d;
+}
+
+.RadTabStripTop_Ayuntamiento .rtsSelected,
+.RadTabStripTop_Ayuntamiento .rtsSelected:hover
+{
+	border-bottom-color: #ffffff;
+	margin-top: 0;
+	padding-top: 2px;
+}
+/* </orientation: top> */
+
+/* <orientation: bottom> */
+.RadTabStripBottom_Ayuntamiento_Baseline .rtsLevel { background-position: 0 -149px; background-repeat: repeat-x; }
+
+.RadTabStripBottom_Ayuntamiento .rtsLink
+{
+	margin-bottom: 2px;
+}
+
+.RadTabStripBottom_Ayuntamiento .rtsLink:hover
+{
+	border-top-color: #7d7d7d;
+}
+
+.RadTabStripBottom_Ayuntamiento .rtsSelected,
+.RadTabStripBottom_Ayuntamiento .rtsSelected:hover
+{
+	border-top-color: #ffffff;
+	margin-bottom: 0;
+	padding-bottom: 2px;
+}
+/* </orientation: bottom> */
+
+/* <orientation: left> */
+.RadTabStripLeft_Ayuntamiento .rtsLink:hover
+{ border-right-color: #7d7d7d; }
+
+.RadTabStripLeft_Ayuntamiento .rtsSelected,
+.RadTabStripLeft_Ayuntamiento .rtsSelected:hover
+{ border-right-color: #ffffff; }
+/* </orientation: left> */
+
+/* <orientation: right> */
+.RadTabStripRight_Ayuntamiento .rtsLink:hover
+{ border-left-color: #7d7d7d; }
+
+.RadTabStripRight_Ayuntamiento .rtsSelected,
+.RadTabStripRight_Ayuntamiento .rtsSelected:hover
+{ border-left-color: #ffffff; }
+/* </orientation: right> */
+
+/* <disabled states> */
+.RadTabStrip_Ayuntamiento .rtsDisabled,
+.RadTabStrip_Ayuntamiento .rtsDisabled:hover
+{
+	border-color: #7d7d7d;
+	background: #e3e3e3;
+	color: #ababab;
+}
+/* </disabled states> */

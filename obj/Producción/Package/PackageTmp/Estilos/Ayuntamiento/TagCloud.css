@@ -1,0 +1,30 @@
+.RadTagCloud_Hipocrates
+{
+	background-color: #4a4a4a;
+	border: 1px dotted #e3e3e3;
+}
+.RadTagCloud_Hipocrates .rtcTagList .rtcTagItem
+{
+	color: #ffffff;
+}
+.RadTagCloud_Hipocrates .rtcTagList .rtcTagItem:hover
+{
+	color: #9cf740;
+}
+.RadTagCloud_Hipocrates .rtcTagList .rtcTagItem a
+{
+	color: #e3e3e3;
+	border: 1px solid transparent;
+}
+div.RadTagCloud_Hipocrates .rtcTagList .rtcTagItem a:hover
+{
+	color: #baff75;
+	border: 1px solid transparent;
+	text-decoration: underline;
+}
+
+/* Loading image */
+.rtcLoading.RadTagCloud_Hipocrates
+{
+	background-image: url('Common/loading_small.gif');
+}

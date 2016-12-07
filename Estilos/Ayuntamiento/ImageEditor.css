@@ -1,0 +1,68 @@
+/* RadImageEditor Office2010Black Skin */
+
+.RadImageEditor_Hipocrates,
+.RadDock_Hipocrates.rieDialogs .riePrintContent
+{
+	border-color: #2b2b2b;
+	background-color: #4a4a4a;
+}
+
+.RadImageEditor_Hipocrates .rieStatusBarInfo .rieLabel,
+.RadImageEditor_Hipocrates .rieStatusBarInfo span,
+.RadDock_Hipocrates.rieDialogs .rdContent
+{
+	color: #e3e3e3;
+}
+
+.RadImageEditor_Hipocrates .rieContentArea
+{
+	border-color: #2b2b2b;
+}
+
+/* ImageEditor Dialogs using RadDock as Wrapper */
+.RadDock_Hipocrates.rieDialogs .rbPrimaryIcon,
+.RadImageEditor_Hipocrates .rieResizeHandle,
+.RadImageEditor_Hipocrates .rieBackgroundImg .rtbIcon /* Custom skins */
+{
+	background-image: url('ImageEditor/ImageEditorTools.png');
+}
+
+*html .RadDock_Hipocrates.rieDialogs .rbPrimaryIcon,
+*html .RadImageEditor_Hipocrates .rieResizeHandle,
+*html .RadImageEditor_Hipocrates .rieBackgroundImg .rtbIcon /* Custom skins */
+{
+	background-image: url('ImageEditor/ImageEditorToolsIE6.gif');
+}
+
+.RadDock_Hipocrates.rieDialogs .rieThumbsBottomRow td,
+.RadDock_Hipocrates.rieDialogs .rieDialogsThumbsLeft,
+.RadDock_Hipocrates.rieDialogs .riePrintContent img
+{
+	border-color: #9cf740;
+}
+
+.RadDock_Hipocrates.rieDialogs .rieThumbsLink
+{
+	border-color: #919191;
+}
+
+.RadDock_Hipocrates.rieDialogs .rieActiveThumbsLink,
+.RadDock_Hipocrates.rieDialogs .rieThumbsLink:hover,
+.RadImageEditor_Hipocrates .rieHighlightVertical, 
+.RadImageEditor_Hipocrates .rieHighlightHorizontal
+{
+	border-color: #9cf740;
+	background-color: #c6ff8c;
+}
+
+/* Override risizebar bgr */
+
+.RadDock_Hipocrates.rieDialogs .rieResizeButtons
+{
+	background:url('Common/rieResizeBgr.gif') -1px -52px no-repeat;
+}
+
+.RadDock_Hipocrates.rieDialogs.rdRtl .rieResizeButtons
+{
+	background-position: 43px -52px;
+}

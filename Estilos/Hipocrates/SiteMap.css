@@ -1,0 +1,50 @@
+.RadSiteMap_Hipocrates .rsmLink,
+.RadSiteMap_Hipocrates .rsmTemplate
+{
+	font-family: "Segoe UI", Arial, sans-serif;
+	border-bottom: 0;
+	color: #ffffff;
+}
+
+.RadSiteMap_Hipocrates .rsmLevel1 .rsmLink,
+.RadSiteMap_Hipocrates .rsmLevel1 .rsmTemplate
+{
+	color: #ffffff;
+}
+
+.RadSiteMap_Hipocrates .rsmLevel2 .rsmLink,
+.RadSiteMap_Hipocrates .rsmLevel2 .rsmTemplate,
+.RadSiteMap_Hipocrates .rsmThreeLevels .rsmLevel1 .rsmLink,
+.RadSiteMap_Hipocrates .rsmTwoLevels .rsmLevel1 .rsmLink,
+.RadSiteMap_Hipocrates .rsmOneLevel .rsmItem .rsmLink
+{
+	color: #ffffff;
+}
+
+.RadSiteMap_Hipocrates .rsmLink:hover
+{
+	color: #ffffff;
+}
+
+.RadSiteMap_Hipocrates .rsmLevel1 .rsmLink:hover
+{
+	color: #000000;
+}
+
+.RadSiteMap_Hipocrates .rsmLevel2 .rsmLink:hover,
+.RadSiteMap_Hipocrates .rsmThreeLevels .rsmLevel1 .rsmLink:hover,
+.RadSiteMap_Hipocrates .rsmTwoLevels .rsmLevel1 .rsmLink:hover,
+.RadSiteMap_Hipocrates .rsmOneLevel .rsmItem .rsmLink:hover
+{
+	padding: 1px 4px;
+	color: #000000;
+	background: #c3ff87 url('SiteMap/rsmHover.png') repeat-x 0 0;
+	border: 1px solid #9df249;
+}
+
+.RadSiteMap_Hipocrates .rsmLevel .rsmNodeLines .rsmItem
+{
+	padding: 1px 4px;
+	background-image: url('SiteMap/NodeLines.png');
+	border: 1px solid #9df249;
+}

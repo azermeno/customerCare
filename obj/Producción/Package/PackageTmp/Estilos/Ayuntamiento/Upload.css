@@ -1,0 +1,147 @@
+/* RadUpload / WebBlue skin */
+
+/* <general styles> */
+
+.RadUpload_Ayuntamiento,
+.RadUpload_Ayuntamiento a,
+.RadUpload_Ayuntamiento input,
+.RadUploadProgressArea_Ayuntamiento,
+.RadUploadProgressArea_Ayuntamiento input
+{
+    font: normal 11px/10px "Segoe UI", Arial, sans-serif;
+}
+
+/* </general styles> */
+
+/* <file inputs> */
+
+.RadUpload_Ayuntamiento .ruStyled .ruFileInput
+{
+    border-color: #616161;
+}
+
+.RadUpload_Ayuntamiento .ruFakeInput
+{
+    border-color: #616161;
+    color: #4a4a4a;
+}
+* html .RadUpload_Ayuntamiento .ruFileWrap .ruInputHover { border-color: #333333; }
+*+html .RadUpload_Ayuntamiento .ruFileWrap .ruInputHover { border-color: #333333; }
+
+.RadUpload_Ayuntamiento .ruReadOnly .ruFakeInput
+{
+	background: #f2f2f2;
+}
+
+/* </file inputs> */
+
+/* <buttons> */
+
+div.RadUploadSubmit,
+div.RadUpload_Ayuntamiento .ruButton,
+div.RadUploadProgressArea_Ayuntamiento .ruButton
+{
+    color: #ffffff;
+    background-color: #919191;
+    border: 1px solid #4f4f4f;
+}
+
+div.RadUpload_Ayuntamiento .ruRemove
+{
+	color: #6e6e6e;
+	background-color: transparent;
+    background-image: url('Upload/ruSprite.png');
+	border: 0;
+}
+
+div.RadUpload_Ayuntamiento .ruInputs .ruButtonHover,
+div.RadUpload_Ayuntamiento .ruActions .ruButtonHover,
+div.RadUpload_Ayuntamiento .ruFileWrap .ruButtonHover,
+div.RadUploadProgressArea_Ayuntamiento .ruActions .ruButtonHover
+{
+    background-color: #c2c2c2;
+}
+
+/* </buttons> */
+
+/* <progress area> */
+
+.RadUploadProgressArea_Ayuntamiento .ruProgress
+{
+    border-color: #616161;
+    background-image: url('Upload/ruSprite.png');
+    background-color: #ffffff;
+}
+
+.RadUploadProgressArea_Ayuntamiento .ruProgress li
+{
+    color: #000000;
+}
+
+.RadUploadProgressArea_Ayuntamiento li.ruProgressHeader
+{
+    color: #000000;
+}
+
+.RadUploadProgressArea_Ayuntamiento .ruProgress li.ruCurrentFile
+{
+    color: #000000;
+}
+
+.RadUploadProgressArea_Ayuntamiento .ruProgress li.ruCurrentFile span
+{
+    color: #c92836;
+}
+
+.RadUploadProgressArea_Ayuntamiento .ruProgress .ruBar
+{
+    border-color: #999999;
+}
+ 
+.RadUploadProgressArea_Ayuntamiento .ruProgress .ruBar div
+{
+    background-image: url('Upload/ruProgress.gif');
+	border-right: 1px solid #c92836;
+}
+
+.RadUploadProgressArea_Ayuntamiento_rtl .ruProgress .ruBar div
+{
+	border-right: 0;
+	border-left: 1px solid #c92836;
+    background-image: url('Upload/ruProgress.gif');
+}
+ 
+.RadUploadProgressArea_Ayuntamiento .ruProgress .ruActions
+{
+	border-top-color: #616161;
+	background: #e3e3e3;
+}
+
+/* </progress area> */
+
+/* <RadAsyncUpload> */
+
+.RadUpload_Ayuntamiento .ruUploadInvalid
+{
+    background-repeat: no-repeat;
+    background-position: 100% -297px;
+    background-image: url('Input/sprite.gif');
+}
+
+.RadUpload_Ayuntamiento_rtl .ruUploadInvalid
+{
+    background-position: 3px -297px;
+}
+
+.RadUpload_Ayuntamiento span.ruFileProgressWrap
+{
+    background: #dbdbdb;
+}
+
+.RadUpload_Ayuntamiento span.ruFileProgress,
+.RadUpload_Ayuntamiento span.ruProgressComplete
+{
+    background: #ff3849;
+}
+
+/* </RadAsyncUpload> */

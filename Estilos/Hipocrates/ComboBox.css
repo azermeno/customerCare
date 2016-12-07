@@ -1,0 +1,183 @@
+/* RadComboBox Office2010Black skin */
+
+/*global*/
+
+.RadComboBox_Hipocrates,
+.RadComboBox_Hipocrates .rcbInput,
+.RadComboBoxDropDown_Hipocrates
+{
+	font: 12px "Segoe UI", Arial, sans-serif;
+	color: #000000;
+}
+
+/* combobox */
+
+.RadComboBox_Hipocrates .rcbInputCellLeft,
+.RadComboBox_Hipocrates .rcbInputCellRight,
+.RadComboBox_Hipocrates .rcbArrowCellLeft,
+.RadComboBox_Hipocrates .rcbArrowCellRight
+{
+	background-image: url('ComboBox/rcbSprite.png');
+	_background-image: url('ComboBox/rcbSpriteIE6.png');
+}
+
+.RadComboBox_Hipocrates td.rcbInputCellLeft { background-position: 0 0; }
+.RadComboBox_Hipocrates td.rcbInputCellRight { background-position: 100% 0; }
+
+.RadComboBox_Hipocrates .rcbHovered .rcbInputCellLeft { background-position: 0 0; }
+.RadComboBox_Hipocrates .rcbHovered .rcbInputCellRight { background-position: 100% 0; }
+
+.RadComboBox_Hipocrates .rcbFocused .rcbInputCellLeft { background-position: 0 0; }
+.RadComboBox_Hipocrates .rcbFocused .rcbInputCellRight { background-position: 100% 0; }
+
+.RadComboBox_Hipocrates .rcbHovered .rcbReadOnly td.rcbInputCellLeft { background-position: 0 -22px; }
+.RadComboBox_Hipocrates .rcbHovered .rcbReadOnly td.rcbInputCellRight { background-position: 100% -22px; }
+
+.RadComboBox_Hipocrates .rcbFocused .rcbReadOnly td.rcbInputCellLeft { background-position: 0 -44px; }
+.RadComboBox_Hipocrates .rcbFocused .rcbReadOnly td.rcbInputCellRight { background-position: 100% -44px; }
+
+.RadComboBox_Hipocrates .rcbInputCell .rcbEmptyMessage
+{
+	color: #666666;
+}
+
+.RadComboBox_Hipocrates .rcbHovered .rcbInputCell .rcbInput
+{
+	color: #000000;
+}
+
+.RadComboBox_Hipocrates td.rcbArrowCellLeft { background-position: -18px -88px; }
+.RadComboBox_Hipocrates td.rcbArrowCellRight { background-position: 0 -88px; }
+
+.RadComboBox_Hipocrates .rcbHovered .rcbArrowCellLeft { background-position: -54px -88px; }
+.RadComboBox_Hipocrates .rcbHovered .rcbArrowCellRight { background-position: -36px -88px; }
+
+.RadComboBox_Hipocrates .rcbFocused .rcbArrowCellLeft { background-position: -90px -88px; }
+.RadComboBox_Hipocrates .rcbFocused .rcbArrowCellRight { background-position: -72px -88px; }
+
+.RadComboBox_Hipocrates td.rcbArrowCellHidden,
+.RadComboBox_Hipocrates .rcbHovered td.rcbArrowCellHidden,
+.RadComboBox_Hipocrates .rcbFocused td.rcbArrowCellHidden { background-position: -15px -88px; }
+
+.RadComboBox_Hipocrates_rtl td.rcbArrowCellHidden,
+.RadComboBox_Hipocrates_rtl .rcbHovered td.rcbArrowCellHidden,
+.RadComboBox_Hipocrates_rtl .rcbFocused td.rcbArrowCellHidden { background-position: -18px -88px; }
+
+/* Read-only styles */
+
+.RadComboBox_Hipocrates .rcbReadOnly td.rcbArrowCellLeft { background-position: -18px -88px; }
+.RadComboBox_Hipocrates .rcbReadOnly td.rcbArrowCellRight { background-position: -2px -88px; }
+
+.RadComboBox_Hipocrates .rcbHovered .rcbReadOnly .rcbArrowCellLeft { background-position: -54px -88px; }
+.RadComboBox_Hipocrates .rcbHovered .rcbReadOnly .rcbArrowCellRight { background-position: -38px -88px; }
+
+.RadComboBox_Hipocrates .rcbFocused .rcbReadOnly .rcbArrowCellLeft { background-position: -90px -88px; }
+.RadComboBox_Hipocrates .rcbFocused .rcbReadOnly .rcbArrowCellRight { background-position: -74px -88px; }
+
+.RadComboBox_Hipocrates .rcbReadOnly td.rcbArrowCellHidden { background-position: -15px -88px; }
+.RadComboBox_Hipocrates .rcbHovered .rcbReadOnly td.rcbArrowCellHidden { background-position: -51px -88px; }
+.RadComboBox_Hipocrates .rcbFocused .rcbReadOnly td.rcbArrowCellHidden { background-position: -87px -88px; }
+
+.RadComboBox_Hipocrates_rtl .rcbReadOnly td.rcbArrowCellHidden { background-position: -18px -88px; }
+.RadComboBox_Hipocrates_rtl .rcbHovered .rcbReadOnly td.rcbArrowCellHidden { background-position: -54px -88px; }
+.RadComboBox_Hipocrates_rtl .rcbFocused .rcbReadOnly td.rcbArrowCellHidden { background-position: -90px -88px; }
+
+/* dropdown */
+
+.RadComboBoxDropDown_Hipocrates .rcbHeader,
+.RadComboBoxDropDown_Hipocrates .rcbFooter,
+.RadComboBoxDropDown_Hipocrates .rcbMoreResults,
+.RadComboBoxDropDown_Hipocrates .rcbMoreResults a
+{
+	background-image: url('ComboBox/rcbSprite.png');
+	_background-image: url('ComboBox/rcbSpriteIE6.png');
+}
+
+.RadComboBoxDropDown_Hipocrates
+{
+	background: #ffffff;
+	border-color: #cbd1c5;
+	border-top-color: #878c82;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbHeader,
+.RadComboBoxDropDown_Hipocrates .rcbFooter
+{
+	background-color: #f4f5f2;
+	background-position: 0 -110px;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbHeader
+{
+	border-bottom-color: #d6d6d6;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbFooter
+{
+	border-top-color: #d6d6d6;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbItem em
+{
+	background: #e6e6e6;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbHovered
+{
+	padding: 1px 5px;
+	border: 1px solid #b4ff69;
+	color: #000000;
+	background: #d1ffa3;
+}
+html .RadComboBoxDropDown_Hipocrates .rcbHovered {
+	padding: 1px 5px;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbCheckAllItems,
+.RadComboBoxDropDown_Hipocrates .rcbCheckAllItemsHovered {
+	color: #000000;
+	background-color: #d1ffa3;
+}
+.RadComboBoxDropDown_Hipocrates .rcbCheckAllItemsHovered {
+	color: #000000;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbSeparator
+{
+    color: #ffffff;
+    background: #8a8a8a;
+}
+
+.RadComboBox_Hipocrates .rcbDisabled .rcbInputCell .rcbInput,
+.RadComboBoxDropDown_Hipocrates .rcbDisabled
+{
+	color: #666666;
+}
+
+.RadComboBox_Hipocrates .rcbDisabled td.rcbInputCellLeft { background-position: 0 -66px; }
+.RadComboBox_Hipocrates .rcbDisabled td.rcbInputCellRight { background-position: 100% -66px; }
+.RadComboBox_Hipocrates .rcbDisabled td.rcbArrowCellLeft { background-position: -126px -88px; }
+.RadComboBox_Hipocrates .rcbDisabled td.rcbArrowCellRight { background-position: -108px -88px; }
+.RadComboBox_Hipocrates .rcbDisabled .rcbReadOnly td.rcbArrowCellRight { background-position: -110px -88px; }
+.RadComboBox_Hipocrates table.rcbDisabled td.rcbArrowCellHidden,
+.RadComboBox_Hipocrates .rcbDisabled .rcbReadOnly td.rcbArrowCellHidden { background-position: -123px -88px; }
+.RadComboBox_Hipocrates_rtl table.rcbDisabled td.rcbArrowCellHidden,
+.RadComboBox_Hipocrates_rtl .rcbDisabled .rcbReadOnly td.rcbArrowCellHidden { background-position: -126px -88px; }
+
+.RadComboBoxDropDown_Hipocrates .rcbLoading
+{
+	background: #f0f0f0;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbMoreResults
+{
+	border-top-color: #cbd1c5;
+	background-position: 0 -132px;
+	background-color: #e6e6e6;
+	color: #8a8a8a;
+}
+
+.RadComboBoxDropDown_Hipocrates .rcbMoreResults a
+{
+	background-position: -157px -94px;
+}

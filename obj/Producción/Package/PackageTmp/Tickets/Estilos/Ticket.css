@@ -1,0 +1,60 @@
+﻿table
+{
+    width:100%;
+    height:100%;
+}
+
+#divImagenes
+{
+    background-color:Transparent;
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:26px;
+    vertical-align:middle;
+}
+
+#RadMultiPage1
+{
+    position:absolute;
+    top:26px;
+    bottom:0px;
+}
+
+#RadPageView1
+{
+    height:100%;
+}
+
+#RadPageView2
+{
+    height:100%;
+}
+
+#RadPageView3
+{
+    height:100%;
+}
+
+.RadGrid
+{
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.RadGrid .rgDataDiv
+{
+    position: absolute;
+    top: 26px;
+    bottom: 0px;
+}
+
+.accion
+{
+    margin:2px; 
+    float:right;
+    display:inline;
+}

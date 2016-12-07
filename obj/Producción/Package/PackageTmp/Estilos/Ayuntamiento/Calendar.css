@@ -1,0 +1,393 @@
+/*Telerik RadCalendar Default skin*/
+
+table.RadCalendar_Ayuntamiento
+{
+	background:#ffffff;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*titlebar*/
+
+.RadCalendar_Ayuntamiento .rcTitlebar
+{
+	border-color:#7d7d7d;
+	background:#e3e3e3;
+	color:#000000;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar table
+{
+	font:12px/23px "segoe ui",arial,sans-serif;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar td
+{
+	padding:0 0 1px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar .rcPrev,
+.RadCalendar_Ayuntamiento .rcTitlebar .rcNext,
+.RadCalendar_Ayuntamiento .rcTitlebar .rcFastPrev,
+.RadCalendar_Ayuntamiento .rcTitlebar .rcFastNext
+{
+	width:18px;
+	height:18px;
+	margin:1px 2px 0;
+	background-image:url('Calendar/sprite.gif');
+	color:#cccccc;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar .rcFastPrev
+{
+	margin-left:4px;
+	background-position:0 -200px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar a.rcFastPrev:hover
+{
+	background-position:0 -250px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar .rcPrev
+{
+	background-position:0 -300px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar a.rcPrev:hover
+{
+	background-position:0 -350px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar .rcNext
+{
+	background-position:0 -400px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar a.rcNext:hover
+{
+	background-position:0 -450px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar .rcFastNext
+{
+	margin-right:4px;
+	background-position:0 -500px;
+}
+
+.RadCalendar_Ayuntamiento .rcTitlebar a.rcFastNext:hover
+{
+	background-position:0 -550px;
+}
+
+.RadCalendar_Ayuntamiento .rcMain
+{
+	border-color:#999999;
+}
+
+.RadCalendar_Ayuntamiento .rcMainTable
+{
+	font:12px/17px "segoe ui",arial,sans-serif;
+}
+
+/*header, footer*/
+
+.RadCalendar_Ayuntamiento .rcHeader,
+.RadCalendar_Ayuntamiento .rcFooter
+{
+	border-color:#999999;
+}
+
+/*week numbers and days*/
+
+.RadCalendar_Ayuntamiento .rcWeek th
+{
+	border-bottom:1px solid #999999;
+	padding:4px 6px 4px 0;
+	color:#333333;
+}
+
+.RadCalendar_Ayuntamiento .rcWeek .rcViewSel,
+.RadCalendar_Ayuntamiento .rcRow th
+{
+	width:13px;
+	padding:0 7px 0 9px;
+	background:#ededed;
+}
+
+/*date cells*/
+
+.RadCalendar_Ayuntamiento .rcRow td
+{
+	border-color:#ffffff;
+}
+
+.RadCalendar_Ayuntamiento .rcMain .rcRow a,
+.RadCalendar_Ayuntamiento .rcMain .rcRow span
+{
+	color:#000000;
+}
+
+.RadCalendar_Ayuntamiento .rcMain .rcWeekend a
+{
+	color:#666666;
+}
+
+.RadCalendar_Ayuntamiento .rcRow .rcToday
+{
+	border-color:#c91c2b;
+}
+
+.RadCalendar_Ayuntamiento .rcMain .rcOtherMonth a
+{
+	color:#787878;
+}
+
+.RadCalendar_Ayuntamiento .rcMain .rcOutOfRange span
+{
+	color:#787878;
+}
+
+.RadCalendar_Ayuntamiento .rcRow .rcSelected
+{
+	border-color:#c92836;
+	background:#ff3849;
+}
+
+.RadCalendar_Ayuntamiento .rcMain .rcRow .rcSelected a
+{
+	color:#87141e;
+}
+
+.RadCalendar_Ayuntamiento .rcRow .rcHover
+{
+	border-color:#c91c2b;
+	background:#ffabb2;
+}
+
+.RadCalendar_Ayuntamiento .rcMain .rcRow .rcHover a
+{
+	color:#8a131d;
+}
+
+/*multimonth view*/
+
+.RadCalendarMultiView_Ayuntamiento .rcTitlebar
+{
+	border-color:#616161;
+	background:#c7c7c7;
+}
+
+.RadCalendarMultiView_Ayuntamiento .rcTitlebar table
+{
+	line-height:29px;
+}
+
+.RadCalendarMultiView_Ayuntamiento .rcMain
+{
+	border-color:#616161;
+}
+
+.RadCalendarMultiView_Ayuntamiento .rcCalendar
+{
+	border-color:#999999;
+}
+
+.RadCalendarMultiView_Ayuntamiento .rcCalendar .rcMainTable
+{
+	height:177px;
+}
+
+.RadCalendarMultiView_Ayuntamiento .rcMainTable .rcTitle
+{
+	border-color:#999999;
+	padding:0 0 2px;
+	background:#e3e3e3;
+	line-height:22px;
+}
+
+/*month view*/
+
+table.RadCalendarMonthView_Ayuntamiento
+{
+	border-color:#616161;
+	background:#ffffff;
+	font:12px "segoe ui",arial,sans-serif;
+	color:#333333;
+}
+
+.RadCalendarMonthView_Ayuntamiento #rcMView_Feb,
+.RadCalendarMonthView_Ayuntamiento #rcMView_Apr,
+.RadCalendarMonthView_Ayuntamiento #rcMView_Jun,
+.RadCalendarMonthView_Ayuntamiento #rcMView_Aug,
+.RadCalendarMonthView_Ayuntamiento #rcMView_Oct,
+.RadCalendarMonthView_Ayuntamiento #rcMView_Dec
+{
+	border-right:1px solid #999999;
+}
+
+.RadCalendarMonthView_Ayuntamiento a
+{
+	color:#333333;
+}
+
+.RadCalendarMonthView_Ayuntamiento .rcSelected a
+{
+	border-color:#c92836;
+	background:#ff3849;
+	color:#87141e;
+}
+
+.RadCalendarMonthView_Ayuntamiento #rcMView_PrevY a,
+.RadCalendarMonthView_Ayuntamiento #rcMView_NextY a
+{
+	width:18px;
+	height:13px;
+	background:url('Calendar/sprite.gif');
+	color:#cccccc;
+}
+
+.RadCalendarMonthView_Ayuntamiento #rcMView_PrevY a
+{
+	background-position:0 -2100px;
+}
+
+.RadCalendarMonthView_Ayuntamiento #rcMView_NextY a
+{
+	background-position:0 -2200px;
+}
+
+.RadCalendarMonthView_Ayuntamiento .rcButtons
+{
+	padding:5px 7px 4px;
+}
+
+.RadCalendarMonthView_Ayuntamiento input
+{
+	border-color:#7a7a7a;
+	background:#c7c7c7;
+	color:#000000;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*time view*/
+
+table.RadCalendarTimeView_Ayuntamiento
+{
+	border-color:#616161;
+	background:#ffffff;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+.RadCalendarTimeView_Ayuntamiento th
+{
+	border-bottom:1px solid #999999;
+	padding:0 0 1px;
+	background:#e3e3e3;
+	color:#000000;
+	line-height:23px;
+}
+
+table.RadCalendarTimeView_Ayuntamiento td
+{
+	border-color:#999999;
+}
+
+.RadCalendarTimeView_Ayuntamiento a
+{
+	color:#333333;
+}
+
+.RadCalendarTimeView_Ayuntamiento td.rcSelected a
+{
+	border-color:#c92836;
+	background:#ff3849;
+	color:#87141e;
+}
+
+.RadCalendarTimeView_Ayuntamiento td.rcHover a
+{
+	border-color:#c91c2b;
+	background:#ffabb2;
+	color:#8a131d;
+}
+
+.RadCalendarTimeView_Ayuntamiento .rcFooter
+{
+	border-color:#999999;
+}
+
+/*pickers*/
+
+.RadPicker_Ayuntamiento .rcCalPopup,
+.RadPicker_Ayuntamiento .rcTimePopup
+{
+	background-image:url('Calendar/sprite.gif');
+}
+
+.RadPicker_Ayuntamiento .rcCalPopup,
+.RadPicker_Ayuntamiento a.rcDisabled.rcCalPopup:hover
+{
+	background-position:0 0;
+}
+
+.RadPicker_Ayuntamiento a.rcCalPopup:hover,
+.RadPicker_Ayuntamiento a.rcCalPopup:focus,
+.RadPicker_Ayuntamiento a.rcCalPopup:active
+{
+	background-position:0 -50px;
+}
+
+.RadPicker_Ayuntamiento .rcTimePopup,
+.RadPicker_Ayuntamiento a.rcDisabled.rcTimePopup:hover
+{
+	background-position:0 -100px;
+}
+
+.RadPicker_Ayuntamiento a.rcTimePopup:hover,
+.RadPicker_Ayuntamiento a.rcTimePopup:focus,
+.RadPicker_Ayuntamiento a.rcTimePopup:active
+{
+	background-position:0 -150px;
+}
+
+/*rtl*/
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar .rcFastPrev
+{
+	background-position:0 -500px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar a.rcFastPrev:hover
+{
+	background-position:0 -550px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar .rcPrev
+{
+	background-position:0 -400px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar a.rcPrev:hover
+{
+	background-position:0 -450px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar .rcNext
+{
+	background-position:0 -300px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar a.rcNext:hover
+{
+	background-position:0 -350px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar .rcFastNext
+{
+	background-position:0 -200px;
+}
+
+.RadCalendarRTL_Ayuntamiento .rcTitlebar a.rcFastNext:hover
+{
+	background-position:0 -250px;
+}

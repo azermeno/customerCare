@@ -1,0 +1,166 @@
+/* RadSplitter for ASP.NET AJAX - Office2010Black Skin */
+
+/* Borders */
+.RadSplitter_Hipocrates,
+.RadSplitter_Hipocrates .rspPaneTabContainer,
+
+/* Vertical RadSplitter items */
+.RadSplitter_Hipocrates .rspPane, 
+.RadSplitter_Hipocrates .rspResizeBar,
+.RadSplitter_Hipocrates .rspSlideContainerResize,
+
+/* Horizontal RadSplitter items */
+.RadSplitter_Hipocrates .rspPaneHorizontal,
+.RadSplitter_Hipocrates .rspResizeBarHorizontal,
+.RadSplitter_Hipocrates .rspSlideContainerResizeHorizontal
+{
+	border-color:#2b2b2b;
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadSplitter_Hipocrates .rspLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* RadSplitBar/RadSlidingPane resize elements */
+.RadSplitter_Hipocrates .rspResizeBar,
+.RadSplitter_Hipocrates .rspSlideContainerResize
+{
+	background:#ededed url('Splitter/ResizeBarVerticalSprites.gif') repeat-y 0 0;
+    border-right-color:#2b2b2b;
+}
+
+.RadSplitter_Hipocrates .rspResizeBarOver,
+.RadSplitter_Hipocrates .rspSlideContainerResizeOver
+{
+    background-position:-4px 0;
+}
+
+.RadSplitter_Hipocrates .rspResizeBarHorizontal,
+.RadSplitter_Hipocrates .rspSlideContainerResizeHorizontal
+{
+	background:#ededed url('Splitter/ResizeBarHorizontalSprites.gif') repeat-x 0 0;
+    border-bottom-color:#2b2b2b;
+}
+
+.RadSplitter_Hipocrates .rspResizeBarOverHorizontal,
+.RadSplitter_Hipocrates .rspSlideContainerResizeOverHorizontal
+{
+    background-position:0 -4px;
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_Hipocrates .rspPaneTabContainer,
+/* RadSlidingPane buttons */
+.RadSplitter_Hipocrates .rspSlideHeaderDockIcon,
+.RadSplitter_Hipocrates .rspSlideHeaderUndockIcon,
+.RadSplitter_Hipocrates .rspSlideHeaderCollapseIcon,
+/* RadSplitBar buttons */
+.RadSplitter_Hipocrates .rspCollapseBarExpand,
+.RadSplitter_Hipocrates .rspCollapseBarCollapse,
+
+.RadSplitter_Hipocrates .rspCollapseBarHorizontalExpand,
+.RadSplitter_Hipocrates .rspCollapseBarHorizontalCollapse
+{
+    background-image:url('Splitter/ExpandCollapseBarsCommands.gif');
+    background-repeat:no-repeat;
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_Hipocrates .rspPaneTabContainer
+{
+    background-position:-81px 0;
+    background-repeat:repeat-y;
+}
+
+/* RadSplitBar buttons */
+.RadSplitter_Hipocrates .rspCollapseBarCollapse
+{	
+	background-position:0 0;
+}
+.RadSplitter_Hipocrates .rspCollapseBarCollapseOver
+{
+    background-position:-192px 0;
+}
+
+.RadSplitter_Hipocrates .rspCollapseBarExpand
+{	
+	background-position:-4px 0;
+}
+table.RadSplitter_Hipocrates .rspCollapseBarExpandOver
+{
+    background-position:-196px 0;
+}
+
+.RadSplitter_Hipocrates .rspCollapseBarHorizontalExpand
+{
+    background-position:-8px -4px;
+}
+.RadSplitter_Hipocrates .rspCollapseBarHorizontalExpandOver
+{
+    background-position:-8px -12px;
+}
+
+.RadSplitter_Hipocrates .rspCollapseBarHorizontalCollapse
+{
+    background-position:-8px 0;
+}
+.RadSplitter_Hipocrates .rspCollapseBarHorizontalCollapseOver
+{
+    background-position:-8px -8px;
+}
+
+/* RadSlidingPane buttons */
+.RadSplitter_Hipocrates .rspSlideHeaderUndockIcon
+{
+	background-position:-50px 0;
+}
+
+.RadSplitter_Hipocrates .rspSlideHeaderDockIcon
+{
+	background-position:-35px 0;
+}
+
+.RadSplitter_Hipocrates .rspSlideHeaderCollapseIcon
+{
+	background-position:-65px 0;
+}
+
+/* RadSlidingPane header */
+.RadSplitter_Hipocrates .rspSlideHeader, 
+/* RadSlidingPane title */
+.RadSplitter_Hipocrates .rspSlideTitleContainer,
+/* RadSlidingPane tab, SlideDirection=Top/Bottom */
+.RadSplitter_Hipocrates .rspBottom .rspPaneTabContainer,
+.RadSplitter_Hipocrates .rspTop .rspPaneTabContainer
+{
+	background-image:url('Splitter/slideTitleContainerBgr.gif');
+	background-repeat:repeat-x;
+}
+
+.RadSplitter_Hipocrates .rspBottom .rspPaneTabContainer,
+.RadSplitter_Hipocrates .rspTop .rspPaneTabContainer
+{
+    background-position:0 -1px;
+}
+
+/* RadSlidingPane title text */
+.RadSplitter_Hipocrates .rspSlideTitle,
+/* RadSlidingPane tab text */
+.RadSplitter_Hipocrates .rspPaneTabText
+{
+	font:normal 10px "Segoe UI", Arial, Sans-serif;
+	color:#ffffff;
+}
+.RadSplitter_Hipocrates .rspSlideTitle
+{	
+	font-size:12px;
+}
+
+/* RadSlidingPane content - this element should not be transparent as it shows above content in adjacent RadPanes */
+.RadSplitter_Hipocrates .rspSlideContent
+{
+	background-color:#4a4a4a;
+	color: #ffffff;
+}

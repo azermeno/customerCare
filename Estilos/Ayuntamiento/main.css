@@ -1,0 +1,39 @@
+﻿body   
+{
+    background: #4b6c9e;
+    font-size: .80em;
+    font-family: Verdana; 
+    color: #ffffff;
+    text-align:center;
+}
+
+#background {
+	z-index:-10000; 
+	width:100%; 
+	position:fixed;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+#logo {
+	z-index:-9000; 
+}
+#ciber 
+{
+    position: fixed;
+	z-index:-9500; 
+	bottom:5%;
+	right: 5%;
+}
+#agua 
+{
+    position: fixed;
+	z-index:-9500; 
+	top:80px;
+	left: 0px;
+}
+#Panel1
+{
+    position: relative;
+    top: 50px;
+}

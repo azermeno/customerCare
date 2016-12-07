@@ -1,0 +1,262 @@
+/* <RadToolBar / Office2010Black> */
+
+/* <tool wrapper> */
+
+/* <horizontal> */
+
+.RadToolBar_Hipocrates .rtbOuter
+{
+	border: 1px solid #2b2b2b;
+}
+
+.RadToolBar_Hipocrates .rtbMiddle
+{
+	border: 1px solid #a1a1a1;
+	background: #a1a1a1 url('ToolBar/rtbControlBg.png') repeat-x 0 0;
+}
+
+/* </horizontal> */
+
+/* <vertical> */
+
+.RadToolBar_Hipocrates_Vertical .rtbMiddle
+{
+	background: #a1a1a1 url('ToolBar/rtbVerticalControlBg.png') repeat-y 0 0;
+}
+
+/* </vertical> */
+
+/* </tool wrapper> */
+
+/* <buttons> */
+
+.RadToolBar_Hipocrates .rtbWrap,
+.RadToolBar_Hipocrates .rtbTemplate
+{
+	color: #000000;
+	font: normal 12px/20px "Segoe UI", Arial, sans-serif;
+}
+
+/* <button states> */
+
+.RadToolBar_Hipocrates .rtbSplBtnFocused .rtbWrap, .RadToolBar_Hipocrates .rtbSplBtnFocused .rtbOut, .RadToolBar_Hipocrates .rtbSplBtnFocused .rtbMid, .RadToolBar_Hipocrates .rtbSplBtnFocused .rtbIn,
+.RadToolBar_Hipocrates .rtbItemFocused .rtbWrap, .RadToolBar_Hipocrates .rtbItemFocused .rtbOut, .RadToolBar_Hipocrates .rtbItemFocused .rtbMid, .RadToolBar_Hipocrates .rtbItemFocused .rtbIn,
+.RadToolBar_Hipocrates .rtbItemHovered .rtbWrap, .RadToolBar_Hipocrates .rtbItemHovered .rtbOut, .RadToolBar_Hipocrates .rtbItemHovered .rtbMid, .RadToolBar_Hipocrates .rtbItemHovered .rtbIn
+{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url('ToolBar/rtbHoverBg.png');
+}
+
+.RadToolBar_Hipocrates .rtbItemClicked .rtbWrap, .RadToolBar_Hipocrates .rtbItemClicked .rtbOut, .RadToolBar_Hipocrates .rtbItemClicked .rtbMid, .RadToolBar_Hipocrates .rtbItemClicked .rtbIn
+{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url('ToolBar/rtbClickedBg.png');
+}
+
+.RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbWrap, .RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbOut, .RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbMid, .RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbIn,
+.RadToolBar_Hipocrates .rtbDropDownExpanded .rtbWrap, .RadToolBar_Hipocrates .rtbDropDownExpanded .rtbOut, .RadToolBar_Hipocrates .rtbDropDownExpanded .rtbMid, .RadToolBar_Hipocrates .rtbDropDownExpanded .rtbIn,
+.RadToolBar_Hipocrates .rtbChecked .rtbWrap, .RadToolBar_Hipocrates .rtbChecked .rtbOut, .RadToolBar_Hipocrates .rtbChecked .rtbMid, .RadToolBar_Hipocrates .rtbChecked .rtbIn,
+.RadToolBar_Hipocrates li.rtbChecked .rtbWrap:hover, .RadToolBar_Hipocrates li.rtbChecked .rtbWrap:hover .rtbOut, .RadToolBar_Hipocrates li.rtbChecked .rtbWrap:hover .rtbMid, .RadToolBar_Hipocrates li.rtbChecked .rtbWrap:hover .rtbIn
+{
+	background-image: url('ToolBar/rtbActiveBg.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.RadToolBar_Hipocrates .rtbItemFocused .rtbWrap,
+.RadToolBar_Hipocrates .rtbChecked .rtbWrap,
+.RadToolBar_Hipocrates .rtbDropDownExpanded .rtbWrap,
+.RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbWrap,
+.RadToolBar_Hipocrates .rtbItemHovered .rtbWrap,
+.RadToolBar_Hipocrates .rtbItemClicked .rtbWrap
+{
+	color: #000000;
+}
+
+/* </button states> */
+
+/* <Drop Down Arrows> */
+
+
+.RadToolBar_Hipocrates .rtbSplBtn .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItem .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbDropDownExpanded .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbDropDownExpanded .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnHovered .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnHovered .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItemHovered .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItemHovered .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnClicked .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItemClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItemClicked .rtbChoiceArrow
+{
+	background-image: url('ToolBar/rtbDropArrows.png');
+}
+
+.RadToolBar_Hipocrates .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtn .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnExpanded .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbDropDownExpanded .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnHovered .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItemHovered .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbSplBtnClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_Hipocrates .rtbItemClicked .rtbExpandUp .rtbChoiceArrow
+{
+	background-image: url('ToolBar/rtbUpArrows.png');
+}
+
+/* </Drop Down Arrows> */
+
+.RadToolBar_Hipocrates_Horizontal li.rtbSeparator 
+{
+	border-left: 1px solid #828282;
+	background: #c7c7c7;
+}
+
+.RadToolBar_Hipocrates_Vertical li.rtbSeparator
+{
+	border-top: 1px solid #828282;
+	background: #c7c7c7;
+}
+
+/* </buttons> */
+
+
+/* <disabled states> */
+
+.RadToolBar_Hipocrates .rtbDisabled .rtbWrap:hover,
+.RadToolBar_Hipocrates .rtbDisabled .rtbWrap:hover .rtbOut,
+.RadToolBar_Hipocrates .rtbDisabled .rtbWrap:hover .rtbMid,
+.RadToolBar_Hipocrates .rtbDisabled .rtbWrap:hover .rtbIn
+{
+	background-image: none;
+}
+
+.RadToolBar_Hipocrates .rtbDisabled .rtbWrap { color: #9ebd7e\9; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0)  /* WebKit alpha + opacity/cleartype bug, like IE wasn't enough... */
+{
+	.RadToolBar_Hipocrates .rtbDisabled .rtbWrap { color: #9ebd7e; }
+}
+
+/* </disabled states */
+
+/* <drop-down> */
+
+/* <Drop Down rounded corners and shadows> */
+
+.RadToolBarDropDown_Hipocrates .rtbTopFix,
+.RadToolBarDropDown_Hipocrates .rtbBottomFix,
+.RadToolBarDropDown_Hipocrates .rtbGroup
+{
+	background-image: url('ToolBar/rtbDropDownBg.png');
+	background-color: #f5f5f5;
+	background-repeat: repeat-y;
+	background-position: -1px 0;
+}
+
+.RadToolBarDropDown_Hipocrates div.rtbTopFix,
+.RadToolBarDropDown_Hipocrates div.rtbBottomFix
+{
+    background-position: -2px 0;
+}
+
+.RadToolBarDropDown_Hipocrates .rtbBottomLeft,
+.RadToolBarDropDown_Hipocrates .rtbRoundedCorners
+{
+	background-image:  url('ToolBar/rtbRoundedLeft.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.RadToolBarDropDown_Hipocrates .rtbTopRight,
+.RadToolBarDropDown_Hipocrates .rtbBottomRight
+{
+	background-image:  url('ToolBar/rtbRoundedRight.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.RadToolBarDropDown_Hipocrates .rtbTopFix,
+.RadToolBarDropDown_Hipocrates .rtbBottomFix,
+.RadToolBarDropDown_Hipocrates .rtbRoundedCorners .rtbFirst
+{
+	border-color: #878787;
+}
+
+.RadToolBarDropDown_Hipocrates_rtl .rtbBottomLeft,
+.RadToolBarDropDown_Hipocrates_rtl .rtbRoundedCorners
+{
+	background-image: url('ToolBar/rtbRoundedLeft_rtl.png');
+}
+
+.RadToolBarDropDown_Hipocrates_rtl .rtbTopRight,
+.RadToolBarDropDown_Hipocrates_rtl .rtbBottomRight
+{
+	background-image: url('ToolBar/rtbRoundedRight_rtl.png');
+}
+
+.RadToolBarDropDown_Hipocrates_rtl div.rtbTopFix,
+.RadToolBarDropDown_Hipocrates_rtl div.rtbBottomFix,
+.RadToolBarDropDown_Hipocrates_rtl .rtbGroup
+{
+	background-position: 101% 0;
+}
+
+/* </Drop Down rounded corners and shadows> */
+
+.RadToolBarDropDown_Hipocrates
+{
+	border-color: #878787;
+	background-color: #ffffff;
+	background-image: url('ToolBar/rtbDropDownBg.png');
+	background-position: -1px 0;
+}
+
+.RadToolBarDropDown_Hipocrates li.rtbItem {
+	padding:0 0 0 4px;
+}
+
+div.RadToolBarDropDown_Hipocrates_rtl
+{
+	background-position: 101% 0;
+}
+
+.RadToolBarDropDown_Hipocrates .rtbWrap,
+.RadToolBarDropDown_Hipocrates .rtbTemplate
+{
+	font-weight: normal;
+	font-size: 12px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: #000000;
+}
+
+.RadToolBarDropDown_Hipocrates .rtbItemHovered,
+.RadToolBarDropDown_Hipocrates .rtbItemFocused,
+.RadToolBarDropDown_Hipocrates .rtbItemHovered .rtbWrap,
+.RadToolBarDropDown_Hipocrates .rtbItemFocused .rtbWrap
+{
+	color: #000000;
+	background-image: url('ToolBar/rtbDropDownHover.png');
+}
+
+.RadToolBarDropDown_Hipocrates .rtbDisabled .rtbWrap
+{
+	color: #5e5e5e;
+}
+
+.RadToolBarDropDown_Hipocrates .rtbSeparator
+{
+	border-color: #c4c4c4;
+	background: #ffffff;
+}
+
+/* </drop-down> */
+
+/* </RadToolBar / Office2010Black> */

@@ -1,0 +1,133 @@
+/* RadSlider for ASP.NET AJAX Simple Skin */
+.RadSlider_Ayuntamiento .rslHorizontal div.rslTrack,
+.RadSlider_Ayuntamiento .rslVertical div.rslTrack
+{
+	border-width:0;
+}
+
+.RadSlider_Ayuntamiento .rslVertical ul.rslItemsWrapper,
+.RadSlider_Ayuntamiento .rslHorizontal ul.rslItemsWrapper
+{
+	margin:0;
+}
+
+.RadSlider_Ayuntamiento .rslHorizontal a.rslHandle
+{
+	background-image:url('Slider/Handles.gif');
+}
+
+.RadSlider_Ayuntamiento a.rslDraghandle
+{
+	background:#c9c9c9;
+	border:solid 1px #616161;
+}
+
+.RadSlider_Ayuntamiento a.rslDraghandle:hover
+{
+	background:#ffabb2;
+	border-color:#c91c2b;
+}
+
+.RadSlider_Ayuntamiento a.rslDraghandle:active,
+.RadSlider_Ayuntamiento a.rslDraghandle:focus
+{
+	background:#ff3849;
+	border-color:#c92836;
+}
+
+.RadSlider_Ayuntamiento .rslHorizontal .rslTrack
+{	
+	background:url('Slider/TrackBgr.gif') repeat-x;
+}
+
+.RadSlider_Ayuntamiento .rslHorizontal .rslSelectedregion
+{
+	background:url('Slider/SelectedRegionHorizontalBgr.gif') right top no-repeat;
+}
+
+/* vertical slider */
+.RadSlider_Ayuntamiento .rslVertical a.rslHandle
+{
+	background-image:url('Slider/HandlesVertical.gif');
+}
+
+.RadSlider_Ayuntamiento .rslVertical .rslTrack
+{
+	background:url('Slider/TrackVerticalBgr.gif') repeat-y;
+}
+
+.RadSlider_Ayuntamiento .rslVertical .rslSelectedregion
+{
+	background:url('Slider/SelectedRegionVerticalBgr.gif') left bottom no-repeat;
+}
+
+.RadSlider_Ayuntamiento .rslItem,
+.RadSlider_Ayuntamiento .rslLargeTick span
+{
+	color:#333333;
+}
+
+.RadSlider_Ayuntamiento .rslItemsWrapper .rslItemSelected
+{
+	color:#000000;
+}
+
+/* horizontal slider items */
+.RadSlider_Ayuntamiento .rslHorizontal .rslItem
+{
+	background-image:url('Slider/ItemHorizontalBgr.gif');
+}
+
+/* vertical slider items */
+.RadSlider_Ayuntamiento .rslVertical .rslItem
+{
+	background-image:url('Slider/ItemVerticalBgr.gif');
+}
+
+/* horizontal slider - TrackPosition=Top/Bottom */
+.RadSlider_Ayuntamiento .rslTop .rslSmallTick,
+.RadSlider_Ayuntamiento .rslBottom .rslSmallTick
+{
+    background-image:url('Slider/SmallChangeHorizontal.gif');
+}
+
+.RadSlider_Ayuntamiento .rslTop .rslLargeTick,
+.RadSlider_Ayuntamiento .rslBottom .rslLargeTick
+{
+	background-image:url('Slider/LargeChangeHorizontal.gif');
+}
+
+/* vertical slider - TrackPosition=Left/Right */
+.RadSlider_Ayuntamiento .rslLeft .rslSmallTick,
+.RadSlider_Ayuntamiento .rslRight .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeVertical.gif');
+}
+
+.RadSlider_Ayuntamiento .rslLeft .rslLargeTick,
+.RadSlider_Ayuntamiento .rslRight .rslLargeTick
+{
+	background-image:url('Slider/LargelChangeVertical.gif');
+}
+
+/* horizontal slider - TrackPosition=Center */
+.RadSlider_Ayuntamiento .rslMiddle .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeMiddleHorizontal.gif');
+}
+
+.RadSlider_Ayuntamiento .rslMiddle .rslLargeTick
+{
+	background-image:url('Slider/LargeChangeMiddleHorizontal.gif');
+}
+
+/* vertical slider - TrackPosition=Center */
+.RadSlider_Ayuntamiento .rslCenter .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeCenterVertical.gif');
+}
+
+.RadSlider_Ayuntamiento .rslCenter .rslLargeTick
+{
+	background-image:url('Slider/LargelChangeCenterVertical.gif');
+}

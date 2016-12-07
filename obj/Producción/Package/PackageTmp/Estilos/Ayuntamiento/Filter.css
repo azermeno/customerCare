@@ -1,0 +1,207 @@
+/*Telerik RadFilter Office2010 skin*/
+
+/*sprite*/
+
+.RadFilter_Hipocrates .rfLeft,
+.RadFilter_Hipocrates .rfMid,
+.RadFilter_Hipocrates .rfTools,
+.RadFilter_Hipocrates .rfRight,
+.RadFilter_Hipocrates .rfOper:hover,
+.RadFilter_Hipocrates .rfField:hover,
+.RadFilter_Hipocrates .rfExp:hover,
+.RadFilter_Hipocrates .rfOper:focus,
+.RadFilter_Hipocrates .rfField:focus,
+.RadFilter_Hipocrates .rfExp:focus,
+.RadFilter_Hipocrates .rfOper:active,
+.RadFilter_Hipocrates .rfField:active,
+.RadFilter_Hipocrates .rfExp:active,
+.RadFilter_Hipocrates .rfAddGr,
+.RadFilter_Hipocrates .rfAddExp,
+.RadFilter_Hipocrates .rfDel,
+.RadFilter_Hipocrates .rfApply a,
+.RadFilter_Hipocrates .rfApply input
+{
+	background-image:url('Filter/sprite.gif');
+}
+
+/*global*/
+
+.RadFilter_Hipocrates,
+.RadFilter_Hipocrates .rfText,
+.RadFilter_Hipocrates .rfApply input
+{
+	font-size:12px;
+	font-family:"segoe ui",arial,sans-serif;
+}
+
+.RadFilter_Hipocrates,
+.RadFilter_Hipocrates a,
+.RadFilter_Hipocrates .rfText
+{
+	color:#000000;
+}
+
+/*lines*/
+
+.RadFilter_Hipocrates .rfLines li li
+{
+	background-image:url('Filter/rfLine.gif');
+}
+
+.RadFilter_Hipocrates .rfLines li li .rfDiv
+{
+	background-image:url('Filter/rfMiddle.gif');
+}
+
+.RadFilter_Hipocrates .rfLines li li.rfLast .rfDiv
+{
+	background-image:url('Filter/rfLast.gif');
+}
+
+/*item elements*/
+
+.RadFilter_Hipocrates .rfLeft
+{
+	background-position:0 0;
+}
+
+.RadFilter_Hipocrates .rfRight
+{
+	background-position:100% 0;
+}
+
+.RadFilter_Hipocrates .rfMid,
+.RadFilter_Hipocrates .rfTools
+{
+	background-position:0 -100px;
+}
+
+.RadFilter_Hipocrates .rfField
+{
+	color:#000000;
+}
+
+.RadFilter_Hipocrates .rfOper:hover,
+.RadFilter_Hipocrates .rfField:hover,
+.RadFilter_Hipocrates .rfExp:hover,
+.RadFilter_Hipocrates .rfOper:focus,
+.RadFilter_Hipocrates .rfField:focus,
+.RadFilter_Hipocrates .rfExp:focus,
+.RadFilter_Hipocrates .rfOper:active,
+.RadFilter_Hipocrates .rfField:active,
+.RadFilter_Hipocrates .rfExp:active
+{
+	background-position:100% -76px;
+	color:#000000;
+}
+
+.RadFilter_Hipocrates .rfExp
+{
+    color:#333333;    
+}
+
+.RadFilter_Hipocrates .rfText
+{
+	border-color:#919191;
+	background-color:#ffffff;
+}
+
+.RadFilter_Hipocrates .rfAddExp
+{
+	background-position:-300px 0;
+}
+.RadFilter_Hipocrates .rfAddExp:hover
+{
+	background-position:-350px 0;
+}
+
+.RadFilter_Hipocrates .rfAddGr
+{
+	background-position:-400px 0;
+}
+.RadFilter_Hipocrates .rfAddGr:hover
+{
+	background-position:-450px 0;
+}
+
+.RadFilter_Hipocrates .rfDel
+{
+	background-position:-150px 0;
+}
+.RadFilter_Hipocrates .rfDel:hover
+{
+	background-position:-200px 0;
+}
+
+/*preview*/
+
+.RadFilter_Hipocrates .rfPreview strong
+{
+	color:#000000;
+}
+
+.RadFilter_Hipocrates .rfPreview .rfBr
+{
+	color:#000000;
+}
+
+.RadFilter_Hipocrates .rfPreview em
+{
+    color:#c7c7c7;
+}
+/*apply*/
+
+.RadFilter_Hipocrates .rfApply a
+{
+	background-position:100% -28px;
+	height: 22px;
+}
+.RadFilter_Hipocrates .rfApply input
+{
+	background-position:0 -50px;
+	height: 22px;
+}
+.RadFilter_Hipocrates .rfApply input
+{
+	color:#000000;
+}
+
+/*rtl*/
+
+.RadFilterRTL_Hipocrates .rfLines li li
+{
+	background-image:url('Filter/rfLine-rtl.gif');
+}
+
+.RadFilterRTL_Hipocrates .rfLines li li .rfDiv
+{
+	background-image:url('Filter/rfMiddle-rtl.gif');
+}
+
+.RadFilterRTL_Hipocrates .rfLines li li.rfLast .rfDiv
+{
+	background-image:url('Filter/rfLast-rtl.gif');
+}
+
+.RadFilterRTL_Hipocrates .rfLeft
+{
+	background-position:100% 0;
+}
+
+.RadFilterRTL_Hipocrates .rfRight
+{
+	background-position:0 0;
+}
+
+.RadFilterRTL_Hipocrates .rfOper:hover,
+.RadFilterRTL_Hipocrates .rfField:hover,
+.RadFilterRTL_Hipocrates .rfExp:hover,
+.RadFilterRTL_Hipocrates .rfOper:focus,
+.RadFilterRTL_Hipocrates .rfField:focus,
+.RadFilterRTL_Hipocrates .rfExp:focus,
+.RadFilterRTL_Hipocrates .rfOper:active,
+.RadFilterRTL_Hipocrates .rfField:active,
+.RadFilterRTL_Hipocrates .rfExp:active
+{
+	background-position:-586px -76px;
+}

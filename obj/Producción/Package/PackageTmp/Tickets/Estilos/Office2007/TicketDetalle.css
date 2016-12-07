@@ -1,0 +1,96 @@
+﻿
+        @media screen 
+        {
+            html, form
+            {
+                overflow: hidden;
+                height:100%;
+                margin:0px;
+                padding: 0px;
+                border: 0px;
+            }
+            body
+            {
+                font-size: .80em;
+                font-family: Verdana;
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                height: 100%;
+                width: 100%;
+            }
+            #rgrFormatos
+            {
+                width:49.7%;
+                float:left;
+            }
+            #rgrAdjuntos
+            {
+                width:49.7%;
+                float:left;
+            }
+            #rgrTraza_GridData
+            {
+                height:auto !important
+            }
+    /*table
+    {
+        width:100%;
+    }
+            .invisible
+            {
+                display:none;
+            }
+            .rspPaneHorizontal
+            {
+                position: relative;
+            }
+            #rgrEventos
+            {
+                width:65%;
+            }
+            #rgrEventos td
+            {
+                color:Black;
+            }
+            #rgrEventos .rgDataDiv
+            {
+                position: absolute;
+                top: 26px;
+                bottom: 0px;
+            }
+            #rtbTipificacion_i1_rtbTipi_text, #rtbResponsable_i1_rtbResponsable_text, #rtbLimite_i1_rtbLimi_text, #rtbSolicitante_i1_rtbSoli_text
+            {
+                color:#202020;
+            }
+	        #RAD_SPLITTER_PANE_CONTENT_rpEventos
+	        {
+		        position: relative;
+	        }*/
+        }
+        @media print
+        {
+           #RadToolBar1
+           {
+             display:none;
+           }
+           
+           #RAD_SPLITTER_PANE_CONTENT_rpIzquierdo
+           {
+             width:7in !important;
+           }
+           
+           #RAD_SPLITBAR_SPACER_RadSplitBar1
+           {
+             width:0in !important;
+           }
+           
+           #RAD_SPLITTER_PANE_CONTENT_rpDerecho
+           {
+             width:3in !important;
+           }
+           
+           .rtbIcon
+           {
+             display: none;
+           }
+        }

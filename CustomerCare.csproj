@@ -1,0 +1,1821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{418FDD3F-3D9B-447B-9728-9F0E5E1395A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomerCare</RootNamespace>
+    <AssemblyName>CustomerCare</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Producción|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\alara\Documents\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Net.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.Design, Version=2011.2.915.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q2 2011 SP1\Bin35\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2012.1.411.0, Culture=neutral, PublicKeyToken=29ac1a93ec063d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q2 2011 SP1\Bin35\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.1.411.0, Culture=neutral, PublicKeyToken=29ac1a93ec063d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q2 2011 SP1\Bin35\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationClientsideProviders" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="Westwind.Utilities, Version=1.23.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Westwind.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Westwind.Web, Version=1.23.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Westwind.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acciones\Accion.aspx" />
+    <Content Include="Acciones\Adjuntar.aspx" />
+    <Content Include="Acciones\Adjunto.aspx" />
+    <Content Include="Acciones\cerrar.aspx" />
+    <Content Include="Acciones\Estilos\Ayuntamiento\Accion.css" />
+    <Content Include="Acciones\Estilos\Hipocrates\Accion.css" />
+    <Content Include="Acciones\images\01_01.png" />
+    <Content Include="Acciones\images\01_02.png" />
+    <Content Include="Acciones\images\01_03.png" />
+    <Content Include="Acciones\images\01_04.png" />
+    <Content Include="Acciones\images\01_05.png" />
+    <Content Include="Acciones\images\01_06.png" />
+    <Content Include="Acciones\images\01_07.png" />
+    <Content Include="Acciones\images\01_10.png" />
+    <Content Include="Acciones\images\01_11.png" />
+    <Content Include="Acciones\images\01_12.png" />
+    <Content Include="Acciones\images\01_13.png" />
+    <Content Include="Acciones\images\01_16.png" />
+    <Content Include="Acciones\images\01_18.png" />
+    <Content Include="Acciones\images\01_19.png" />
+    <Content Include="Acciones\images\01_24.png" />
+    <Content Include="Acciones\images\01_25.png" />
+    <Content Include="Acciones\images\01_26.png" />
+    <Content Include="Acciones\images\01_27.png" />
+    <Content Include="Acciones\images\01_28.png" />
+    <Content Include="Acciones\images\01_29.png" />
+    <Content Include="Acciones\images\01_30.png" />
+    <Content Include="Acciones\images\01_31.png" />
+    <Content Include="Acciones\images\01_32.png" />
+    <Content Include="Acciones\images\01_33.png" />
+    <Content Include="Acciones\images\01_34.png" />
+    <Content Include="Acciones\images\01_35.png" />
+    <Content Include="Acciones\images\01_36.png" />
+    <Content Include="Acciones\images\01_37.png" />
+    <Content Include="Acciones\images\01_38.png" />
+    <Content Include="Acciones\images\01_39.png" />
+    <Content Include="Acciones\images\01_40.png" />
+    <Content Include="Acciones\images\01_41.png" />
+    <Content Include="Acciones\images\01_42.png" />
+    <Content Include="Acciones\images\02_01.png" />
+    <Content Include="Acciones\images\02_02.png" />
+    <Content Include="Acciones\images\02_03.png" />
+    <Content Include="Acciones\images\02_04.png" />
+    <Content Include="Acciones\images\02_05.png" />
+    <Content Include="Acciones\images\02_06.png" />
+    <Content Include="Acciones\images\02_07.png" />
+    <Content Include="Acciones\images\02_09.png" />
+    <Content Include="Acciones\images\02_12.png" />
+    <Content Include="Acciones\images\02_17.png" />
+    <Content Include="Acciones\images\02_18.png" />
+    <Content Include="Acciones\images\02_20.png" />
+    <Content Include="Acciones\images\02_23.png" />
+    <Content Include="Acciones\images\02_24.png" />
+    <Content Include="Acciones\images\02_25.png" />
+    <Content Include="Acciones\images\03_01.png" />
+    <Content Include="Acciones\images\03_02.png" />
+    <Content Include="Acciones\images\03_04.png" />
+    <Content Include="Acciones\images\03_05.png" />
+    <Content Include="Acciones\images\03_06.png" />
+    <Content Include="Acciones\images\03_07.png" />
+    <Content Include="Acciones\images\03_08.png" />
+    <Content Include="Acciones\images\03_09.png" />
+    <Content Include="Acciones\images\03_11.png" />
+    <Content Include="Acciones\images\03_12.png" />
+    <Content Include="Acciones\images\03_19.png" />
+    <Content Include="Acciones\images\03_22.png" />
+    <Content Include="Acciones\images\03_25.png" />
+    <Content Include="Acciones\images\03_28.png" />
+    <Content Include="Acciones\images\03_35.png" />
+    <Content Include="Acciones\images\03_37.png" />
+    <Content Include="Acciones\images\03_39.png" />
+    <Content Include="Acciones\images\03_40.png" />
+    <Content Include="Acciones\images\03_43.png" />
+    <Content Include="Acciones\images\03_44.png" />
+    <Content Include="Acciones\images\03_45.png" />
+    <Content Include="Acciones\images\03_47.png" />
+    <Content Include="Acciones\images\03_48.png" />
+    <Content Include="Acciones\images\03_51.png" />
+    <Content Include="Acciones\images\03_52.png" />
+    <Content Include="Acciones\images\03_54.png" />
+    <Content Include="Acciones\images\03_57.png" />
+    <Content Include="Acciones\images\03_58.png" />
+    <Content Include="Acciones\images\03_59.png" />
+    <Content Include="Acciones\images\03_60.png" />
+    <Content Include="Acciones\images\03_61.png" />
+    <Content Include="Acciones\images\03_62.png" />
+    <Content Include="Acciones\images\03_63.png" />
+    <Content Include="Acciones\images\03_64.png" />
+    <Content Include="Acciones\images\03_65.png" />
+    <Content Include="Acciones\images\03_66.png" />
+    <Content Include="Acciones\images\03_68.png" />
+    <Content Include="Acciones\images\03_69.png" />
+    <Content Include="Acciones\images\03_70.png" />
+    <Content Include="Acciones\images\03_76.png" />
+    <Content Include="Acciones\images\03_77.png" />
+    <Content Include="Acciones\images\03_78.png" />
+    <Content Include="Acciones\images\03_79.png" />
+    <Content Include="Acciones\images\03_81.png" />
+    <Content Include="Acciones\images\03_82.png" />
+    <Content Include="Acciones\images\04_01.png" />
+    <Content Include="Acciones\images\04_02.png" />
+    <Content Include="Acciones\images\04_03.png" />
+    <Content Include="Acciones\images\04_05.png" />
+    <Content Include="Acciones\images\04_06.png" />
+    <Content Include="Acciones\images\04_07.png" />
+    <Content Include="Acciones\images\04_08.png" />
+    <Content Include="Acciones\images\04_09.png" />
+    <Content Include="Acciones\images\04_15.png" />
+    <Content Include="Acciones\images\04_16.png" />
+    <Content Include="Acciones\images\04_17.png" />
+    <Content Include="Acciones\images\04_18.png" />
+    <Content Include="Acciones\images\04_19.png" />
+    <Content Include="Acciones\images\04_20.png" />
+    <Content Include="Acciones\images\04_21.png" />
+    <Content Include="Acciones\images\04_22.png" />
+    <Content Include="Acciones\images\04_23.png" />
+    <Content Include="Acciones\images\04_25.png" />
+    <Content Include="Acciones\images\04_26.png" />
+    <Content Include="Acciones\images\04_27.png" />
+    <Content Include="Acciones\images\04_28.png" />
+    <Content Include="Acciones\images\04_37.png" />
+    <Content Include="Acciones\images\04_38.png" />
+    <Content Include="Acciones\images\04_39.png" />
+    <Content Include="Acciones\images\04_41.png" />
+    <Content Include="Acciones\images\04_42.png" />
+    <Content Include="Acciones\images\04_43.png" />
+    <Content Include="Acciones\images\04_44.png" />
+    <Content Include="Acciones\images\04_46.png" />
+    <Content Include="Acciones\images\04_47.png" />
+    <Content Include="Acciones\images\04_49.png" />
+    <Content Include="Acciones\images\04_50.png" />
+    <Content Include="Acciones\images\04_51.png" />
+    <Content Include="Acciones\images\04_52.png" />
+    <Content Include="Acciones\images\04_63.png" />
+    <Content Include="Acciones\images\04_64.png" />
+    <Content Include="Acciones\images\04_65.png" />
+    <Content Include="Acciones\images\04_66.png" />
+    <Content Include="Acciones\images\04_67.png" />
+    <Content Include="Acciones\images\04_68.png" />
+    <Content Include="Acciones\images\04_69.png" />
+    <Content Include="Acciones\images\04_70.png" />
+    <Content Include="Acciones\images\04_71.png" />
+    <Content Include="Acciones\images\04_72.png" />
+    <Content Include="Acciones\images\04_73.png" />
+    <Content Include="Acciones\images\04_74.png" />
+    <Content Include="Acciones\images\06_01.png" />
+    <Content Include="Acciones\images\06_02.png" />
+    <Content Include="Acciones\images\06_03.png" />
+    <Content Include="Acciones\images\06_04.png" />
+    <Content Include="Acciones\images\06_05.png" />
+    <Content Include="Acciones\images\06_06.png" />
+    <Content Include="Acciones\images\06_07.png" />
+    <Content Include="Acciones\images\06_08.png" />
+    <Content Include="Acciones\images\06_10.png" />
+    <Content Include="Acciones\images\06_12.png" />
+    <Content Include="Acciones\images\06_15.png" />
+    <Content Include="Acciones\images\06_18.png" />
+    <Content Include="Acciones\images\06_20.png" />
+    <Content Include="Acciones\images\06_23.png" />
+    <Content Include="Acciones\images\06_30.png" />
+    <Content Include="Acciones\images\06_33.png" />
+    <Content Include="Acciones\images\06_36.png" />
+    <Content Include="Acciones\images\06_38.png" />
+    <Content Include="Acciones\images\06_39i.png" />
+    <Content Include="Acciones\images\06_40.png" />
+    <Content Include="Acciones\images\06_41.png" />
+    <Content Include="Acciones\images\06_43.png" />
+    <Content Include="Acciones\images\06_46.png" />
+    <Content Include="Acciones\images\06_49.png" />
+    <Content Include="Acciones\images\06_51.png" />
+    <Content Include="Acciones\images\06_55.png" />
+    <Content Include="Acciones\images\06_58.png" />
+    <Content Include="Acciones\images\06_61.png" />
+    <Content Include="Acciones\images\06_64.png" />
+    <Content Include="Acciones\images\06_66.png" />
+    <Content Include="Acciones\images\06_67.png" />
+    <Content Include="Acciones\images\06_68.png" />
+    <Content Include="Acciones\images\06_69.png" />
+    <Content Include="Acciones\images\06_70.png" />
+    <Content Include="Acciones\images\06_71.png" />
+    <Content Include="Acciones\images\06_72.png" />
+    <Content Include="Acciones\images\06_73.png" />
+    <Content Include="Acciones\images\06_75.png" />
+    <Content Include="Acciones\images\06_76.png" />
+    <Content Include="Acciones\images\06_77.png" />
+    <Content Include="Acciones\images\06_79.png" />
+    <Content Include="Acciones\images\06_82.png" />
+    <Content Include="Acciones\images\06_83.png" />
+    <Content Include="Acciones\images\06_84.png" />
+    <Content Include="Acciones\images\06_85.png" />
+    <Content Include="Acciones\images\06_86.png" />
+    <Content Include="Acciones\images\06_87.png" />
+    <Content Include="Acciones\images\06_88.png" />
+    <Content Include="Acciones\images\06_89.png" />
+    <Content Include="Acciones\images\06_90.png" />
+    <Content Include="Acciones\images\06_91.png" />
+    <Content Include="Acciones\images\06_92.png" />
+    <Content Include="Acciones\images\06_93.png" />
+    <Content Include="Acciones\images\06_94.png" />
+    <Content Include="Acciones\images\06_95.png" />
+    <Content Include="Acciones\images\06_96.png" />
+    <Content Include="Acciones\images\07_01.png" />
+    <Content Include="Acciones\images\07_02.png" />
+    <Content Include="Acciones\images\07_03.png" />
+    <Content Include="Acciones\images\07_04.png" />
+    <Content Include="Acciones\images\07_05.png" />
+    <Content Include="Acciones\images\07_06.png" />
+    <Content Include="Acciones\images\07_09.png" />
+    <Content Include="Acciones\images\07_10.png" />
+    <Content Include="Acciones\images\07_11.png" />
+    <Content Include="Acciones\images\07_12.png" />
+    <Content Include="Acciones\images\07_14.png" />
+    <Content Include="Acciones\images\07_15.png" />
+    <Content Include="Acciones\images\07_16.png" />
+    <Content Include="Acciones\images\07_17.png" />
+    <Content Include="Acciones\images\07_20.png" />
+    <Content Include="Acciones\images\07_21.png" />
+    <Content Include="Acciones\images\07_22.png" />
+    <Content Include="Acciones\images\07_24.png" />
+    <Content Include="Acciones\images\07_28.png" />
+    <Content Include="Acciones\images\07_29.png" />
+    <Content Include="Acciones\images\07_39.png" />
+    <Content Include="Acciones\images\07_40.png" />
+    <Content Include="Acciones\images\07_41.png" />
+    <Content Include="Acciones\images\07_43.png" />
+    <Content Include="Acciones\images\07_48.png" />
+    <Content Include="Acciones\images\07_52.png" />
+    <Content Include="Acciones\images\07_54.png" />
+    <Content Include="Acciones\images\07_74.png" />
+    <Content Include="Acciones\images\07_84.png" />
+    <Content Include="Acciones\images\07_85.png" />
+    <Content Include="Acciones\images\07_86.png" />
+    <Content Include="Acciones\images\attach.png" />
+    <Content Include="Acciones\images\background-chocolate.png" />
+    <Content Include="Acciones\images\background-tinto.png" />
+    <Content Include="Acciones\images\background.gif" />
+    <Content Include="Acciones\images\Cancelar.ico" />
+    <Content Include="Acciones\images\cerrar.png" />
+    <Content Include="Acciones\images\checkbox.png" />
+    <Content Include="Acciones\images\ciber20aniv.png" />
+    <Content Include="Acciones\images\csv.jpg" />
+    <Content Include="Acciones\images\delete.png" />
+    <Content Include="Acciones\images\doc.png" />
+    <Content Include="Acciones\images\edit.png" />
+    <Content Include="Acciones\images\Eliminar.ico" />
+    <Content Include="Acciones\images\eliminar.png" />
+    <Content Include="Acciones\images\eliminar2.png" />
+    <Content Include="Acciones\images\espacio.gif" />
+    <Content Include="Acciones\images\Excel.png" />
+    <Content Include="Acciones\images\favicon_4_48x48x32.png" />
+    <Content Include="Acciones\images\favicon_5_32x32x32.png" />
+    <Content Include="Acciones\images\favicon_6_16x16x32.png" />
+    <Content Include="Acciones\images\fondobarra.png" />
+    <Content Include="Acciones\images\Gdl.png" />
+    <Content Include="Acciones\images\Guardar.ico" />
+    <Content Include="Acciones\images\guardarFiltro.png" />
+    <Content Include="Acciones\images\hijos.png" />
+    <Content Include="Acciones\images\img_trans.gif" />
+    <Content Include="Acciones\images\imprimir2.png" />
+    <Content Include="Acciones\images\l06.png" />
+    <Content Include="Acciones\images\led.png" />
+    <Content Include="Acciones\images\line.png" />
+    <Content Include="Acciones\images\lineb.png" />
+    <Content Include="Acciones\images\login-box.png" />
+    <Content Include="Acciones\images\logo-ayuntamiento.png" />
+    <Content Include="Acciones\images\logo-y-login-box.png" />
+    <Content Include="Acciones\images\logo.png" />
+    <Content Include="Acciones\images\logo2.png" />
+    <Content Include="Acciones\images\medio.png" />
+    <Content Include="Acciones\images\Nuevo.ico" />
+    <Content Include="Acciones\images\otrosinmas.png" />
+    <Content Include="Acciones\images\pdf2.jpg" />
+    <Content Include="Acciones\images\Pen.ico" />
+    <Content Include="Acciones\images\repactar.png" />
+    <Content Include="Acciones\images\seguimiento-ticket.png" />
+    <Content Include="Acciones\images\seguimiento-ticket2.png" />
+    <Content Include="Acciones\images\seguimiento.png" />
+    <Content Include="Acciones\images\seguimiento2.png" />
+    <Content Include="Acciones\images\semaforo.png" />
+    <Content Include="Acciones\images\sep1.png" />
+    <Content Include="Acciones\images\sep2.png" />
+    <Content Include="Acciones\images\sprite.gif" />
+    <Content Include="Acciones\images\TabStripStates.png" />
+    <Content Include="Acciones\images\ticket2.png" />
+    <Content Include="Acciones\images\tipificar.png" />
+    <Content Include="Acciones\images\word.jpg" />
+    <Content Include="Acciones\Reprogramar.aspx" />
+    <Content Include="Administracion\Estilos\Ayuntamiento\Usuarios.css" />
+    <Content Include="Administracion\Estilos\Programadas.css" />
+    <Content Include="Administracion\Estilos\Imagenes\editar-un-marcador-de-nombre-icono-8476-32.png" />
+    <Content Include="Administracion\Estilos\Imagenes\eliminar-usuario-icono-5252-32.png" />
+    <Content Include="Administracion\Estilos\Imagenes\nuevo-usuario-icono-8071-32.png" />
+    <Content Include="Administracion\Estilos\Imagenes\RadioButtonOFF20.png" />
+    <Content Include="Administracion\Estilos\Imagenes\RadioButtonON20.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\Checkbox Empty largo.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\Checkbox Empty.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\Checkbox Empty20.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\Checkbox Full largo.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\Checkbox Full.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\Checkbox Full20.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\editar-un-marcador-de-nombre-icono-8476-32.png" />
+    <Content Include="Administracion\Estilos\Office2007\Imagenes\eliminar-usuario-icono-5252-32.png" />
+    <Content Include="Administracion\Estilos\Extra.css" />
+    <Content Include="Administracion\Estilos\Hipocrates\Clases.css" />
+    <Content Include="Administracion\Estilos\Hipocrates\Usuarios.css" />
+    <Content Include="Administracion\Estilos\Imagenes\Checkbox Empty largo.png" />
+    <Content Include="Administracion\Estilos\Imagenes\Checkbox Empty.png" />
+    <Content Include="Administracion\Estilos\Imagenes\Checkbox Empty20.png" />
+    <Content Include="Administracion\Estilos\Imagenes\Checkbox Full largo.png" />
+    <Content Include="Administracion\Estilos\Imagenes\Checkbox Full.png" />
+    <Content Include="Administracion\Estilos\Imagenes\Checkbox Full20.png" />
+    <Content Include="Administracion\Estilos\Office2007\Clases.css" />
+    <Content Include="Administracion\Estilos\Office2007\Usuarios.css" />
+    <Content Include="Administracion\Estilos\Perfiles.css" />
+    <Content Include="Administracion\Estilos\Unidades.css" />
+    <Content Include="Administracion\Estilos\Usuarios.css" />
+    <Content Include="Administracion\Programadas.aspx" />
+    <Content Include="Administracion\Scripts\Usuarios.js" />
+    <Content Include="Administracion\Unidades.aspx" />
+    <Content Include="Administracion\Usuarios.aspx" />
+    <Content Include="Administracion\WebForm1.aspx" />
+    <Content Include="Ayuntamiento\ciu.aspx" />
+    <Content Include="Estadistica\ComparativoConclusiones.aspx" />
+    <Content Include="Estadistica\ComparativoEstados.aspx" />
+    <Content Include="Estadistica\ComparativoZonas.aspx" />
+    <Content Include="Administracion\DatosExtra.aspx" />
+    <Content Include="Acciones\Estilos\Accion.css" />
+    <Content Include="Estilos\Ayuntamiento\admin.css" />
+    <Content Include="Estilos\Ayuntamiento\base.css" />
+    <Content Include="Estilos\Ayuntamiento\Button.css" />
+    <Content Include="Estilos\Ayuntamiento\Button\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Button\ButtonSprites.gif" />
+    <Content Include="Estilos\Ayuntamiento\Button\ToggleSprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\Calendar.css" />
+    <Content Include="Estilos\Ayuntamiento\Calendar\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Calendar\sprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\ColorPicker.css" />
+    <Content Include="Estilos\Ayuntamiento\ComboBox.css" />
+    <Content Include="Estilos\Ayuntamiento\ComboBox\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\ComboBox\rcbSprite.png" />
+    <Content Include="Estilos\Ayuntamiento\CustomerCare.css" />
+    <Content Include="Estilos\Ayuntamiento\DataPage.css" />
+    <Content Include="Estilos\Ayuntamiento\Dock.css" />
+    <Content Include="Estilos\Ayuntamiento\Dock\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Dock\CommandSprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\Dock\HorizontalSprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\Dock\VerticalSprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\Editor.css" />
+    <Content Include="Estilos\Ayuntamiento\Editor\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Editor\CommandSpritesLight.png" />
+    <Content Include="Estilos\Ayuntamiento\Editor\CommandSpritesLightIE6.gif" />
+    <Content Include="Estilos\Ayuntamiento\Editor\CommonIcons.gif" />
+    <Content Include="Estilos\Ayuntamiento\Editor\ToolBarSprites.gif" />
+    <Content Include="Estilos\Ayuntamiento\Editor\ToolbarVerticalSprites.gif" />
+    <Content Include="Estilos\Ayuntamiento\Extra.css" />
+    <Content Include="Estilos\Ayuntamiento\FileExplorer.css" />
+    <Content Include="Estilos\Ayuntamiento\Filter.css" />
+    <Content Include="Estilos\Ayuntamiento\FormDecorator.css" />
+    <Content Include="Estilos\Ayuntamiento\Grid.css" />
+    <Content Include="Estilos\Ayuntamiento\Grid\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Grid\contextMenu.gif" />
+    <Content Include="Estilos\Ayuntamiento\Grid\export.gif" />
+    <Content Include="Estilos\Ayuntamiento\Grid\loading_small.gif" />
+    <Content Include="Estilos\Ayuntamiento\Grid\rgDrag.gif" />
+    <Content Include="Estilos\Ayuntamiento\Grid\sprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\ImageEditor.css" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\cambia.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\cancela.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\cerrar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\derivado.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\derivados.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\doc.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\edita.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\escala.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\flecha.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\Priorizar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\rechaza.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\repacta.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\seguimiento-ticket.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\seguimiento.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\solval.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\tipifica.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\valida.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\20x20\Versiones.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Adjuntar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\cerrar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Editar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\escala.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Guardar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Imprimir.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Nota.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\NuevoDerivado.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Priorizar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Rechazar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Repactar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Seguimiento.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\SolVal.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Tipificar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\30x30\Validar.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\agua1.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\background-chocolate.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\background.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\Cancelar.ico" />
+    <Content Include="Estilos\Ayuntamiento\Images\checkbox.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\ciber20aniv.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\csv.jpg" />
+    <Content Include="Estilos\Ayuntamiento\Images\delete.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\Excel.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\favicon_4_48x48x32%282%29.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\favicon_4_48x48x32.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\favicon_5_32x32x32%282%29.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\favicon_5_32x32x32.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\favicon_6_16x16x32%282%29.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\favicon_6_16x16x32.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\fondobarra.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\agua2.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\Guardar.ico" />
+    <Content Include="Estilos\Ayuntamiento\Images\guardarFiltro.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\img_trans.gif" />
+    <Content Include="Estilos\Ayuntamiento\Images\imprimir2.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\led.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\line.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\login-box.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\logo-y-login-box.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\logo.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\logo2.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\Nuevo.ico" />
+    <Content Include="Estilos\Ayuntamiento\Images\pdf2.jpg" />
+    <Content Include="Estilos\Ayuntamiento\Images\Modificar.ico" />
+    <Content Include="Estilos\Ayuntamiento\Images\semaforo.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\sprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\Images\TabStripStates.png" />
+    <Content Include="Estilos\Ayuntamiento\Images\word.jpg" />
+    <Content Include="Estilos\Ayuntamiento\Incidencias.css" />
+    <Content Include="Estilos\Ayuntamiento\index.css" />
+    <Content Include="Estilos\Ayuntamiento\Indicadores.css" />
+    <Content Include="Estilos\Ayuntamiento\Input.css" />
+    <Content Include="Estilos\Ayuntamiento\Input\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Input\sprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\ListBox.css" />
+    <Content Include="Estilos\Ayuntamiento\ListBox\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\ListBox\rlbDropClue.png" />
+    <Content Include="Estilos\Ayuntamiento\ListBox\rlbSprite.png" />
+    <Content Include="Estilos\Ayuntamiento\ListView.css" />
+    <Content Include="Estilos\Ayuntamiento\main.css" />
+    <Content Include="Estilos\Ayuntamiento\Menu.css" />
+    <Content Include="Estilos\Ayuntamiento\Menu\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Menu\rmDropDownStripe.png" />
+    <Content Include="Estilos\Ayuntamiento\Menu\rmExpandArrows.png" />
+    <Content Include="Estilos\Ayuntamiento\Menu\rmRoundedLeft.png" />
+    <Content Include="Estilos\Ayuntamiento\Menu\rmRoundedLeft_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\Menu\rmRoundedRight.png" />
+    <Content Include="Estilos\Ayuntamiento\Menu\rmRoundedRight_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\Notification.css" />
+    <Content Include="Estilos\Ayuntamiento\nuevaincidencia.css" />
+    <Content Include="Estilos\bootstrap-datepicker.css" />
+    <Content Include="Estilos\css\buttons.css" />
+    <Content Include="Estilos\css\Index.css" />
+    <Content Include="Estilos\css\skel-noscript.css" />
+    <Content Include="Estilos\css\style-desktop.css" />
+    <Content Include="Estilos\css\style-mobile.css" />
+    <Content Include="Estilos\css\style-narrow.css" />
+    <Content Include="Estilos\css\style-narrower.css" />
+    <Content Include="Estilos\css\style-wide.css" />
+    <Content Include="Estilos\css\style.css" />
+    <Content Include="Estilos\css\styleblack.css" />
+    <Content Include="Estilos\css\style_L.css" />
+    <Content Include="Estilos\jquery-ui.css" />
+    <Content Include="Estilos\jquery.timepicker.css" />
+    <Content Include="Estilos\Office2007\Images\20x20\Icono proyecto.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\proyecto.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\proyecto1.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\reprogramar.png" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.reveal.js" />
+    <Content Include="Scripts\jquery.timepicker.js" />
+    <Content Include="Tickets\Estilos\style.css" />
+    <Content Include="Tickets\images\01_01.png" />
+    <Content Include="Tickets\images\01_02.png" />
+    <Content Include="Tickets\images\01_03.png" />
+    <Content Include="Tickets\images\01_04.png" />
+    <Content Include="Tickets\images\01_05.png" />
+    <Content Include="Tickets\images\01_06.png" />
+    <Content Include="Tickets\images\01_07.png" />
+    <Content Include="Tickets\images\01_10.png" />
+    <Content Include="Tickets\images\01_11.png" />
+    <Content Include="Tickets\images\01_12.png" />
+    <Content Include="Tickets\images\01_13.png" />
+    <Content Include="Tickets\images\01_16.png" />
+    <Content Include="Tickets\images\01_18.png" />
+    <Content Include="Tickets\images\01_19.png" />
+    <Content Include="Tickets\images\01_24.png" />
+    <Content Include="Tickets\images\01_25.png" />
+    <Content Include="Tickets\images\01_26.png" />
+    <Content Include="Tickets\images\01_27.png" />
+    <Content Include="Tickets\images\01_28.png" />
+    <Content Include="Tickets\images\01_29.png" />
+    <Content Include="Tickets\images\01_30.png" />
+    <Content Include="Tickets\images\01_31.png" />
+    <Content Include="Tickets\images\01_32.png" />
+    <Content Include="Tickets\images\01_33.png" />
+    <Content Include="Tickets\images\01_34.png" />
+    <Content Include="Tickets\images\01_35.png" />
+    <Content Include="Tickets\images\01_36.png" />
+    <Content Include="Tickets\images\01_37.png" />
+    <Content Include="Tickets\images\01_38.png" />
+    <Content Include="Tickets\images\01_39.png" />
+    <Content Include="Tickets\images\01_40.png" />
+    <Content Include="Tickets\images\01_41.png" />
+    <Content Include="Tickets\images\01_42.png" />
+    <Content Include="Tickets\images\02_01.png" />
+    <Content Include="Tickets\images\02_02.png" />
+    <Content Include="Tickets\images\02_03.png" />
+    <Content Include="Tickets\images\02_04.png" />
+    <Content Include="Tickets\images\02_05.png" />
+    <Content Include="Tickets\images\02_06.png" />
+    <Content Include="Tickets\images\02_07.png" />
+    <Content Include="Tickets\images\02_09.png" />
+    <Content Include="Tickets\images\02_12.png" />
+    <Content Include="Tickets\images\02_17.png" />
+    <Content Include="Tickets\images\02_18.png" />
+    <Content Include="Tickets\images\02_20.png" />
+    <Content Include="Tickets\images\02_23.png" />
+    <Content Include="Tickets\images\02_24.png" />
+    <Content Include="Tickets\images\02_25.png" />
+    <Content Include="Tickets\images\03_01.png" />
+    <Content Include="Tickets\images\03_02.png" />
+    <Content Include="Tickets\images\03_04.png" />
+    <Content Include="Tickets\images\03_05.png" />
+    <Content Include="Tickets\images\03_06.png" />
+    <Content Include="Tickets\images\03_07.png" />
+    <Content Include="Tickets\images\03_08.png" />
+    <Content Include="Tickets\images\03_09.png" />
+    <Content Include="Tickets\images\03_11.png" />
+    <Content Include="Tickets\images\03_12.png" />
+    <Content Include="Tickets\images\03_19.png" />
+    <Content Include="Tickets\images\03_22.png" />
+    <Content Include="Tickets\images\03_25.png" />
+    <Content Include="Tickets\images\03_28.png" />
+    <Content Include="Tickets\images\03_35.png" />
+    <Content Include="Tickets\images\03_37.png" />
+    <Content Include="Tickets\images\03_39.png" />
+    <Content Include="Tickets\images\03_40.png" />
+    <Content Include="Tickets\images\03_43.png" />
+    <Content Include="Tickets\images\03_44.png" />
+    <Content Include="Tickets\images\03_45.png" />
+    <Content Include="Tickets\images\03_47.png" />
+    <Content Include="Tickets\images\03_48.png" />
+    <Content Include="Tickets\images\03_51.png" />
+    <Content Include="Tickets\images\03_52.png" />
+    <Content Include="Tickets\images\03_54.png" />
+    <Content Include="Tickets\images\03_57.png" />
+    <Content Include="Tickets\images\03_58.png" />
+    <Content Include="Tickets\images\03_59.png" />
+    <Content Include="Tickets\images\03_60.png" />
+    <Content Include="Tickets\images\03_61.png" />
+    <Content Include="Tickets\images\03_62.png" />
+    <Content Include="Tickets\images\03_63.png" />
+    <Content Include="Tickets\images\03_64.png" />
+    <Content Include="Tickets\images\03_65.png" />
+    <Content Include="Tickets\images\03_66.png" />
+    <Content Include="Tickets\images\03_68.png" />
+    <Content Include="Tickets\images\03_69.png" />
+    <Content Include="Tickets\images\03_70.png" />
+    <Content Include="Tickets\images\03_76.png" />
+    <Content Include="Tickets\images\03_77.png" />
+    <Content Include="Tickets\images\03_78.png" />
+    <Content Include="Tickets\images\03_79.png" />
+    <Content Include="Tickets\images\03_81.png" />
+    <Content Include="Tickets\images\03_82.png" />
+    <Content Include="Tickets\images\04_01.png" />
+    <Content Include="Tickets\images\04_02.png" />
+    <Content Include="Tickets\images\04_03.png" />
+    <Content Include="Tickets\images\04_05.png" />
+    <Content Include="Tickets\images\04_06.png" />
+    <Content Include="Tickets\images\04_07.png" />
+    <Content Include="Tickets\images\04_08.png" />
+    <Content Include="Tickets\images\04_09.png" />
+    <Content Include="Tickets\images\04_15.png" />
+    <Content Include="Tickets\images\04_16.png" />
+    <Content Include="Tickets\images\04_17.png" />
+    <Content Include="Tickets\images\04_18.png" />
+    <Content Include="Tickets\images\04_19.png" />
+    <Content Include="Tickets\images\04_20.png" />
+    <Content Include="Tickets\images\04_21.png" />
+    <Content Include="Tickets\images\04_22.png" />
+    <Content Include="Tickets\images\04_23.png" />
+    <Content Include="Tickets\images\04_25.png" />
+    <Content Include="Tickets\images\04_26.png" />
+    <Content Include="Tickets\images\04_27.png" />
+    <Content Include="Tickets\images\04_28.png" />
+    <Content Include="Tickets\images\04_37.png" />
+    <Content Include="Tickets\images\04_38.png" />
+    <Content Include="Tickets\images\04_39.png" />
+    <Content Include="Tickets\images\04_41.png" />
+    <Content Include="Tickets\images\04_42.png" />
+    <Content Include="Tickets\images\04_43.png" />
+    <Content Include="Tickets\images\04_44.png" />
+    <Content Include="Tickets\images\04_46.png" />
+    <Content Include="Tickets\images\04_47.png" />
+    <Content Include="Tickets\images\04_49.png" />
+    <Content Include="Tickets\images\04_50.png" />
+    <Content Include="Tickets\images\04_51.png" />
+    <Content Include="Tickets\images\04_52.png" />
+    <Content Include="Tickets\images\04_63.png" />
+    <Content Include="Tickets\images\04_64.png" />
+    <Content Include="Tickets\images\04_65.png" />
+    <Content Include="Tickets\images\04_66.png" />
+    <Content Include="Tickets\images\04_67.png" />
+    <Content Include="Tickets\images\04_68.png" />
+    <Content Include="Tickets\images\04_69.png" />
+    <Content Include="Tickets\images\04_70.png" />
+    <Content Include="Tickets\images\04_71.png" />
+    <Content Include="Tickets\images\04_72.png" />
+    <Content Include="Tickets\images\04_73.png" />
+    <Content Include="Tickets\images\04_74.png" />
+    <Content Include="Tickets\images\06_01.png" />
+    <Content Include="Tickets\images\06_02.png" />
+    <Content Include="Tickets\images\06_03.png" />
+    <Content Include="Tickets\images\06_04.png" />
+    <Content Include="Tickets\images\06_05.png" />
+    <Content Include="Tickets\images\06_06.png" />
+    <Content Include="Tickets\images\06_07.png" />
+    <Content Include="Tickets\images\06_08.png" />
+    <Content Include="Tickets\images\06_10.png" />
+    <Content Include="Tickets\images\06_12.png" />
+    <Content Include="Tickets\images\06_15.png" />
+    <Content Include="Tickets\images\06_18.png" />
+    <Content Include="Tickets\images\06_20.png" />
+    <Content Include="Tickets\images\06_23.png" />
+    <Content Include="Tickets\images\06_30.png" />
+    <Content Include="Tickets\images\06_33.png" />
+    <Content Include="Tickets\images\06_36.png" />
+    <Content Include="Tickets\images\06_38.png" />
+    <Content Include="Tickets\images\06_39i.png" />
+    <Content Include="Tickets\images\06_40.png" />
+    <Content Include="Tickets\images\06_41.png" />
+    <Content Include="Tickets\images\06_43.png" />
+    <Content Include="Tickets\images\06_46.png" />
+    <Content Include="Tickets\images\06_49.png" />
+    <Content Include="Tickets\images\06_51.png" />
+    <Content Include="Tickets\images\06_55.png" />
+    <Content Include="Tickets\images\06_58.png" />
+    <Content Include="Tickets\images\06_61.png" />
+    <Content Include="Tickets\images\06_64.png" />
+    <Content Include="Tickets\images\06_66.png" />
+    <Content Include="Tickets\images\06_67.png" />
+    <Content Include="Tickets\images\06_68.png" />
+    <Content Include="Tickets\images\06_69.png" />
+    <Content Include="Tickets\images\06_70.png" />
+    <Content Include="Tickets\images\06_71.png" />
+    <Content Include="Tickets\images\06_72.png" />
+    <Content Include="Tickets\images\06_73.png" />
+    <Content Include="Tickets\images\06_75.png" />
+    <Content Include="Tickets\images\06_76.png" />
+    <Content Include="Tickets\images\06_77.png" />
+    <Content Include="Tickets\images\06_79.png" />
+    <Content Include="Tickets\images\06_82.png" />
+    <Content Include="Tickets\images\06_83.png" />
+    <Content Include="Tickets\images\06_84.png" />
+    <Content Include="Tickets\images\06_85.png" />
+    <Content Include="Tickets\images\06_86.png" />
+    <Content Include="Tickets\images\06_87.png" />
+    <Content Include="Tickets\images\06_88.png" />
+    <Content Include="Tickets\images\06_89.png" />
+    <Content Include="Tickets\images\06_90.png" />
+    <Content Include="Tickets\images\06_91.png" />
+    <Content Include="Tickets\images\06_92.png" />
+    <Content Include="Tickets\images\06_93.png" />
+    <Content Include="Tickets\images\06_94.png" />
+    <Content Include="Tickets\images\06_95.png" />
+    <Content Include="Tickets\images\06_96.png" />
+    <Content Include="Tickets\images\07_01.png" />
+    <Content Include="Tickets\images\07_02.png" />
+    <Content Include="Tickets\images\07_03.png" />
+    <Content Include="Tickets\images\07_04.png" />
+    <Content Include="Tickets\images\07_05.png" />
+    <Content Include="Tickets\images\07_06.png" />
+    <Content Include="Tickets\images\07_09.png" />
+    <Content Include="Tickets\images\07_10.png" />
+    <Content Include="Tickets\images\07_11.png" />
+    <Content Include="Tickets\images\07_12.png" />
+    <Content Include="Tickets\images\07_14.png" />
+    <Content Include="Tickets\images\07_15.png" />
+    <Content Include="Tickets\images\07_16.png" />
+    <Content Include="Tickets\images\07_17.png" />
+    <Content Include="Tickets\images\07_20.png" />
+    <Content Include="Tickets\images\07_21.png" />
+    <Content Include="Tickets\images\07_22.png" />
+    <Content Include="Tickets\images\07_24.png" />
+    <Content Include="Tickets\images\07_28.png" />
+    <Content Include="Tickets\images\07_29.png" />
+    <Content Include="Tickets\images\07_39.png" />
+    <Content Include="Tickets\images\07_40.png" />
+    <Content Include="Tickets\images\07_41.png" />
+    <Content Include="Tickets\images\07_43.png" />
+    <Content Include="Tickets\images\07_48.png" />
+    <Content Include="Tickets\images\07_52.png" />
+    <Content Include="Tickets\images\07_54.png" />
+    <Content Include="Tickets\images\07_74.png" />
+    <Content Include="Tickets\images\07_84.png" />
+    <Content Include="Tickets\images\07_85.png" />
+    <Content Include="Tickets\images\07_86.png" />
+    <Content Include="Tickets\images\attach.png" />
+    <Content Include="Tickets\images\background-chocolate.png" />
+    <Content Include="Tickets\images\background-tinto.png" />
+    <Content Include="Tickets\images\background.gif" />
+    <Content Include="Tickets\images\Cancelar.ico" />
+    <Content Include="Tickets\images\ccare.png" />
+    <Content Include="Tickets\images\cerrar.png" />
+    <Content Include="Tickets\images\checkbox.png" />
+    <Content Include="Tickets\images\ciber20aniv.png" />
+    <Content Include="Tickets\images\cibhor.png" />
+    <Content Include="Tickets\images\csv.jpg" />
+    <Content Include="Tickets\images\delete.png" />
+    <Content Include="Tickets\images\doc.png" />
+    <Content Include="Tickets\images\edit.png" />
+    <Content Include="Tickets\images\Eliminar.ico" />
+    <Content Include="Tickets\images\eliminar.png" />
+    <Content Include="Tickets\images\eliminar2.png" />
+    <Content Include="Tickets\images\espacio.gif" />
+    <Content Include="Tickets\images\Excel.png" />
+    <Content Include="Tickets\images\favicon_4_48x48x32.png" />
+    <Content Include="Tickets\images\favicon_5_32x32x32.png" />
+    <Content Include="Tickets\images\favicon_6_16x16x32.png" />
+    <Content Include="Tickets\images\fondobarra.png" />
+    <Content Include="Tickets\images\Gdl.png" />
+    <Content Include="Tickets\images\Guardar.ico" />
+    <Content Include="Tickets\images\guardarFiltro.png" />
+    <Content Include="Tickets\images\hijos.png" />
+    <Content Include="Tickets\images\img_trans.gif" />
+    <Content Include="Tickets\images\imprimir2.png" />
+    <Content Include="Tickets\images\l06.png" />
+    <Content Include="Tickets\images\led.png" />
+    <Content Include="Tickets\images\line.png" />
+    <Content Include="Tickets\images\lineb.png" />
+    <Content Include="Tickets\images\login-box.png" />
+    <Content Include="Tickets\images\logo-ayuntamiento.png" />
+    <Content Include="Tickets\images\logo-y-login-box.png" />
+    <Content Include="Tickets\images\logo.png" />
+    <Content Include="Tickets\images\logo2.png" />
+    <Content Include="Tickets\images\medio.png" />
+    <Content Include="Tickets\images\Nuevo.ico" />
+    <Content Include="Tickets\images\otrosinmas.png" />
+    <Content Include="Tickets\images\pdf2.jpg" />
+    <Content Include="Tickets\images\Pen.ico" />
+    <Content Include="Tickets\images\repactar.png" />
+    <Content Include="Tickets\images\seguimiento-ticket.png" />
+    <Content Include="Tickets\images\seguimiento-ticket2.png" />
+    <Content Include="Tickets\images\seguimiento.png" />
+    <Content Include="Tickets\images\seguimiento2.png" />
+    <Content Include="Tickets\images\semaforo.png" />
+    <Content Include="Tickets\images\sep1.png" />
+    <Content Include="Tickets\images\sep2.png" />
+    <Content Include="Tickets\images\sprite.gif" />
+    <Content Include="Tickets\images\TabStripStates.png" />
+    <Content Include="Tickets\images\ticket2.png" />
+    <Content Include="Tickets\images\tipificar.png" />
+    <Content Include="Tickets\images\word.jpg" />
+    <Content Include="Tickets\Scripts\jquery.timepicker.js" />
+    <Content Include="System.Net.Json.dll" />
+    <Content Include="Tickets\Scripts\Tickets.js" />
+    <Content Include="Tickets\Estilos\Ayuntamiento\NuevoTicket.css" />
+    <Content Include="Estilos\Ayuntamiento\OrgChart.css" />
+    <Content Include="Estilos\Ayuntamiento\PanelBar.css" />
+    <Content Include="Estilos\Ayuntamiento\Principal.css" />
+    <Content Include="Estilos\Ayuntamiento\Rating.css" />
+    <Content Include="Estilos\Ayuntamiento\RibbonBar.css" />
+    <Content Include="Estilos\Ayuntamiento\Rotator.css" />
+    <Content Include="Estilos\Ayuntamiento\Scheduler.css" />
+    <Content Include="Estilos\Ayuntamiento\Site.css" />
+    <Content Include="Estilos\Ayuntamiento\SiteMap.css" />
+    <Content Include="Estilos\Ayuntamiento\Slider.css" />
+    <Content Include="Estilos\Ayuntamiento\Slider\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\Handles.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\HandlesVertical.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\ItemHorizontalBgr.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\ItemVerticalBgr.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\LargeChangeHorizontal.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\LargeChangeMiddleHorizontal.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\LargelChangeCenterVertical.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\LargelChangeVertical.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\SelectedRegionHorizontalBgr.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\SelectedRegionVerticalBgr.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\SmallChangeCenterVertical.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\SmallChangeHorizontal.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\SmallChangeMiddleHorizontal.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\SmallChangeVertical.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\TrackBgr.gif" />
+    <Content Include="Estilos\Ayuntamiento\Slider\TrackVerticalBgr.gif" />
+    <Content Include="Estilos\Ayuntamiento\SocialShare.css" />
+    <Content Include="Estilos\Ayuntamiento\Splitter.css" />
+    <Content Include="Estilos\Ayuntamiento\Splitter\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Splitter\ExpandCollapseBarsCommands.gif" />
+    <Content Include="Estilos\Ayuntamiento\Splitter\loading.gif" />
+    <Content Include="Tickets\Estilos\Ayuntamiento\TablaTickets.css" />
+    <Content Include="Estilos\Ayuntamiento\TabStrip.css" />
+    <Content Include="Estilos\Ayuntamiento\TabStrip\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\TabStrip\TabStripStates.png" />
+    <Content Include="Estilos\Ayuntamiento\TagCloud.css" />
+    <Content Include="Tickets\Estilos\Ayuntamiento\Ticket.css" />
+    <Content Include="Tickets\Estilos\Ayuntamiento\TicketDetalle.css" />
+    <Content Include="Tickets\Estilos\Ayuntamiento\Tickets.css" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar.css" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbClickedDropArrows.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbClickedUpArrows.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbDropArrows.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbDropDownBg.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbRoundedLeft.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbRoundedLeft_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbRoundedRight.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbRoundedRight_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolBar\rtbUpArrows.png" />
+    <Content Include="Estilos\Ayuntamiento\ToolTip.css" />
+    <Content Include="Estilos\Ayuntamiento\ToolTip\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\ToolTip\Callouts.gif" />
+    <Content Include="Estilos\Ayuntamiento\ToolTip\loading.gif" />
+    <Content Include="Estilos\Ayuntamiento\ToolTip\ToolTipSprites.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList.css" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlBottom.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlBottomRTL.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlMiddle.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlMiddleRTL.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlSingle.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlTop.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\rtlTopRTL.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeList\sprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeView.css" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\BottomLine.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\BottomLine_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\FirstNodeSpan.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\FirstNodeSpan_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\LoadingIcon.gif" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\MiddleLine.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\MiddleLine_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\NodeSpan.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\NodeSpan_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\PlusMinus.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\SingleLine.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\SingleLine_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\TopLine.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\TopLine_rtl.png" />
+    <Content Include="Estilos\Ayuntamiento\TreeView\TriState.png" />
+    <Content Include="Administracion\Estilos\Ayuntamiento\Clases.css" />
+    <Content Include="Estilos\Ayuntamiento\Upload.css" />
+    <Content Include="Estilos\Ayuntamiento\Upload\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Upload\ruProgress.gif" />
+    <Content Include="Estilos\Ayuntamiento\Upload\ruSprite.png" />
+    <Content Include="Estilos\Ayuntamiento\Upload\sprite.gif" />
+    <Content Include="Estilos\Ayuntamiento\Window.css" />
+    <Content Include="Estilos\Ayuntamiento\Window\Ayuntamiento.gif" />
+    <Content Include="Estilos\Ayuntamiento\Window\CommandButtonSprites.gif" />
+    <Content Include="Estilos\Ayuntamiento\Window\Icon.gif" />
+    <Content Include="Estilos\Ayuntamiento\Window\loading.gif" />
+    <Content Include="Estilos\Ayuntamiento\Window\loading_small.gif" />
+    <Content Include="Estilos\base.css" />
+    <Content Include="Estilos\CustomerCare.css" />
+    <Content Include="Estilos\Extra.css" />
+    <Content Include="Estilos\Hipocrates\admin.css" />
+    <Content Include="Estilos\Hipocrates\base.css" />
+    <Content Include="Estilos\Hipocrates\Button.css" />
+    <Content Include="Estilos\Hipocrates\Button\ButtonSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Button\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Button\ToggleSprite.gif" />
+    <Content Include="Estilos\Hipocrates\Calendar.css" />
+    <Content Include="Estilos\Hipocrates\Calendar\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Calendar\sprite.gif" />
+    <Content Include="Estilos\Hipocrates\ColorPicker.css" />
+    <Content Include="Estilos\Hipocrates\ColorPicker\ColorPickerSprites.png" />
+    <Content Include="Estilos\Hipocrates\ColorPicker\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\ColorPicker\rcpVerticalSprites.png" />
+    <Content Include="Estilos\Hipocrates\ColorPicker\rcpVerticalSpritesIE6.png" />
+    <Content Include="Estilos\Hipocrates\ComboBox.css" />
+    <Content Include="Estilos\Hipocrates\ComboBox\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\ComboBox\rcbSprite.png" />
+    <Content Include="Estilos\Hipocrates\ComboBox\rcbSpriteIE6.png" />
+    <Content Include="Estilos\Hipocrates\Common\CommandSpritesLight.png" />
+    <Content Include="Estilos\Hipocrates\Common\CommandSpritesLightIE6.gif" />
+    <Content Include="Estilos\Hipocrates\Common\CommonIcons.gif" />
+    <Content Include="Estilos\Hipocrates\Common\loading.gif" />
+    <Content Include="Estilos\Hipocrates\Common\loading_small.gif" />
+    <Content Include="Estilos\Hipocrates\CustomerCare.css" />
+    <Content Include="Estilos\Hipocrates\DataPage.css" />
+    <Content Include="Estilos\Hipocrates\DataPager\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Dock.css" />
+    <Content Include="Estilos\Hipocrates\Dock\CommandSprite.gif" />
+    <Content Include="Estilos\Hipocrates\Dock\CommandSprite.png" />
+    <Content Include="Estilos\Hipocrates\Dock\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Dock\HorizontalSprite.png" />
+    <Content Include="Estilos\Hipocrates\Dock\VerticalSprite.gif" />
+    <Content Include="Estilos\Hipocrates\Editor.css" />
+    <Content Include="Estilos\Hipocrates\Editor\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Editor\ToolBarSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Editor\ToolbarVerticalSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Extra.css" />
+    <Content Include="Estilos\Hipocrates\FileExplorer.css" />
+    <Content Include="Estilos\Hipocrates\FileExplorer\FileExplorerToolbarSprites.png" />
+    <Content Include="Estilos\Hipocrates\FileExplorer\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Filter.css" />
+    <Content Include="Estilos\Hipocrates\Filter\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\rfLast-rtl.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\rfLast.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\rfLine-rtl.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\rfLine.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\rfMiddle-rtl.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\rfMiddle.gif" />
+    <Content Include="Estilos\Hipocrates\Filter\sprite.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator.css" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\ButtonSprites.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\CheckBoxSprites.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\ComboSprites.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\FieldsetBgr.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\RadioButtonSprites.gif" />
+    <Content Include="Estilos\Hipocrates\FormDecorator\RadioButtonSprites.png" />
+    <Content Include="Estilos\Hipocrates\Grid.css" />
+    <Content Include="Estilos\Hipocrates\Grid\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Grid\rgDrag.gif" />
+    <Content Include="Estilos\Hipocrates\Grid\sprite.gif" />
+    <Content Include="Estilos\Hipocrates\Grid\sprite.png" />
+    <Content Include="Estilos\Hipocrates\ImageEditor.css" />
+    <Content Include="Estilos\Hipocrates\ImageEditor\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\ImageEditor\ImageEditorTools.png" />
+    <Content Include="Estilos\Hipocrates\ImageEditor\ImageEditorToolsIE6.gif" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\cambia.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\cancela.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\cerrar.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\derivado.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\derivados.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\doc.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\edita.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\escala.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\flecha.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\Priorizar.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\rechaza.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\repacta.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\seguimiento-ticket.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\seguimiento.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\solval.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\tipifica.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\valida.png" />
+    <Content Include="Estilos\Hipocrates\Images\20x20\Versiones.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Adjuntar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\cerrar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Editar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Escalar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Guardar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Imprimir.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Nota.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\NuevoDerivado.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Priorizar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Rechazar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Repactar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Seguimiento.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\SolVal.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Tipificar.png" />
+    <Content Include="Estilos\Hipocrates\Images\30x30\Validar.png" />
+    <Content Include="Estilos\Hipocrates\Images\agua1.png" />
+    <Content Include="Estilos\Hipocrates\Images\agua2.png" />
+    <Content Include="Estilos\Hipocrates\Images\background-chocolate.png" />
+    <Content Include="Estilos\Hipocrates\Images\background-tinto.png" />
+    <Content Include="Estilos\Hipocrates\Images\background.gif" />
+    <Content Include="Estilos\Hipocrates\Images\background.png" />
+    <Content Include="Estilos\Hipocrates\Images\Cancelar.ico" />
+    <Content Include="Estilos\Hipocrates\Images\checkbox.png" />
+    <Content Include="Estilos\Hipocrates\Images\csv.jpg" />
+    <Content Include="Estilos\Hipocrates\Images\delete.png" />
+    <Content Include="Estilos\Hipocrates\Images\Excel.png" />
+    <Content Include="Estilos\Hipocrates\Images\fondobarra.png" />
+    <Content Include="Estilos\Hipocrates\Images\Gdl.png" />
+    <Content Include="Estilos\Hipocrates\Images\Guardar.ico" />
+    <Content Include="Estilos\Hipocrates\Images\guardarFiltro.png" />
+    <Content Include="Estilos\Hipocrates\Images\imprimir2.png" />
+    <Content Include="Estilos\Hipocrates\Images\led.png" />
+    <Content Include="Estilos\Hipocrates\Images\line.png" />
+    <Content Include="Estilos\Hipocrates\Images\login-box.png" />
+    <Content Include="Estilos\Hipocrates\Images\logo-ayuntamiento.png" />
+    <Content Include="Estilos\Hipocrates\Images\logo-y-login-box.png" />
+    <Content Include="Estilos\Hipocrates\Images\logo.png" />
+    <Content Include="Estilos\Hipocrates\Images\logo2.png" />
+    <Content Include="Estilos\Hipocrates\Images\mail\footer-bottom.gif" />
+    <Content Include="Estilos\Hipocrates\Images\mail\footer-top.gif" />
+    <Content Include="Estilos\Hipocrates\Images\mail\logo.png" />
+    <Content Include="Estilos\Hipocrates\Images\mail\promo_02.jpg" />
+    <Content Include="Estilos\Hipocrates\Images\mail\title01.gif" />
+    <Content Include="Estilos\Hipocrates\Images\medicoNet.ico" />
+    <Content Include="Estilos\Hipocrates\Images\Nuevo.ico" />
+    <Content Include="Estilos\Hipocrates\Images\pdf2.jpg" />
+    <Content Include="Estilos\Hipocrates\Images\Modificar.ico" />
+    <Content Include="Estilos\Hipocrates\Images\semaforo.png" />
+    <Content Include="Estilos\Hipocrates\Images\sprite.gif" />
+    <Content Include="Estilos\Hipocrates\Images\TabStripStates.png" />
+    <Content Include="Estilos\Hipocrates\Images\word.jpg" />
+    <Content Include="Estilos\Hipocrates\Incidencias.css" />
+    <Content Include="Estilos\Hipocrates\index.css" />
+    <Content Include="Estilos\Hipocrates\Indicadores.css" />
+    <Content Include="Estilos\Hipocrates\Input.css" />
+    <Content Include="Estilos\Hipocrates\Input\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Input\sprite.gif" />
+    <Content Include="Estilos\Hipocrates\ListBox.css" />
+    <Content Include="Estilos\Hipocrates\ListBox\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbButtonDisabled.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbButtonDisabledIE6.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbButtonHover.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbButtonHoverIE6.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbButtonNormal.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbButtonNormalIE6.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbDropClue.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbHeaderFooter.png" />
+    <Content Include="Estilos\Hipocrates\ListBox\rlbSprite.png" />
+    <Content Include="Estilos\Hipocrates\ListView.css" />
+    <Content Include="Estilos\Hipocrates\ListView\drag.gif" />
+    <Content Include="Estilos\Hipocrates\ListView\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Menu.css" />
+    <Content Include="Estilos\Hipocrates\Menu\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Menu\rmRootExpand.png" />
+    <Content Include="Estilos\Hipocrates\Menu\rmRoundedLeft.png" />
+    <Content Include="Estilos\Hipocrates\Menu\rmRoundedLeft_rtl.png" />
+    <Content Include="Estilos\Hipocrates\Menu\rmRoundedRight.png" />
+    <Content Include="Estilos\Hipocrates\Menu\rmRoundedRight_rtl.png" />
+    <Content Include="Estilos\Hipocrates\Menu\rmSprite.png" />
+    <Content Include="Estilos\Hipocrates\Menu\rmVSprite.png" />
+    <Content Include="Estilos\Hipocrates\Notification.css" />
+    <Content Include="Estilos\Hipocrates\Notification\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Notification\NotificationSprite.png" />
+    <Content Include="Estilos\Hipocrates\nuevaincidencia.css" />
+    <Content Include="Tickets\Estilos\Hipocrates\NuevoTicket.css" />
+    <Content Include="Estilos\Hipocrates\OrgChart.css" />
+    <Content Include="Estilos\Hipocrates\OrgChart\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\OrgChart\rocItemTileLight.png" />
+    <Content Include="Estilos\Hipocrates\OrgChart\rocLinesLight.png" />
+    <Content Include="Estilos\Hipocrates\PanelBar.css" />
+    <Content Include="Estilos\Hipocrates\PanelBar\Expandable.png" />
+    <Content Include="Estilos\Hipocrates\PanelBar\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\PanelBar\RootItemBg.png" />
+    <Content Include="Estilos\Hipocrates\PanelBar\SubItemStates.png" />
+    <Content Include="Estilos\Hipocrates\Principal.css" />
+    <Content Include="Estilos\Hipocrates\Rating.css" />
+    <Content Include="Estilos\Hipocrates\Rating\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Rating\Sprite.gif" />
+    <Content Include="Estilos\Hipocrates\Rating\Sprite.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar.css" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbApplicationTabSprite.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbApplicationTabSprite_IE6.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbArrowSprite.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbContextualTabSmoothTile.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbGradients.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbTabSprite.png" />
+    <Content Include="Estilos\Hipocrates\RibbonBar\rrbTabSprite_IE6.png" />
+    <Content Include="Estilos\Hipocrates\Rotator.css" />
+    <Content Include="Estilos\Hipocrates\Rotator\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Rotator\RotatorButtons.gif" />
+    <Content Include="Estilos\Hipocrates\Scheduler.css" />
+    <Content Include="Estilos\Hipocrates\Scheduler\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsAppointmentBg.png" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsInlineEditHSprite.png" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsInlineEditVSprite.png" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsModalBg.png" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsModalBgIE6.png" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsModalTitleBg.png" />
+    <Content Include="Estilos\Hipocrates\Scheduler\rsSprites.png" />
+    <Content Include="Estilos\Hipocrates\Site.css" />
+    <Content Include="Estilos\Hipocrates\SiteMap.css" />
+    <Content Include="Estilos\Hipocrates\SiteMap\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\SiteMap\NodeLines.png" />
+    <Content Include="Estilos\Hipocrates\SiteMap\rsmHover.png" />
+    <Content Include="Estilos\Hipocrates\Slider.css" />
+    <Content Include="Estilos\Hipocrates\Slider\DragHandle.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\DragHandleDown.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\DragVerticalHandle.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\DragVerticalHandleRight.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\Handles.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\HandlesVertical.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\ItemHorizontalBgr.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\ItemVerticalBgr.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\LargeChangeHorizontal.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\LargeChangeMiddleHorizontal.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\LargelChangeCenterVertical.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\LargelChangeVertical.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\SelectedRegionHorizontalBgr.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\SelectedRegionVerticalBgr.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\SmallChangeCenterVertical.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\SmallChangeHorizontal.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\SmallChangeMiddleHorizontal.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\SmallChangeVertical.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\TrackBgr.gif" />
+    <Content Include="Estilos\Hipocrates\Slider\TrackVerticalBgr.gif" />
+    <Content Include="Estilos\Hipocrates\SocialShare.css" />
+    <Content Include="Estilos\Hipocrates\SocialShare\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Splitter.css" />
+    <Content Include="Estilos\Hipocrates\Splitter\ExpandCollapseBarsCommands.gif" />
+    <Content Include="Estilos\Hipocrates\Splitter\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Splitter\ResizeBarHorizontalSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Splitter\ResizeBarVerticalSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Splitter\slideTitleContainerBgr.gif" />
+    <Content Include="Tickets\Estilos\Hipocrates\TablaTickets.css" />
+    <Content Include="Estilos\Hipocrates\TabStrip.css" />
+    <Content Include="Estilos\Hipocrates\TabStrip\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\TabStrip\Level2Bg.png" />
+    <Content Include="Estilos\Hipocrates\TabStrip\TabStripStates.png" />
+    <Content Include="Estilos\Hipocrates\TabStrip\TabStripVStates.png" />
+    <Content Include="Estilos\Hipocrates\TagCloud.css" />
+    <Content Include="Estilos\Hipocrates\TagCloud\Hipocrates.gif" />
+    <Content Include="Tickets\Estilos\Hipocrates\Ticket.css" />
+    <Content Include="Tickets\Estilos\Hipocrates\TicketDetalle.css" />
+    <Content Include="Tickets\Estilos\Hipocrates\Tickets.css" />
+    <Content Include="Estilos\Hipocrates\ToolBar.css" />
+    <Content Include="Estilos\Hipocrates\ToolBar\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbActiveBg.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbClickedBg.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbControlBg.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbDropArrows.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbDropDownBg.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbDropDownHover.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbHoverBg.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbRoundedLeft.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbRoundedLeft_rtl.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbRoundedRight.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbRoundedRight_rtl.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbUpArrows.png" />
+    <Content Include="Estilos\Hipocrates\ToolBar\rtbVerticalControlBg.png" />
+    <Content Include="Estilos\Hipocrates\ToolTip.css" />
+    <Content Include="Estilos\Hipocrates\ToolTip\Callouts.gif" />
+    <Content Include="Estilos\Hipocrates\ToolTip\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\ToolTip\ToolTipSprites.png" />
+    <Content Include="Estilos\Hipocrates\ToolTip\ToolTipVerticalSprites.png" />
+    <Content Include="Estilos\Hipocrates\TreeList.css" />
+    <Content Include="Estilos\Hipocrates\TreeList\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlBottom.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlBottomRTL.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlMiddle.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlMiddleRTL.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlSingle.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlTop.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\rtlTopRTL.gif" />
+    <Content Include="Estilos\Hipocrates\TreeList\sprite.gif" />
+    <Content Include="Estilos\Hipocrates\TreeView.css" />
+    <Content Include="Estilos\Hipocrates\TreeView\BottomLine.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\BottomLine_rtl.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\FirstNodeSpan.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\FirstNodeSpan_rtl.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\TreeView\ItemHoveredBg.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\ItemSelectedBg.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\LoadingIcon.gif" />
+    <Content Include="Estilos\Hipocrates\TreeView\MiddleLine.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\MiddleLine_rtl.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\NodeSpan.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\NodeSpan_rtl.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\PlusMinus.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\SingleLine.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\SingleLine_rtl.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\TopLine.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\TopLine_rtl.png" />
+    <Content Include="Estilos\Hipocrates\TreeView\TriState.png" />
+    <Content Include="Estilos\Hipocrates\Unidades.css" />
+    <Content Include="Estilos\Hipocrates\Upload.css" />
+    <Content Include="Estilos\Hipocrates\Upload\AsyncProgress.png" />
+    <Content Include="Estilos\Hipocrates\Upload\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Upload\ruProgress.gif" />
+    <Content Include="Estilos\Hipocrates\Upload\ruSprite.png" />
+    <Content Include="Estilos\Hipocrates\Window.css" />
+    <Content Include="Estilos\Hipocrates\Window\CommandButtonSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Window\Hipocrates.gif" />
+    <Content Include="Estilos\Hipocrates\Window\WindowHorizontalSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Window\WindowHorizontalSprites.png" />
+    <Content Include="Estilos\Hipocrates\Window\WindowVerticalSprites.gif" />
+    <Content Include="Estilos\Hipocrates\Window\WindowVerticalSprites.png" />
+    <Content Include="Estilos\index.css" />
+    <Content Include="Tickets\Estilos\NuevoTicket.css" />
+    <Content Include="Acciones\Estilos\Office2007\Accion.css" />
+    <Content Include="Estilos\Office2007\base.css" />
+    <Content Include="Estilos\Office2007\CustomerCare.css" />
+    <Content Include="Estilos\Office2007\Extra.css" />
+    <Content Include="Estilos\Office2007\Images\20x20\cambia.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\cancela.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\cerrar.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\derivado.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\derivados.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\doc.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\edita.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\escala.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\flecha.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\Priorizar.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\rechaza.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\repacta.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\seguimiento-ticket.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\seguimiento.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\solval.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\tipifica.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\valida.png" />
+    <Content Include="Estilos\Office2007\Images\20x20\Versiones.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Adjuntar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Cerrar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Editar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Escalar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Guardar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Imprimir.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Nota.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\NuevoDerivado.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Priorizar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Rechazar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Repactar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Seguimiento.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\SolVal.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Tipificar.png" />
+    <Content Include="Estilos\Office2007\Images\30x30\Validar.png" />
+    <Content Include="Estilos\Office2007\Images\agua1.png" />
+    <Content Include="Estilos\Office2007\Images\agua2.png" />
+    <Content Include="Estilos\Office2007\Images\background.png" />
+    <Content Include="Estilos\Office2007\Images\Cancelar.ico" />
+    <Content Include="Estilos\Office2007\Images\checkbox.png" />
+    <Content Include="Estilos\Office2007\Images\CSV.jpg" />
+    <Content Include="Estilos\Office2007\Images\delete.png" />
+    <Content Include="Estilos\Office2007\Images\Excel.png" />
+    <Content Include="Estilos\Office2007\Images\fondobarra.png" />
+    <Content Include="Estilos\Office2007\Images\Gdl.png" />
+    <Content Include="Estilos\Office2007\Images\Guardar.ico" />
+    <Content Include="Estilos\Office2007\Images\guardarFiltro.png" />
+    <Content Include="Estilos\Office2007\Images\imprimir2.png" />
+    <Content Include="Estilos\Office2007\Images\led.png" />
+    <Content Include="Estilos\Office2007\Images\line.png" />
+    <Content Include="Estilos\Office2007\Images\login-box.png" />
+    <Content Include="Estilos\Office2007\Images\logo-ayuntamiento.png" />
+    <Content Include="Estilos\Office2007\Images\logo-y-login-box.png" />
+    <Content Include="Estilos\Office2007\Images\logo.png" />
+    <Content Include="Estilos\Office2007\Images\logo2.png" />
+    <Content Include="Estilos\Office2007\Images\mail\footer-bottom.gif" />
+    <Content Include="Estilos\Office2007\Images\mail\footer-top.gif" />
+    <Content Include="Estilos\Office2007\Images\mail\logo.png" />
+    <Content Include="Estilos\Office2007\Images\mail\promo_02.jpg" />
+    <Content Include="Estilos\Office2007\Images\mail\title01.gif" />
+    <Content Include="Estilos\Office2007\Images\Nuevo.ico" />
+    <Content Include="Estilos\Office2007\Images\PDF.jpg" />
+    <Content Include="Estilos\Office2007\Images\Modificar.ico" />
+    <Content Include="Estilos\Office2007\Images\semaforo.png" />
+    <Content Include="Estilos\Office2007\Images\sprite.gif" />
+    <Content Include="Estilos\Office2007\Images\TabStripStates.png" />
+    <Content Include="Estilos\Office2007\Images\word.jpg" />
+    <Content Include="Estilos\Office2007\index.css" />
+    <Content Include="Tickets\Estilos\Office2007\NuevoTicket.css" />
+    <Content Include="Tickets\Estilos\Office2007\TablaTickets.css" />
+    <Content Include="Tickets\Estilos\Office2007\Ticket.css" />
+    <Content Include="Tickets\Estilos\Office2007\TicketDetalle.css" />
+    <Content Include="Tickets\Estilos\Office2007\Tickets.css" />
+    <Content Include="Estilos\Office2007\Unidades.css" />
+    <Content Include="Tickets\Estilos\TablaTickets.css" />
+    <Content Include="Tickets\Estilos\Ticket.css" />
+    <Content Include="Tickets\Estilos\TicketDetalle.css" />
+    <Content Include="Tickets\Estilos\Tickets.css" />
+    <Content Include="Administracion\Estilos\Clases.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Acciones\Formato.aspx" />
+    <Content Include="Administracion\Formatos.aspx" />
+    <Content Include="html\mail.html" />
+    <Content Include="Ayuntamiento\nueva.aspx" />
+    <Content Include="Estadistica\HistoricoZonas.aspx" />
+    <Content Include="Acciones\Repactar.aspx" />
+    <Content Include="Estadistica\Reportes.aspx" />
+    <Content Include="Acciones\Scripts\Accion.js" />
+    <Content Include="Administracion\Scripts\DatosExtra.js" />
+    <Content Include="Scripts\Extra.js" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Estilos\img_trans.gif" />
+    <Content Include="Tickets\Scripts\TicketDetalle.js" />
+    <Content Include="Administracion\Scripts\Clases.js" />
+    <Content Include="Administracion\Tipificaciones.aspx" />
+    <Content Include="Administracion\Clases.aspx" />
+    <Content Include="Estadistica\ComparativoTipificaciones.aspx" />
+    <Content Include="Administracion\Unidades2.aspx" />
+    <Content Include="Administracion\Perfiles.aspx" />
+    <Content Include="Tickets\TicketDetalle.aspx" />
+    <Content Include="Tickets\Tickets.aspx" />
+    <Content Include="Administracion\NuevoFormato.aspx" />
+    <Content Include="Tickets\Scripts\Ticket.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Acciones\seguimiento.aspx" />
+    <Content Include="Tickets\TablaTickets.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="Indicadores.aspx" />
+    <Content Include="Tickets\NuevoTicket.aspx" />
+    <Content Include="Tickets\Scripts\TablaTickets.js" />
+    <Content Include="Servicio.asmx" />
+    <Content Include="Tickets\Scripts\NuevoTicket.js" />
+    <Content Include="Salir.aspx" />
+    <Content Include="Scripts\CustomerCare.js" />
+    <Content Include="Scripts\Indicadores.js" />
+    <Content Include="Scripts\Fondo.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Tickets\VisorTemporal.aspx" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="CustomerCare.aspx" />
+    <Content Include="Tickets\Ticket.aspx" />
+    <Content Include="Estadistica\ComparativoSitios.aspx" />
+    <Content Include="x64\liblept168.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libtesseract302.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\liblept168.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libtesseract302.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acciones\Accion.aspx.cs">
+      <DependentUpon>Accion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\Accion.aspx.designer.cs">
+      <DependentUpon>Accion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\Adjuntar.aspx.cs">
+      <DependentUpon>Adjuntar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\Adjuntar.aspx.designer.cs">
+      <DependentUpon>Adjuntar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\Adjunto.aspx.cs">
+      <DependentUpon>Adjunto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\Adjunto.aspx.designer.cs">
+      <DependentUpon>Adjunto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\cerrar.aspx.cs">
+      <DependentUpon>cerrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\cerrar.aspx.designer.cs">
+      <DependentUpon>cerrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\Reprogramar.aspx.cs">
+      <DependentUpon>Reprogramar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\Reprogramar.aspx.designer.cs">
+      <DependentUpon>Reprogramar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Programadas.aspx.cs">
+      <DependentUpon>Programadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Programadas.aspx.designer.cs">
+      <DependentUpon>Programadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Unidades.aspx.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Unidades.aspx.designer.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuntamiento\ciu.aspx.cs">
+      <DependentUpon>ciu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayuntamiento\ciu.aspx.designer.cs">
+      <DependentUpon>ciu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Clase.cs" />
+    <Compile Include="Clases\CustomerCareResource.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\DAO\Class1.cs" />
+    <Compile Include="Clases\DAO\DAOTickets.cs" />
+    <Compile Include="Clases\DAO\direccionTicket.cs" />
+    <Compile Include="Clases\Evento.cs" />
+    <Compile Include="Clases\Perfil.cs" />
+    <Compile Include="Clases\Solicitante.cs" />
+    <Compile Include="Clases\Tipificación.cs" />
+    <Compile Include="Clases\Utilidades.cs" />
+    <Compile Include="Clases\Otras.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Estadistica\ComparativoConclusiones.aspx.cs">
+      <DependentUpon>ComparativoConclusiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoConclusiones.aspx.designer.cs">
+      <DependentUpon>ComparativoConclusiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoEstados.aspx.cs">
+      <DependentUpon>ComparativoEstados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoEstados.aspx.designer.cs">
+      <DependentUpon>ComparativoEstados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoZonas.aspx.cs">
+      <DependentUpon>ComparativoZonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoZonas.aspx.designer.cs">
+      <DependentUpon>ComparativoZonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\DAO\DAO.cs" />
+    <Compile Include="Administracion\DatosExtra.aspx.cs">
+      <DependentUpon>DatosExtra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\DatosExtra.aspx.designer.cs">
+      <DependentUpon>DatosExtra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\Formato.aspx.cs">
+      <DependentUpon>Formato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\Formato.aspx.designer.cs">
+      <DependentUpon>Formato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Formatos.aspx.cs">
+      <DependentUpon>Formatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Formatos.aspx.designer.cs">
+      <DependentUpon>Formatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuntamiento\nueva.aspx.cs">
+      <DependentUpon>nueva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayuntamiento\nueva.aspx.designer.cs">
+      <DependentUpon>nueva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica\HistoricoZonas.aspx.cs">
+      <DependentUpon>HistoricoZonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\HistoricoZonas.aspx.designer.cs">
+      <DependentUpon>HistoricoZonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\Repactar.aspx.cs">
+      <DependentUpon>Repactar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\Repactar.aspx.designer.cs">
+      <DependentUpon>Repactar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RoutoTelecom.cs" />
+    <Compile Include="Tickets\TicketDetalle.aspx.cs">
+      <DependentUpon>TicketDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\TicketDetalle.aspx.designer.cs">
+      <DependentUpon>TicketDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Tickets.aspx.cs">
+      <DependentUpon>Tickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\Tickets.aspx.designer.cs">
+      <DependentUpon>Tickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\NuevoFormato.aspx.cs">
+      <DependentUpon>NuevoFormato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\NuevoFormato.aspx.designer.cs">
+      <DependentUpon>NuevoFormato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\seguimiento.aspx.cs">
+      <DependentUpon>seguimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones\seguimiento.aspx.designer.cs">
+      <DependentUpon>seguimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\TablaTickets.aspx.cs">
+      <DependentUpon>TablaTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\TablaTickets.aspx.designer.cs">
+      <DependentUpon>TablaTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indicadores.aspx.cs">
+      <DependentUpon>Indicadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indicadores.aspx.designer.cs">
+      <DependentUpon>Indicadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\NuevoTicket.aspx.cs">
+      <DependentUpon>NuevoTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\NuevoTicket.aspx.designer.cs">
+      <DependentUpon>NuevoTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomerCare.aspx.cs">
+      <DependentUpon>CustomerCare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCare.aspx.designer.cs">
+      <DependentUpon>CustomerCare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salir.aspx.cs">
+      <DependentUpon>Salir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salir.aspx.designer.cs">
+      <DependentUpon>Salir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio.asmx.cs">
+      <DependentUpon>Servicio.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticket.aspx.cs">
+      <DependentUpon>Ticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticket.aspx.designer.cs">
+      <DependentUpon>Ticket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Ticket.cs" />
+    <Compile Include="Administracion\Tipificaciones.aspx.cs">
+      <DependentUpon>Tipificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Tipificaciones.aspx.designer.cs">
+      <DependentUpon>Tipificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Clases.aspx.cs">
+      <DependentUpon>Clases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Clases.aspx.designer.cs">
+      <DependentUpon>Clases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Unidades2.aspx.cs">
+      <DependentUpon>Unidades2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Unidades2.aspx.designer.cs">
+      <DependentUpon>Unidades2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Perfiles.aspx.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Perfiles.aspx.designer.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoSitios.aspx.cs">
+      <DependentUpon>ComparativoSitios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoSitios.aspx.designer.cs">
+      <DependentUpon>ComparativoSitios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoTipificaciones.aspx.cs">
+      <DependentUpon>ComparativoTipificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadistica\ComparativoTipificaciones.aspx.designer.cs">
+      <DependentUpon>ComparativoTipificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\VisorTemporal.aspx.cs">
+      <DependentUpon>VisorTemporal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\VisorTemporal.aspx.designer.cs">
+      <DependentUpon>VisorTemporal.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adjuntos\" />
+    <Folder Include="Encuestas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\RadSpell\de-DE.tdf" />
+    <None Include="App_Data\RadSpell\en-US.tdf" />
+    <None Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="packages.config" />
+    <Content Include="Web.Pruebas.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Producción.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>4583</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

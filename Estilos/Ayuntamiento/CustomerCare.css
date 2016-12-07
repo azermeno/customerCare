@@ -1,0 +1,140 @@
+﻿iframe
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+
+html, form
+{
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    overflow:hidden;
+}
+
+body   
+{
+    font-size: .80em;
+    font-family: Verdana; 
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+}
+
+div
+{
+    height:100%;
+}
+
+.btNvaInc
+{
+    position:fixed;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align:center;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    width: 100%;
+	overflow:visible;
+	/* 
+	position: fixed; 
+	top: 80px;text-align:left;
+    top: 95px;
+    left: 1px;*/
+    left:0;
+    height: 100%;
+}
+
+.contenido
+{
+    position: relative;
+    width: 1024px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    height: 630px;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    /*text-align: left;
+    width: auto;*/
+    margin: 10px 0px 0px 4px;
+    position: absolute;
+    top:0px;
+    height:auto;
+    left:0px;
+}
+
+.botones
+{
+    height: 35px;
+    position: absolute;
+    top:0px;
+    text-align:center;
+    width: 100%;
+    
+}
+
+.loginDisplay
+{
+    font-size: 12px;
+    /*display: block;*/
+    text-align: right;
+    padding: 1px;
+    color: #fff;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height:auto;
+}
+.loginDisplay a
+{
+    color: #fff;
+    top: -10px;
+    position: relative;
+}
+.loginDisplay span
+{
+    top: -10px;
+    position: relative;
+}
+.aspNetHidden
+{
+    height:auto;
+}
+/*#rmpPrincipalPanel
+{
+    height:100%;
+}*/
+#rtsPrincipalPanel
+{
+    display:block;
+    height:26px;
+}

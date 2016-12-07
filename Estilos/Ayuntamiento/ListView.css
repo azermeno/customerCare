@@ -1,0 +1,173 @@
+/*Telerik RadListView Office2010Black Skin*/
+
+/*global*/
+
+.RadListView_Hipocrates
+{
+	border:1px solid #8cb068;
+	background:#ffffff;
+	color:#333333;
+	font:12px/16px "segoe ui",arial,sans-serif;
+}
+
+.RadListView_Hipocrates .rlvA
+{
+	/*background:#f6ffed;*/
+}
+
+.RadListView_Hipocrates .rlvISel
+{
+	background:#b0ff61;
+}
+
+.RadListView_Hipocrates .rlvIEdit
+{
+	background:#d6ffad;
+}
+
+/*buttons*/
+
+.RadListView_Hipocrates .rlvBAdd,
+.RadListView_Hipocrates .rlvBUpdate,
+.RadListView_Hipocrates .rlvBCancel,
+.RadListView_Hipocrates .rlvBDel,
+.RadListView_Hipocrates .rlvBEdit
+{
+	background-image:url('Grid/sprite.png');
+}
+
+* html .RadListView_Hipocrates .rlvBAdd,
+* html .RadListView_Hipocrates .rlvBUpdate,
+* html .RadListView_Hipocrates .rlvBCancel,
+* html .RadListView_Hipocrates .rlvBDel,
+* html .RadListView_Hipocrates .rlvBEdit
+{
+	background-image:url('Grid/sprite.gif');
+}
+
+.RadListView_Hipocrates .rlvBAdd
+{
+	background-position:0 -1648px;
+	width:22px;
+	height:22px;
+}
+.RadListView_Hipocrates .rlvBUpdate
+{
+	background-position:0 -1798px;
+	width:23px;
+	height:22px;
+}
+.RadListView_Hipocrates .rlvBCancel
+{
+	background-position:0 -1848px;
+	width:23px;
+	height:22px;
+}
+.RadListView_Hipocrates .rlvBSel
+{
+	background-image:url('FormDecorator/CheckBoxSprites.gif');
+	background-position:-2px -2px;
+}
+.RadListView_Hipocrates .rlvISel .rlvBSel
+{
+	background-position:-2px -422px;
+}
+.RadListView_Hipocrates .rlvBDel
+{
+	background-position:0 -1750px;
+}
+.RadListView_Hipocrates .rlvBEdit
+{
+	background-position:0 -1700px;
+}
+
+.RadListView_Hipocrates .rlvDrag
+{
+	background-image:url('ListView/drag.gif');
+	background-position:center center;
+}
+
+/*flow*/
+
+.RadListView_Hipocrates div.rlvI,
+.RadListView_Hipocrates div.rlvA,
+.RadListView_Hipocrates div.rlvIEmpty,
+.RadListView_Hipocrates div.rlvIEdit
+{
+	border-color:#dbe6d1;
+}
+
+.RadListView_Hipocrates div.rlvISel
+{
+	border-color:#9aff36;
+}
+
+/*grid*/
+
+.RadListView_Hipocrates tr.rlvHeader th
+{
+	border:solid #dbe6d1;
+	border-width:0 0 1px 1px;
+	background:0 -2300px repeat-x #dbf2c4 url('Grid/sprite.png');
+	color:#000000;
+}
+
+.RadListView_Hipocrates tr.rlvI td,
+.RadListView_Hipocrates tr.rlvA td,
+.RadListView_Hipocrates tr.rlvISel td,
+.RadListView_Hipocrates tr.rlvIEmpty td,
+.RadListView_Hipocrates tr.rlvIEdit td
+{
+	border:1px solid;
+	border-top:0;
+	border-right:0;
+}
+
+.RadListView_Hipocrates tr.rlvI td,
+.RadListView_Hipocrates tr.rlvA td,
+.RadListView_Hipocrates tr.rlvIEmpty td,
+.RadListView_Hipocrates tr.rlvIEdit td
+{
+	border-color:#dbe6d1;
+}
+
+.RadListView_Hipocrates tr.rlvISel td
+{
+	border-color:#9aff36;
+}
+
+/*single row*/
+
+.RadListView_Hipocrates td.rlvI,
+.RadListView_Hipocrates td.rlvA,
+.RadListView_Hipocrates td.rlvISel,
+.RadListView_Hipocrates td.rlvIEmpty,
+.RadListView_Hipocrates td.rlvIEdit
+{
+	border:0;
+	border-right:1px solid #dbe6d1;
+}
+
+.RadListView_Hipocrates td.rlvISel
+{
+	border-color:#9aff36;
+}
+
+/*floated*/
+
+.RadListView_Hipocrates .rlvFloated .rlvI,
+.RadListView_Hipocrates .rlvFloated .rlvA,
+.RadListView_Hipocrates .rlvFloated .rlvISel,
+.RadListView_Hipocrates .rlvFloated .rlvIEdit
+{
+	border-color:#8cb068;
+}
+
+/*edit*/
+
+.RadListView_Hipocrates .rlvInput
+{
+	border-color:#c4deab;
+	background:#ffffff;
+	color:#000000;
+}

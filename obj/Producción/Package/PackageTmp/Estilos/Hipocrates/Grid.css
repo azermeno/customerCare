@@ -1,0 +1,780 @@
+/*Telerik RadGrid Office2010Black Skin*/
+
+/*global*/
+
+.RadGrid_Hipocrates
+{
+    border:1px solid #1c1c1c;
+    background:#e6e6e6;
+    color:#000000;
+}
+
+.RadGrid_Hipocrates,
+.RadGrid_Hipocrates .rgMasterTable,
+.RadGrid_Hipocrates .rgDetailTable,
+.RadGrid_Hipocrates .rgGroupPanel table,
+.RadGrid_Hipocrates .rgCommandRow table,
+.RadGrid_Hipocrates .rgEditForm table,
+.RadGrid_Hipocrates .rgPager table,
+.GridToolTip_Hipocrates
+{
+    font:12px/16px "segoe ui",arial,sans-serif;
+}
+
+.RadGrid_Hipocrates .rgHeader:first-child,
+.RadGrid_Hipocrates th.rgResizeCol:first-child,
+.RadGrid_Hipocrates .rgFilterRow>td:first-child,
+.RadGrid_Hipocrates .rgRow>td:first-child,
+.RadGrid_Hipocrates .rgAltRow>td:first-child
+{
+	border-left-width:0;
+	padding-left:8px;
+}
+
+.RadGrid_Hipocrates .rgAdd,
+.RadGrid_Hipocrates .rgRefresh,
+.RadGrid_Hipocrates .rgEdit,
+.RadGrid_Hipocrates .rgDel,
+.RadGrid_Hipocrates .rgFilter,
+.RadGrid_Hipocrates .rgPagePrev,
+.RadGrid_Hipocrates .rgPageNext,
+.RadGrid_Hipocrates .rgPageFirst,
+.RadGrid_Hipocrates .rgPageLast,
+.RadGrid_Hipocrates .rgExpand,
+.RadGrid_Hipocrates .rgCollapse,
+.RadGrid_Hipocrates .rgSortAsc,
+.RadGrid_Hipocrates .rgSortDesc,
+.RadGrid_Hipocrates .rgUpdate,
+.RadGrid_Hipocrates .rgCancel,
+.RadGrid_Hipocrates .rgUngroup,
+.RadGrid_Hipocrates .rgExpXLS,
+.RadGrid_Hipocrates .rgExpDOC,
+.RadGrid_Hipocrates .rgExpPDF,
+.RadGrid_Hipocrates .rgExpCSV
+{
+	background-image:url('Grid/sprite.png');
+}
+
+/* Fix, IE6 does not support PNG alpha channel, so we use gifs for the command sprites instead */
+* html .RadGrid_Hipocrates .rgAdd,
+* html .RadGrid_Hipocrates .rgRefresh,
+* html .RadGrid_Hipocrates .rgEdit,
+* html .RadGrid_Hipocrates .rgDel,
+* html .RadGrid_Hipocrates .rgFilter,
+* html .RadGrid_Hipocrates .rgPagePrev,
+* html .RadGrid_Hipocrates .rgPageNext,
+* html .RadGrid_Hipocrates .rgPageFirst,
+* html .RadGrid_Hipocrates .rgPageLast,
+* html .RadGrid_Hipocrates .rgExpand,
+* html .RadGrid_Hipocrates .rgCollapse,
+* html .RadGrid_Hipocrates .rgSortAsc,
+* html .RadGrid_Hipocrates .rgSortDesc,
+* html .RadGrid_Hipocrates .rgUpdate,
+* html .RadGrid_Hipocrates .rgCancel,
+* html .RadGrid_Hipocrates .rgUngroup,
+* html .RadGrid_Hipocrates .rgExpXLS,
+* html .RadGrid_Hipocrates .rgExpDOC,
+* html .RadGrid_Hipocrates .rgExpPDF,
+* html .RadGrid_Hipocrates .rgExpCSV,
+* html .RadGrid_Hipocrates .rgHeaderDiv,
+* html .RadGrid_Hipocrates .rgHeader,
+* html .RadGrid_Hipocrates th.rgResizeCol,
+* html .RadGrid_Hipocrates .rgSelectedRow,
+* html .RadGrid_Hipocrates .rgSelectedRow.rgHoveredRow
+* html .RadGrid_Hipocrates .rgActiveRow,
+* html .RadGrid_Hipocrates .rgHoveredRow,
+* html .RadGrid_Hipocrates .rgFooterDiv,
+* html .RadGrid_Hipocrates .rgFooter,
+* html .RadGrid_Hipocrates .rgPager,
+* html .RadGrid_Hipocrates .rgPager .rgPagerButton,
+* html .RadGrid_Hipocrates .rgNumPart a:hover,
+* html .RadGrid_Hipocrates .rgNumPart a:hover span,
+* html .RadGrid_Hipocrates .rgNumPart a.rgCurrentPage,
+* html .RadGrid_Hipocrates .rgNumPart a.rgCurrentPage span,
+* html .GridReorderTop_Hipocrates,
+* html .GridReorderBottom_Hipocrates,
+* html .RadGrid_Hipocrates .rgGroupItem,
+* html .RadGrid_Hipocrates .rgCommandRow
+{
+	background-image:url('Grid/sprite.gif');
+}
+
+/*header*/
+
+.RadGrid_Hipocrates .rgHeaderDiv
+{
+	background:#999999 0 -8050px repeat-x url('Grid/sprite.png');
+}
+.rgTwoLines .rgHeaderDiv
+{
+	background-position:0 -7550px;
+}
+
+.RadGrid_Hipocrates .rgHeader,
+.RadGrid_Hipocrates th.rgResizeCol
+{
+	border:solid #454545;
+	border-width:0 0 1px 1px;
+	background:#6b6b6b 0 -2300px repeat-x url('Grid/sprite.png');
+}
+
+.RadGrid_Hipocrates th.rgSorted
+{
+	border-bottom-color:#79c230;
+	background-color:#b8ff70;
+	background-position:0 -2600px;
+}
+
+.RadGrid_Hipocrates .rgHeader,
+.RadGrid_Hipocrates .rgHeader a
+{
+    color:#242424;
+}
+
+.RadGrid_Hipocrates th.rgSorted,
+.RadGrid_Hipocrates th.rgSorted a
+{
+    color:#000000;
+}
+
+/*rows*/
+
+.RadGrid_Hipocrates .rgRow td,
+.RadGrid_Hipocrates .rgAltRow td,
+.RadGrid_Hipocrates .rgEditRow td,
+.RadGrid_Hipocrates .rgFooter td
+{
+	border-style:solid;
+	border-width:0 0 1px 1px;
+}
+
+.RadGrid_Hipocrates .rgRow td,
+.RadGrid_Hipocrates .rgAltRow td
+{
+	border-color:#dbe6d1;
+}
+
+.RadGrid_Hipocrates .rgRow .rgSorted,
+.RadGrid_Hipocrates .rgAltRow .rgSorted
+{
+	background-color:#ebebeb;
+}
+
+.RadGrid_Hipocrates .rgSelectedRow .rgSorted,
+.RadGrid_Hipocrates .rgActiveRow .rgSorted,
+.RadGrid_Hipocrates .rgHoveredRow .rgSorted,
+.RadGrid_Hipocrates .rgEditRow .rgSorted
+{
+	background-color:transparent;
+}
+
+.RadGrid_Hipocrates .rgRow a,
+.RadGrid_Hipocrates .rgAltRow a,
+.RadGrid_Hipocrates .rgEditRow a,
+.RadGrid_Hipocrates .rgFooter a,
+.RadGrid_Hipocrates .rgEditForm a
+{
+	color:#000000;
+}
+
+.RadGrid_Hipocrates .rgSelectedRow
+{
+    background:#a9f75c 0 -3900px repeat-x url('Grid/sprite.png');
+}
+
+.RadGrid_Hipocrates .rgSelectedRow > td
+{
+    background-image:url('Grid/sprite.png');
+    background-position:0 100%;
+    background-repeat:repeat-x;
+}
+
+.RadGrid_Hipocrates .rgSelectedRow.rgHoveredRow
+{
+    background:#dafcb8 0 -3200px repeat-x url('Grid/sprite.png');
+}
+
+.RadGrid_Hipocrates .rgSelectedRow.rgHoveredRow td
+{
+    background-image:none;
+}
+
+*+html .RadGrid_Hipocrates .rgSelectedRow .rgSorted{background-color:#b0ff61}
+* html .RadGrid_Hipocrates .rgSelectedRow .rgSorted{background-color:#b0ff61}
+
+.RadGrid_Hipocrates .rgActiveRow,
+.RadGrid_Hipocrates .rgHoveredRow
+{
+    background:#e6ffcc 0 -2900px repeat-x url('Grid/sprite.png');
+}
+
+*+html .RadGrid_Hipocrates .rgActiveRow .rgSorted,
+*+html .RadGrid_Hipocrates .rgHoveredRow .rgSorted{background-color:#f6ffed}
+* html .RadGrid_Hipocrates .rgActiveRow .rgSorted,
+* html .RadGrid_Hipocrates .rgHoveredRow .rgSorted{background-color:#f6ffed}
+
+.RadGrid_Hipocrates .rgEditRow
+{
+	background:#ebebeb;
+}
+
+*+html .RadGrid_Hipocrates .rgEditRow .rgSorted{background-color:#d6ffad}
+* html .RadGrid_Hipocrates .rgEditRow .rgSorted{background-color:#d6ffad}
+
+.RadGrid_Hipocrates .rgSelectedRow td,
+.RadGrid_Hipocrates .rgActiveRow td,
+.RadGrid_Hipocrates .rgHoveredRow td,
+.RadGrid_Hipocrates .rgEditRow td
+{
+	border-left-width:0;
+	padding-left:8px;
+}
+
+.RadGrid_Hipocrates .rgSelectedRow td
+{
+	border-bottom-color:#9aff36;
+}
+
+.RadGrid_Hipocrates .rgActiveRow td,
+.RadGrid_Hipocrates .rgHoveredRow td,
+.RadGrid_Hipocrates .rgEditRow td
+{
+	border-bottom-color:#dbe6d1;
+}
+
+.RadGrid_Hipocrates .rgDrag
+{
+	background-image:url('Grid/rgDrag.gif');
+}
+
+/*footer*/
+
+.RadGrid_Hipocrates .rgFooterDiv,
+.RadGrid_Hipocrates .rgFooter
+{
+	background:#3b3b3b 0 -6500px repeat-x url('Grid/sprite.png');
+}
+
+.RadGrid_Hipocrates .rgFooter td
+{
+	border-width:1px 0 0;
+	border-color:#2b2b2b #ffffff #ffffff;
+	padding-left:8px;
+	color:#e3e3e3;
+}
+
+/*status*/
+
+.RadGrid_Hipocrates .rgPager .rgStatus
+{
+	border:1px solid;
+	border-width:1px 1px 0 0;
+	border-color:#2b2b2b #262626;
+}
+
+.RadGrid_Hipocrates .rgStatus div
+{
+	background-image:url('Common/loading_small.gif');
+}
+
+/*pager*/
+
+.RadGrid_Hipocrates .rgPager
+{
+	background:#333333 0 -6999px repeat-x url('Grid/sprite.png');
+	color:#e3e3e3;
+}
+
+.RadGrid_Hipocrates td.rgPagerCell
+{
+	border-top:1px solid #2b2b2b;
+	border-left:1px solid #575757;
+}
+
+.RadGrid_Hipocrates .rgInfoPart
+{
+	color:#e3e3e3;
+}
+
+.RadGrid_Hipocrates .rgPageFirst
+{
+	margin:0 3px 0 0;
+	background-position:0 -550px;
+}
+.RadGrid_Hipocrates .rgPageFirst:hover
+{
+	background-position:0 -600px;
+}
+.RadGrid_Hipocrates .rgPagePrev
+{
+	margin:0 3px 0 0;
+	background-position:0 -700px;
+}
+.RadGrid_Hipocrates .rgPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.RadGrid_Hipocrates .rgPageNext
+{
+	margin:0 0 0 3px;
+	background-position:0 -850px;
+}
+.RadGrid_Hipocrates .rgPageNext:hover
+{
+	background-position:0 -900px;
+}
+.RadGrid_Hipocrates .rgPageLast
+{
+	margin:0 0 0 3px;
+	background-position:0 -1000px;
+}
+.RadGrid_Hipocrates .rgPageLast:hover
+{
+	background-position:0 -1050px;
+}
+
+.RadGrid_Hipocrates .rgPager .rgPagerButton
+{
+	border-color:#262626;
+	background:#707070 repeat-x 0 -1900px url('Grid/sprite.png');
+	color:#000000;
+	font:12px/12px "segoe ui",arial,sans-serif;
+}
+
+.RadGrid_Hipocrates .rgNumPart a:hover,
+.RadGrid_Hipocrates .rgNumPart a:hover span,
+.RadGrid_Hipocrates .rgNumPart a.rgCurrentPage,
+.RadGrid_Hipocrates .rgNumPart a.rgCurrentPage span
+{
+	background:no-repeat url('Grid/sprite.png');
+}
+
+.RadGrid_Hipocrates .rgNumPart a
+{
+	color:#e3e3e3;
+}
+
+.RadGrid_Hipocrates .rgNumPart a:hover
+{
+	background-position:100% -1250px;
+	color: #000000;
+}
+
+.RadGrid_Hipocrates .rgNumPart a:hover span
+{
+	background-position:0 -1150px;
+}
+
+.RadGrid_Hipocrates .rgNumPart a.rgCurrentPage,
+.RadGrid_Hipocrates .rgNumPart a.rgCurrentPage:hover
+{
+	background-position:100% -1450px;
+	color: #ffffff;
+}
+
+.RadGrid_Hipocrates .rgNumPart a.rgCurrentPage span,
+.RadGrid_Hipocrates .rgNumPart a.rgCurrentPage:hover span
+{
+	background-position:0 -1350px;
+}
+
+/*sorting, reordering*/
+
+.RadGrid_Hipocrates .rgHeader .rgSortAsc
+{
+	background-position:3px -147px;
+	height:10px;
+}
+
+.RadGrid_Hipocrates .rgHeader .rgSortDesc
+{
+	background-position:3px -197px;
+	height:10px;
+}
+
+.GridReorderTop_Hipocrates,
+.GridReorderBottom_Hipocrates
+{
+	height:12px;
+	background:0 0 no-repeat url('Grid/sprite.png');
+}
+
+.GridReorderBottom_Hipocrates
+{
+	background-position:0 -50px;
+}
+
+/*filtering*/
+
+.RadGrid_Hipocrates .rgFilterRow
+{
+	background:#999999;
+}
+
+.RadGrid_Hipocrates .rgFilterRow td
+{
+    border-style:solid;
+    border-color:#4a4a4a #7d7d7d;
+    border-width:0 0 1px 1px;
+}
+
+.RadGrid_Hipocrates .rgFilter
+{
+	background-position:0 -300px;
+}
+
+.RadGrid_Hipocrates .rgFilter:hover
+{
+	background-position:0 -350px;
+}
+
+.RadGrid_Hipocrates .rgFilterActive,
+.RadGrid_Hipocrates .rgFilterActive:hover
+{
+	background-position:0 -400px;
+}
+
+.RadGrid_Hipocrates .rgFilterBox
+{
+	border-color:#919191;
+	font:12px "segoe ui",arial,sans-serif;
+	color:#000000;
+}
+
+/*filter context menu*/
+
+.RadMenu_Hipocrates .rgHCMClear,
+.RadMenu_Hipocrates .rgHCMFilter
+{
+	border-color:#c1dba7 #9dbd7d #bed9a3;
+	background:#f2fce8 center -23px repeat-x url('FormDecorator/ButtonSprites.gif');
+	color:#376e00;
+	font-family:"segoe ui",arial,sans-serif;
+}
+
+.RadMenu_Hipocrates .rgHCMClear:hover,
+.RadMenu_Hipocrates .rgHCMFilter:hover
+{
+	border-color:#b7d996 #97ba73 #b2c79d;
+	background-position:center -67px;
+	background-color:#c4ff8a;
+	color:#000000;
+}
+
+/*context menu*/
+
+.GridContextMenu_Hipocrates .rmLeftImage
+{
+	background-image:url('Common/contextMenu.gif');
+}
+
+.GridContextMenu_Hipocrates .rgHCMSortAsc .rmLeftImage
+{
+	background-position:0 0;
+}
+
+.GridContextMenu_Hipocrates .rgHCMSortDesc .rmLeftImage
+{
+	background-position:0 -40px;
+}
+
+.GridContextMenu_Hipocrates .rgHCMUnsort .rmLeftImage
+{
+	background-position:0 -80px;
+}
+
+.GridContextMenu_Hipocrates .rgHCMGroup .rmLeftImage
+{
+	background-position:0 -120px;
+}
+
+.GridContextMenu_Hipocrates .rgHCMUngroup .rmLeftImage
+{
+	background-position:0 -160px;
+}
+
+.GridContextMenu_Hipocrates .rgHCMCols .rmLeftImage
+{
+	background-position:0 -200px;
+}
+
+.GridContextMenu_Hipocrates .rgHCMFilter .rmLeftImage
+{
+	background-position:0 -240px;
+}
+
+.GridContextMenu_Hipocrates .rgHCMUnfilter .rmLeftImage
+{
+	background-position:0 -280px;
+}
+
+/*grouping*/
+
+.RadGrid_Hipocrates .rgGroupPanel
+{
+	border:0;
+	background:#a6a6a6;
+}
+
+.RadGrid_Hipocrates .rgGroupPanel td
+{
+	border:0;
+	padding:3px 4px;
+	vertical-align:middle;
+}
+
+.RadGrid_Hipocrates .rgGroupPanel td td
+{
+	padding:0;
+}
+
+.RadGrid_Hipocrates .rgGroupPanel .rgSortAsc
+{
+	background-position:4px -144px;
+}
+
+.RadGrid_Hipocrates .rgGroupPanel .rgSortDesc
+{
+	background-position:4px -194px;
+}
+
+.RadGrid_Hipocrates .rgUngroup
+{
+	background-position:0 -7500px;
+}
+
+.RadGrid_Hipocrates .rgGroupItem
+{
+	border:1px solid #262626;
+	background:#707070 0 -1900px repeat-x url('Grid/sprite.png');
+	color:#000000;
+}
+
+.RadGrid_Hipocrates .rgGroupHeader
+{
+    background:#707070;
+    font-size:1.1em;
+    line-height:21px;
+    color:#e3e3e3;
+}
+
+.RadGrid_Hipocrates .rgGroupHeader td
+{
+	border-bottom:1px solid #4a4a4a;
+    padding-left:8px;
+}
+
+.RadGrid_Hipocrates td.rgGroupCol,
+.RadGrid_Hipocrates td.rgExpandCol
+{
+	background:#707070;
+	border-color:#707070;
+}
+
+.RadGrid_Hipocrates .rgGroupHeader .rgExpand
+{
+	background-position:5px -495px;
+}
+
+.RadGrid_Hipocrates .rgGroupHeader .rgCollapse
+{
+	background-position:3px -93px;
+}
+
+/*editing*/
+
+.RadGrid_Hipocrates .rgEditForm
+{
+	border-bottom:1px solid #1c1c1c;
+}
+
+.RadGrid_Hipocrates .rgUpdate
+{
+	background-position:0 -1800px;
+}
+
+.RadGrid_Hipocrates .rgCancel
+{
+	background-position:0 -1850px;
+}
+
+/*hierarchy*/
+
+.RadGrid_Hipocrates .rgDetailTable
+{
+	border-color:#8cb068;
+}
+
+.RadGrid_Hipocrates .rgExpand
+{
+	background-position:5px -496px;
+}
+
+.RadGrid_Hipocrates .rgCollapse
+{
+	background-position:3px -94px;
+}
+
+/*command row*/
+
+.RadGrid_Hipocrates .rgCommandRow
+{
+	background:#949494 0 -2099px repeat-x url('Grid/sprite.png');
+	color:#333333;
+}
+
+.RadGrid_Hipocrates .rgCommandCell
+{
+	border:0;
+	padding:0;
+}
+
+.RadGrid_Hipocrates thead .rgCommandCell
+{
+	border-bottom:1px solid #454545;
+}
+
+.RadGrid_Hipocrates .rgCommandTable td
+{
+	border:0;
+	padding:2px 7px;
+}
+
+.RadGrid_Hipocrates .rgCommandRow a
+{
+	color:#242424;
+	text-decoration:none;
+}
+
+.RadGrid_Hipocrates .rgAdd
+{
+	margin-right:3px;
+	background-position:0 -1650px;
+}
+
+.RadGrid_Hipocrates .rgRefresh
+{
+	margin-right:3px;
+	background-position:0 -1600px;
+}
+
+.RadGrid_Hipocrates .rgEdit
+{
+	background-position:0 -1700px;
+}
+
+.RadGrid_Hipocrates .rgDel
+{
+	background-position:0 -1750px;
+}
+
+.RadGrid_Hipocrates .rgExpXLS,
+.RadGrid_Hipocrates .rgExpDOC,
+.RadGrid_Hipocrates .rgExpPDF,
+.RadGrid_Hipocrates .rgExpCSV
+{
+	background-image:url('Common/export.gif');
+}
+
+.RadGrid_Hipocrates .rgExpXLS
+{
+	background-position:0 0;
+}
+.RadGrid_Hipocrates .rgExpDOC
+{
+	background-position:0 -50px;
+}
+.RadGrid_Hipocrates .rgExpPDF
+{
+	background-position:0 -100px;
+}
+.RadGrid_Hipocrates .rgExpCSV
+{
+	background-position:0 -150px;
+}
+
+/*multirow select*/
+
+.GridRowSelector_Hipocrates
+{
+	background:#376e00;
+}
+
+/*row drag n drop*/
+
+.GridItemDropIndicator_Hipocrates
+{
+    border-top:1px dashed #376e00;
+}
+
+/*tooltip*/
+
+.GridToolTip_Hipocrates
+{
+	border:1px solid #8cb861;
+	padding:3px;
+	background:#e5f2d8;
+	color:#333333;
+}
+
+/*rtl*/
+
+.RadGridRTL_Hipocrates .rgHeader:first-child,
+.RadGridRTL_Hipocrates th.rgResizeCol:first-child,
+.RadGridRTL_Hipocrates .rgFilterRow>td:first-child,
+.RadGridRTL_Hipocrates .rgRow>td:first-child,
+.RadGridRTL_Hipocrates .rgAltRow>td:first-child
+{
+	border-left-width:1px;
+	padding-left:7px;
+}
+
+.RadGridRTL_Hipocrates .rgPageFirst
+{
+	background-position:0 -1000px;
+}
+.RadGridRTL_Hipocrates .rgPageFirst:hover
+{
+	background-position:0 -1050px;
+}
+.RadGridRTL_Hipocrates .rgPagePrev
+{
+	margin:0 0 0 3px;
+	background-position:0 -850px;
+}
+.RadGridRTL_Hipocrates .rgPagePrev:hover
+{
+	background-position:0 -900px;
+}
+.RadGridRTL_Hipocrates .rgPageNext
+{
+	margin:0 3px 0 0;
+	background-position:0 -700px;
+}
+.RadGridRTL_Hipocrates .rgPageNext:hover
+{
+	background-position:0 -750px;
+}
+.RadGridRTL_Hipocrates .rgPageLast
+{
+	background-position:0 -550px;
+}
+.RadGridRTL_Hipocrates .rgPageLast:hover
+{
+	background-position:0 -600px;
+}
+
+.RadGridRTL_Hipocrates .rgGroupHeader .rgExpand
+{
+	background-position:-20px -495px;
+}
+
+.RadGridRTL_Hipocrates .rgExpand
+{
+	background-position:-20px -496px;
+}
+
+.RadGridRTL_Hipocrates .rgGroupHeader .rgCollapse
+{
+	background-position:-20px -93px;
+}

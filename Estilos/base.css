@@ -1,0 +1,27 @@
+﻿@media screen 
+{
+    iframe
+    {
+        margin:0px;
+        padding:0px;
+        border:0px;
+    }
+
+    html, form
+    {
+        height: 100%;
+        margin:0px;
+        padding:0px;
+        border:0px;
+        overflow:hidden;
+    }
+
+    body 
+    {
+        font-size: .80em;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+    }
+}

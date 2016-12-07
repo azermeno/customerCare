@@ -1,0 +1,48 @@
+.RadDock_Hipocrates .rdMiddle .rdLeft,
+.RadDock_Hipocrates .rdMiddle .rdRight
+{
+	background-image: url('Dock/VerticalSprite.gif');
+}
+
+.RadDock_Hipocrates .rdTop .rdLeft,
+.RadDock_Hipocrates .rdTop .rdRight,
+.RadDock_Hipocrates .rdTop .rdCenter,
+.RadDock_Hipocrates .rdBottom .rdLeft,
+.RadDock_Hipocrates .rdBottom .rdRight,
+.RadDock_Hipocrates .rdBottom .rdCenter
+{
+	background-image: url('Dock/HorizontalSprite.png');
+}
+
+.RadDock_Hipocrates .rdCenter .rdCommands a span
+{
+	background-image: url('Dock/CommandSprite.png');
+}
+
+*html .RadDock_Hipocrates .rdCenter .rdCommands a span
+{
+	background-image: url('Dock/CommandSprite.gif');
+}
+
+.RadDock_Hipocrates .rdMiddle .rdCenter,
+.RadDock_Hipocrates .rdBottom .rdCenter
+{
+	background-color: #4a4a4a;
+}
+
+.RadDock_Hipocrates .rdContent
+{
+	background-color: #4a4a4a;
+	color: #e3e3e3;
+}
+
+.RadDock_Hipocrates .rdTitleBar em
+{
+	color: #ffffff;
+}
+
+.RadDockZone_Hipocrates
+{
+	border-color: #4a4a4a;
+}
+

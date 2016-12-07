@@ -1,0 +1,279 @@
+.RadListBox_Hipocrates .rlbGroup
+{
+	border: 1px solid #99a390;
+	background: #ffffff;
+}
+
+.RadListBox_Hipocrates .rlbTemplateContainer
+{
+	border-color: #99a390;
+}
+
+.RadListBox_Hipocrates .rlbText,
+.RadListBox_Hipocrates .rlbItem,
+.RadListBox_Hipocrates .rlbButtonText,
+.RadListBox_Hipocrates .rlbEmptyMessage
+{
+	font-size: 12px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: #000000;
+}
+
+.RadListBox_Hipocrates .rlbHighlight
+{
+	color: #000000;
+}
+
+.RadListBox_Hipocrates .rlbText,
+.RadListBox_Hipocrates .rlbItem
+{
+	line-height: 18px;
+}
+
+.RadListBox_Hipocrates .rlbGroup .rlbHovered
+{
+	background: #baff75;
+	color: #000000;
+}
+
+.RadListBox_Hipocrates .rlbGroup .rlbSelected
+{
+	background: #9cf740;
+	color: #000000;
+}
+
+.RadListBox_Hipocrates .rlbDisabled .rlbText
+{
+	color: #000000;
+}
+
+.RadListBox_Hipocrates .rlbDisabled .rlbImage
+{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.RadListBox_Hipocrates .rlbHeader,
+.RadListBox_Hipocrates .rlbFooter
+{
+	background-image: url('ListBox/rlbHeaderFooter.png');
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	background-color: #f4f5f2;
+}
+
+.RadListBox_Hipocrates .rlbFooter
+{
+	background-position: 0 -200px;
+	background-color: #ffffff;
+}
+
+.RadListBox_Hipocrates .rlbDropClue
+{
+	background-image: url('ListBox/rlbDropClue.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	left: -12px;
+	width: 12px;
+}
+
+.RadListBox_Hipocrates .rlbGroup .rlbDropClueAbove
+{
+	border-top-style: dotted;
+	border-top-color: #8f8f8f;
+}
+
+.RadListBox_Hipocrates .rlbGroup .rlbDropClueBelow
+{
+	border-bottom-style: dotted;
+	border-bottom-color: #8f8f8f;
+}
+
+.RadListBox_Hipocrates .rlbGroup .rlbSelected.rlbDropClueAbove,
+.RadListBox_Hipocrates .rlbGroup .rlbHovered.rlbDropClueAbove,
+.RadListBox_Hipocrates .rlbGroup .rlbSelected.rlbDropClueBelow,
+.RadListBox_Hipocrates .rlbGroup .rlbHovered.rlbDropClueBelow
+{
+	border-color: #8f8f8f;
+}
+
+/* Buttons normal state vertical layout*/
+.RadListBox_Hipocrates .rlbButtonText
+{
+	background: transparent url('ListBox/rlbSprite.png') no-repeat;
+}
+
+.RadListBox_Hipocrates .rlbButton:hover .rlbButtonTL,
+.RadListBox_Hipocrates .rlbButton:hover .rlbButtonTR,
+.RadListBox_Hipocrates .rlbButton:hover .rlbButtonBL,
+.RadListBox_Hipocrates .rlbButton:hover .rlbButtonBR
+{
+	background-image: url('ListBox/rlbButtonHover.png');
+}
+
+* html .RadListBox_Hipocrates .rlbButton:hover .rlbButtonTL,
+* html .RadListBox_Hipocrates .rlbButton:hover .rlbButtonTR,
+* html .RadListBox_Hipocrates .rlbButton:hover .rlbButtonBL,
+* html .RadListBox_Hipocrates .rlbButton:hover .rlbButtonBR
+{
+	background-image: url('ListBox/rlbButtonHoverIE6.png');
+}
+
+.RadListBox_Hipocrates .rlbButton .rlbButtonTL,
+.RadListBox_Hipocrates .rlbButton .rlbButtonTR,
+.RadListBox_Hipocrates .rlbButton .rlbButtonBL,
+.RadListBox_Hipocrates .rlbButton .rlbButtonBR
+{
+	background-image: url('ListBox/rlbButtonNormal.png');
+}
+
+* html .RadListBox_Hipocrates .rlbButton .rlbButtonTL,
+* html .RadListBox_Hipocrates .rlbButton .rlbButtonTR,
+* html .RadListBox_Hipocrates .rlbButton .rlbButtonBL,
+* html .RadListBox_Hipocrates .rlbButton .rlbButtonBR
+{
+	background-image: url('ListBox/rlbButtonNormalIE6.png');
+}
+
+.RadListBox_Hipocrates .rlbDisabled .rlbButtonTL,
+.RadListBox_Hipocrates .rlbDisabled .rlbButtonTR,
+.RadListBox_Hipocrates .rlbDisabled .rlbButtonBL,
+.RadListBox_Hipocrates .rlbDisabled .rlbButtonBR,
+.RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonTL,
+.RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonTR,
+.RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonBL,
+.RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonBR
+{
+	background-image: url('ListBox/rlbButtonDisabled.png');
+}
+
+* html .RadListBox_Hipocrates .rlbDisabled .rlbButtonTL,
+* html .RadListBox_Hipocrates .rlbDisabled .rlbButtonTR,
+* html .RadListBox_Hipocrates .rlbDisabled .rlbButtonBL,
+* html .RadListBox_Hipocrates .rlbDisabled .rlbButtonBR,
+* html .RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonTL,
+* html .RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonTR,
+* html .RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonBL,
+* html .RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonBR
+{
+	background-image: url('ListBox/rlbButtonDisabledIE6.png');
+}
+
+.RadListBox_Hipocrates .rlbButton:hover .rlbButtonText 
+{ 
+	color: #000000; 
+}
+
+.RadListBox_Hipocrates .rlbDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbDisabled:hover .rlbButtonText
+{
+	color: #8c8c8c;
+}
+
+.RadListBox_Hipocrates .rlbMoveUp .rlbButtonText { background-position: 0 0; }
+.RadListBox_Hipocrates .rlbMoveUp:hover .rlbButtonText { background-position: -400px 0; }
+.RadListBox_Hipocrates .rlbMoveUpDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbMoveUpDisabled:hover .rlbButtonText { background-position: -200px 0; }
+
+.RadListBox_Hipocrates .rlbMoveDown .rlbButtonText { background-position: 0 -25px; }
+.RadListBox_Hipocrates .rlbMoveDown:hover .rlbButtonText { background-position: -400px -25px; }
+.RadListBox_Hipocrates .rlbMoveDownDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbMoveDownDisabled:hover .rlbButtonText { background-position: -200px -25px; }
+
+.RadListBox_Hipocrates .rlbMoveToTop .rlbButtonText { background-position: 0 -275px; }
+.RadListBox_Hipocrates .rlbMoveToTop:hover .rlbButtonText { background-position: -400px -275px; }
+.RadListBox_Hipocrates .rlbMoveToTopDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbMoveToTopDisabled:hover .rlbButtonText { background-position: -200px -275px; }
+
+.RadListBox_Hipocrates .rlbMoveToBottom .rlbButtonText { background-position: 0 -300px; }
+.RadListBox_Hipocrates .rlbMoveToBottom:hover .rlbButtonText { background-position: -400px -300px; }
+.RadListBox_Hipocrates .rlbMoveToBottomDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbMoveToBottomDisabled:hover .rlbButtonText { background-position: -200px -300px; }
+
+.RadListBox_Hipocrates .rlbDelete .rlbButtonText { background-position: 0 -50px; }
+.RadListBox_Hipocrates .rlbDelete:hover .rlbButtonText { background-position: -400px -50px; }
+.RadListBox_Hipocrates .rlbDeleteDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbDeleteDisabled:hover .rlbButtonText { background-position: -200px -50px; }
+
+
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferFrom .rlbButtonText { background-position: 0 -100px; }
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferFrom .rlbButtonText { background-position: 0 -75px; }
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferFrom:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferTo:hover .rlbButtonText { background-position: -400px -100px; }
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferTo:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferFrom:hover .rlbButtonText { background-position: -400px -75px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferFromDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferToDisabled:hover .rlbButtonText { background-position: -200px -100px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferToDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferFromDisabled:hover .rlbButtonText { background-position: -200px -75px; }
+
+
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllFrom .rlbButtonText { background-position: 0 -150px; }
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllFrom .rlbButtonText { background-position: 0 -125px; }
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllFrom:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllTo:hover .rlbButtonText { background-position: -400px -150px; }
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllTo:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllFrom:hover .rlbButtonText { background-position: -400px -125px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllFromDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllToDisabled:hover .rlbButtonText { background-position: -200px -150px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaLeft .rlbTransferAllToDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaRight .rlbTransferAllFromDisabled:hover .rlbButtonText { background-position: -200px -125px; }
+
+
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferFrom .rlbButtonText { background-position: 0 -200px; }
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferFrom .rlbButtonText { background-position: 0 -175px; }
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferFrom:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferTo:hover .rlbButtonText { background-position: -400px -200px; }
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferTo:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferFrom:hover .rlbButtonText { background-position: -400px -175px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferFromDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferToDisabled:hover .rlbButtonText { background-position: -200px -200px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferToDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferFromDisabled:hover .rlbButtonText { background-position: -200px -175px; }
+
+
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllFrom .rlbButtonText { background-position: 0 -250px; }
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllTo .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllFrom .rlbButtonText { background-position: 0 -225px; }
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllFrom:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllTo:hover .rlbButtonText { background-position: -400px -250px; }
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllTo:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllFrom:hover .rlbButtonText { background-position: -400px -225px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllFromDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllToDisabled:hover .rlbButtonText { background-position: -200px -250px; }
+
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllToDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaTop .rlbTransferAllToDisabled:hover .rlbButtonText,
+.RadListBox_Hipocrates .rlbButtonAreaBottom .rlbTransferAllFromDisabled:hover .rlbButtonText { background-position: -200px -225px; }
+

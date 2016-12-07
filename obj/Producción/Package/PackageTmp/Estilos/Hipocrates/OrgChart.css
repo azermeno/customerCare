@@ -1,0 +1,86 @@
+/**
+ * Organizational Chart Office2010Black Skin
+ */
+
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+/** Global wrapper */
+.RadOrgChart_Hipocrates {
+	color: #ffffff;
+	font: normal 12px/22px "Segoe UI", Arial, sans-serif;
+}
+
+
+
+
+/** Viewport */
+.RadOrgChart_Hipocrates .rocViewport {}
+
+
+
+
+/** NodeList */
+.RadOrgChart_Hipocrates .rocNodeList {}
+
+
+
+
+/** Node */
+.RadOrgChart_Hipocrates .rocNode {}
+
+
+
+
+/** Group */
+.RadOrgChart_Hipocrates .rocGroup {
+	border-radius: 10px;
+	background-color: #333333;
+	background-color: rgba(255, 255, 255, .2);
+	*background-color: #333333;
+}
+
+
+
+
+/** ItemList */
+.RadOrgChart_Hipocrates .rocItemList {}
+
+
+
+
+/** ItemWrap */
+.RadOrgChart_Hipocrates .rocItemWrap {}
+
+
+
+
+/** Items */
+.RadOrgChart_Hipocrates .rocItem {
+	color: #000000;
+}
+
+
+	.RadOrgChart_Hipocrates .rocItemContent,
+	.RadOrgChart_Hipocrates .rocItemTemplate {
+		border-color: #2b2b2b;
+		border-radius: 5px;
+		background-color: #949494;
+		background-image: url('OrgChart/rocItemTileLight.png');
+		_background-image: none;
+	}
+
+
+
+
+/** Node lines */
+.RadOrgChart_Hipocrates .rocLineUp,
+.RadOrgChart_Hipocrates .rocLineDown,
+.RadOrgChart_Hipocrates .rocLineHorizontal {
+	background-image: url('OrgChart/rocLinesLight.png');
+}

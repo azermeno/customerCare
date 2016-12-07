@@ -1,0 +1,154 @@
+.RadTabStrip_Hipocrates .rtsLI,
+.RadTabStrip_Hipocrates .rtsLink
+{
+	color: #ffffff;
+	font: 12px/26px "Segoe UI", Arial, sans-serif;
+}
+
+.RadTabStrip_Hipocrates .rtsLevel1 .rtsLI,
+.RadTabStrip_Hipocrates .rtsLevel1 .rtsLink
+{
+	color: #ffffff;
+}
+
+.RadTabStrip_Hipocrates .rtsLevel .rtsLink:hover,
+.RadTabStrip_Hipocrates .rtsLevel .rtsSelected,
+.RadTabStrip_Hipocrates .rtsLevel .rtsSelected:hover
+{
+	text-decoration: underline;
+}
+
+.RadTabStrip_Hipocrates .rtsLevel1 .rtsLink:hover,
+.RadTabStrip_Hipocrates .rtsLevel1 .rtsSelected,
+.RadTabStrip_Hipocrates .rtsLevel1 .rtsSelected:hover
+{
+	text-decoration: none;
+}
+
+.RadTabStrip_Hipocrates .rtsLevel .rtsSelected,
+.RadTabStrip_Hipocrates .rtsLevel .rtsSelected:hover {
+	color: #000000;
+}
+
+.RadTabStripLeft_Hipocrates .rtsSeparator,
+.RadTabStripRight_Hipocrates .rtsSeparator
+{
+	background: #707070;
+}
+
+/* <focus cue> */
+div.RadTabStrip_Hipocrates a.rtsLink:focus
+{
+	outline-color: #707070;
+}
+
+div.RadTabStrip_Hipocrates a.rtsLink:focus:after
+{
+	border-color /*\**/: #707070\9;
+}
+/* </focus cue> */
+
+/* <disabled tabs> */
+.RadTabStrip_Hipocrates .rtsLevel .rtsDisabled
+{
+	color: #666666;
+}
+/* </disabled tabs> */
+
+/* <scrolling arrows> */
+.RadTabStrip_Hipocrates .rtsNextArrow,
+.RadTabStrip_Hipocrates .rtsPrevArrow,
+.RadTabStrip_Hipocrates .rtsPrevArrowDisabled,
+.RadTabStrip_Hipocrates .rtsNextArrowDisabled
+{
+	background-image: url('TabStrip/TabStripStates.png');
+}
+/* </scrolling arrows> */
+
+/* <tab backgrounds> */
+
+.RadTabStrip_Hipocrates .rtsLevel { background: #707070; }
+
+.RadTabStrip_Hipocrates .rtsLevel1 { background-color: #707070; }
+.RadTabStripTop_Hipocrates .rtsLevel2 { background: #a2a3a2 url('TabStrip/Level2Bg.png') repeat-x 0 0; }
+
+.RadTabStripTop_Hipocrates .rtsLevel .rtsLink,
+.RadTabStripTop_Hipocrates .rtsLevel .rtsOut { background-image: none; }
+
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsLink,
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsOut,
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsLink,
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsOut,
+.RadTabStripTop_Hipocrates .rtsLevel1,
+.RadTabStripBottom_Hipocrates .rtsLevel1 { background-image: url('TabStrip/TabStripStates.png'); }
+
+.RadTabStripLeft_Hipocrates .rtsLink,
+.RadTabStripRight_Hipocrates .rtsLink { background-image: url('TabStrip/TabStripVStates.png'); }
+
+.RadTabStripLeft_Hipocrates .rtsLast .rtsLink,
+.RadTabStripRight_Hipocrates .rtsLast .rtsLink
+{
+	border-bottom: 1px solid #5e5e5e;
+}
+
+.RadTabStripRight_Hipocrates .rtsLink,
+.RadTabStripRight_Hipocrates .rtsLI .rtsDisabled:hover { background-position: 100% 0; }
+.RadTabStripRight_Hipocrates .rtsLink:hover { background-position: 100% -200px; }
+.RadTabStripRight_Hipocrates .rtsSelected,
+.RadTabStripRight_Hipocrates .rtsSelected:hover { background-position: 100% -400px; }
+/* </tab backgrounds> */
+
+
+/* <background positioning: tabs with hovers> */
+
+/* <orientation: top> */
+
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsLink { background-position: 0 0; }
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsOut { background-position: 100% 0; }
+
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsLink:hover { background-position: 0 -52px; }
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsLink:hover .rtsOut { background-position: 100% -52px; }
+
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsSelected,
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsSelected:hover { background-position: 0 -26px; }
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsSelected .rtsOut,
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsSelected:hover .rtsOut { background-position: 100% -26px; }
+
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsDisabled:hover { background-position: 0 0; }
+.RadTabStripTop_Hipocrates .rtsLevel1 .rtsDisabled:hover .rtsOut { background-position: 100% 0; }
+
+.RadTabStripTop_Hipocrates .rtsLevel1 { background-position: 0 100%; background-repeat: repeat-x; }
+
+/* </orientation: top> */
+
+/* <orientation: bottom> */
+
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsLink { background-position: 0 -182px; }
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsOut { background-position: 100% -182px; }
+
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsLink:hover { background-position: 0 -130px; }
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsLink:hover .rtsOut { background-position: 100% -130px; }
+
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsSelected,
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsSelected:hover { background-position: 0 -156px; }
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsSelected .rtsOut,
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsSelected:hover .rtsOut { background-position: 100% -156px; }
+
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsDisabled:hover { background-position: 0 -182px; }
+.RadTabStripBottom_Hipocrates .rtsLevel1 .rtsDisabled:hover .rtsOut { background-position: 100% -182px; }
+
+.RadTabStripBottom_Hipocrates .rtsLevel1 { background-position: 0 -599px; background-repeat: repeat-x; }
+
+/* </orientation: bottom> */
+
+/* <orientation: right> */
+
+.RadTabStripRight_Hipocrates .rtsUL .rtsLink,
+.RadTabStripRight_Hipocrates .rtsUL .rtsLI .rtsDisabled:hover { background-position: 100% 0; text-align: left; }
+.RadTabStripRight_Hipocrates .rtsUL .rtsLink:hover { background-position: 100% -200px; }
+.RadTabStripRight_Hipocrates .rtsUL .rtsSelected,
+.RadTabStripRight_Hipocrates .rtsUL .rtsSelected:hover { background-position: 100% -400px; }
+
+/* </orientation: right> */
+
+/* </background positioning: tabs with hovers> */

@@ -1,0 +1,138 @@
+/*Telerik RadInput Office2010Black Skin*/
+
+/*global*/
+
+.RadInput_Hipocrates,
+.RadInputMgr_Hipocrates
+{
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*textbox states*/
+
+html body .RadInput_Hipocrates .riTextBox,
+html body .RadInputMgr_Hipocrates
+{
+	border-color:#919191;
+	background:#f5f5f5;
+	color:#000000;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+html body .RadInput_Hipocrates .riEmpty,
+html body .RadInput_Empty_Hipocrates
+{
+	color:#8c8c8c;
+}
+
+html body .RadInput_Hipocrates .riHover,
+html body .RadInput_Hover_Hipocrates,
+html body .RadInput_Hipocrates .riFocused,
+html body .RadInput_Focused_Hipocrates
+{
+	border-color:#9cf740;
+	background-color:#f5f5f5;
+}
+
+html body .RadInput_Hipocrates .riRead,
+html body .RadInput_Read_Hipocrates
+{
+	border-color:#ddedcc;
+}
+
+html body .RadInput_Hipocrates .riDisabled,
+html body .RadInput_Disabled_Hipocrates
+{
+	color:#666666;
+	background-color:#c7c7c7;
+	cursor:default;
+}
+
+html body .RadInput_Hipocrates .riError,
+html body .RadInput_Error_Hipocrates
+{
+	border-color:#73e600 #8ddb40 #96eb42;
+	background:#f5f5f5 100% -298px no-repeat url('Input/sprite.gif');
+	color:#70b22d;
+}
+
+.RadForm.rfdTextbox .RadInput_Hipocrates .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_Hipocrates[type="text"]
+{
+	border-color:#70b22d #8ddb40 #96eb42;
+	background:#ffffff 100% -298px no-repeat url('Input/sprite.gif');
+	color:#70b22d;
+}
+
+/*buttons*/
+
+.RadInput_Hipocrates a
+{
+	background:transparent no-repeat url('Input/sprite.gif');
+}
+
+/*go*/
+
+.RadInput_Hipocrates .riBtn a
+{
+	width:21px;
+	height:18px;
+	line-height:18px;
+	background-position:3px 6px;
+}
+
+.RadInput_Hipocrates .riBtn a:hover
+{
+	background-position:3px -44px;
+}
+
+/*spin*/
+
+.RadInput_Hipocrates .riSpin a
+{
+	width:13px;
+	height:11px;
+	line-height:10px;
+}
+
+.RadInput_Hipocrates a.riUp
+{
+	background-position:0 -96px;
+}
+
+.RadInput_Hipocrates a.riUp:hover
+{
+	background-position:0 -146px;
+}
+
+.RadInput_Hipocrates a.riDown
+{
+	background-position:0 -198px;
+	margin-top:0;
+}
+
+.RadInput_Hipocrates a.riDown:hover
+{
+	background-position:0 -247px;
+}
+
+/*label*/
+
+.RadInput_Hipocrates .riLabel
+{
+	color:#e3e3e3;
+}
+
+/*rtl*/
+
+html body .RadInputRTL_Hipocrates .riError,
+html body .RadInputRTL_Error_Hipocrates
+{
+	background-position:3px -298px;
+}
+
+.RadForm.rfdTextbox .RadInputRTL_Hipocrates .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_Hipocrates[type="text"]
+{
+	background-position:3px -298px;
+}
